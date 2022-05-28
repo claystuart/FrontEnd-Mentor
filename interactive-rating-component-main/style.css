@@ -1,0 +1,132 @@
+/* Fonts: 
+font-size (paragraph): 15px
+font-weights: 400, 700
+font-family: [Overpass](https://fonts.google.com/specimen/Overpass)
+
+Widths:
+- Mobile: 375px
+- Desktop: 1440px 
+*/
+
+body {
+ /* List of colors */
+ color: hsl(25, 97%, 53%);
+ color: hsl(217, 12%, 63%);
+ color: hsl(216, 12%, 54%);
+ color: hsl(213, 19%, 18%);
+ color: hsl(216, 12%, 8%);
+ color: hsl(0, 0%, 100%);
+
+ font-family: 'Overpass', sans-serif;
+ background-color: #141519;
+
+ display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+h3 {
+    color: hsl(0, 0%, 100%);
+}
+
+p {
+    color: hsl(217, 12%, 63%);
+    font-size: 15px;
+}
+
+/* Contains feedback form */
+.feedback_page {
+    display: inline-block;
+    border-radius: 3%;
+    width: 375px;
+    padding: 2em;
+    background-image: linear-gradient(to bottom, #1f2329, #191d26);
+    max-width: 275px;
+}
+
+.star {
+    background-color: #262e37;
+    text-align: center;
+    padding: 1em;
+    width: 17px;
+    height: 16px;
+    border-radius: 100%;
+}
+
+.radio_container {
+    appearance: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Attribute selector not strictly necessary - just used for demo */
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked + label{
+    color: white;
+    background-color: hsl(217, 12%, 63%);;
+}
+
+label { 
+    color: #747086;
+    background-color: #262e38;
+    height: 25px; 
+    width: 25px;
+    border-radius: 1.5em;
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+label:hover {
+    color: white;
+    background-color: hsl(25, 97%, 53%);
+    cursor: pointer;   
+}
+
+
+.pill {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    margin: 0.25em;
+    margin-top: 1.5em;
+    border-radius: 1em;
+    color:hsl(0, 0%, 100%);
+    background-color: hsl(25, 97%, 53%);
+    border: none;
+    outline: none;
+    width: 100%;  
+}
+
+.pill:hover {
+    cursor: pointer;
+}
+
+/* Contains thank you and score */
+.score_page {
+    border-radius: 3%;
+    width: 300px;
+    padding: 2em;
+    background-image: linear-gradient(to bottom, #1f2329, #191d26);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+#feedbackMessage {
+    color:hsl(25, 97%, 53%);
+    background-color: #262e38;
+    padding: 0.5em 1em;
+    border-radius: 1em;
+}
+
+h3.thankYou {
+    margin: 0%;
+    padding: 0;
+}
