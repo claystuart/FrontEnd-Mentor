@@ -35,7 +35,7 @@
       scorePage.style.setProperty('display', 'flex');
     }
 
-    function reset() {
+    function reset_page() {
       let choice = document.feedbackForm.score; //get radio array
       choice[choice.value - 1].checked = false; //uncheck previous choice
       feedbackPage.style.setProperty('display', 'inline-block');
@@ -86,7 +86,7 @@
   </div> <!-- End feedback form -->
 
 
-  <div class="score_page" id="scorePage" onclick="reset()"> //form resets if you click on it
+  <div class="score_page" id="scorePage" onclick="reset_page()"> <!-- form resets if you click on it -->
 
     <div class="illustration-thank-you">
       <svg width="162" height="108" xmlns="http://www.w3.org/2000/svg">
