@@ -19,7 +19,7 @@
     function processForm() {
       //set message for Thank You form.
       let score = document.feedbackForm.score.value;
-      if(score < 1 || score > 5) {
+      if (score < 1 || score > 5) {
         alert("You forgot to pick a score");
         return;
       }
@@ -33,6 +33,13 @@
       //show score page
       let scorePage = document.getElementById('scorePage');
       scorePage.style.setProperty('display', 'flex');
+    }
+
+    function reset() {
+      let choice = document.feedbackForm.score; //get radio array
+      choice[choice.value - 1].checked = false; //uncheck previous choice
+      feedbackPage.style.setProperty('display', 'inline-block');
+      scorePage.style.display = 'none';
     }
 
   </script>
@@ -62,8 +69,8 @@
 
     <form name="feedbackForm">
       <div class="radio_container">
-        <input type="radio" name="score" id="1" value="1">
-        <label for="1">1</label>
+        <input type="radio" name="score" id="one" value="1">
+        <label for="one">1</label>
         <input type="radio" name="score" id="two" value="2">
         <label for="two">2</label>
         <input type="radio" name="score" id="three" value="3">
@@ -79,7 +86,7 @@
   </div> <!-- End feedback form -->
 
 
-  <div class="score_page" id="scorePage">
+  <div class="score_page" id="scorePage" onclick="reset()"> //form resets if you click on it
 
     <div class="illustration-thank-you">
       <svg width="162" height="108" xmlns="http://www.w3.org/2000/svg">
@@ -132,7 +139,7 @@
   </div>
 
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.&nbsp;
     Coded by <a href="#">Clay Stuart</a>.
   </div>
 
