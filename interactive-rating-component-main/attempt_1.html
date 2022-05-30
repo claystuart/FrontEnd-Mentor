@@ -37,7 +37,7 @@
 
     function reset_page() {
       let choice = document.feedbackForm.score; //get radio array
-      choice[choice.value - 1].checked = false; //uncheck previous choice
+      choice[choice.value].checked = false; //uncheck previous choice
       feedbackPage.style.setProperty('display', 'inline-block');
       scorePage.style.display = 'none';
     }
@@ -69,6 +69,7 @@
 
     <form name="feedbackForm">
       <div class="radio_container">
+        <input type="radio" name="score" hidden>
         <input type="radio" name="score" id="one" value="1">
         <label for="one">1</label>
         <input type="radio" name="score" id="two" value="2">
