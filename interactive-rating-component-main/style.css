@@ -1,13 +1,3 @@
-/* Fonts: 
-font-size (paragraph): 15px
-font-weights: 400, 700
-font-family: [Overpass](https://fonts.google.com/specimen/Overpass)
-
-Widths:
-- Mobile: 375px
-- Desktop: 1440px 
-*/
-
 body {
  /* List of colors */
  color: hsl(25, 97%, 53%);
