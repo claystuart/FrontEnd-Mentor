@@ -21,11 +21,11 @@
       let score = document.feedbackForm.score.value;
       if (score < 1 || score > 5) {
         // alert("You forgot to pick a score");
-        document.querySelector("#modal").style.display = "block";
+        document.querySelector("div.modal").style.display = "block";
         return;
       }
       else {
-        document.querySelector("#modal").style.display = "none";
+        document.querySelector("div.modal").style.display = "none";
       }
       let message = document.getElementById('feedbackMessage');
       message.innerHTML = "You selected " + score + " out of 5";
@@ -47,7 +47,7 @@
     }
 
     function clearModal() {
-      document.querySelector("#modal").style.display = "none";
+      document.querySelector("div.modal").style.display = "none";
     }
 
   </script>
@@ -76,7 +76,7 @@
     </p>
 
     <form name="feedbackForm">
-      <div class="modal" id="modal">
+      <div class="modal">
         Enter a number from 1 to 5
         <button class="pill" type="button" onclick="clearModal()">OK</button>
       </div>
