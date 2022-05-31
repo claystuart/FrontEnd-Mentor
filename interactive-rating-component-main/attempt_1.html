@@ -20,8 +20,12 @@
       //set message for Thank You form.
       let score = document.feedbackForm.score.value;
       if (score < 1 || score > 5) {
-        alert("You forgot to pick a score");
+        // alert("You forgot to pick a score");
+        document.querySelector("#modal").style.display = "block";
         return;
+      }
+      else {
+        document.querySelector("#modal").style.display = "none";
       }
       let message = document.getElementById('feedbackMessage');
       message.innerHTML = "You selected " + score + " out of 5";
@@ -40,6 +44,10 @@
       choice[choice.value].checked = false; //uncheck previous choice
       feedbackPage.style.setProperty('display', 'inline-block');
       scorePage.style.display = 'none';
+    }
+
+    function clearModal() {
+      document.querySelector("#modal").style.display = "none";
     }
 
   </script>
@@ -68,6 +76,11 @@
     </p>
 
     <form name="feedbackForm">
+      <div class="modal" id="modal">
+        Enter a number from 1 to 5
+        <button class="pill" type="button" onclick="clearModal()">OK</button>
+      </div>
+    
       <div class="radio_container">
         <input type="radio" name="score" hidden>
         <input type="radio" name="score" id="one" value="1">
@@ -144,6 +157,7 @@
     Coded by <a href="#">Clay Stuart</a>.
   </div>
 
+  
 </body>
 
 </html>
