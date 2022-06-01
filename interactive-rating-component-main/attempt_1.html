@@ -21,11 +21,11 @@
       let score = document.feedbackForm.score.value;
       if (score < 1 || score > 5) {
         // alert("You forgot to pick a score");
-        document.querySelector("div.modal").style.display = "block";
+        document.querySelector("div.modal").classList.add("modal_visible");
         return;
       }
       else {
-        document.querySelector("div.modal").style.display = "none";
+        document.querySelector("div.modal").classList.remove("modal_visible");
       }
       let message = document.getElementById('feedbackMessage');
       message.innerHTML = "You selected " + score + " out of 5";
@@ -47,7 +47,7 @@
     }
 
     function clearModal() {
-      document.querySelector("div.modal").style.display = "none";
+      document.querySelector("div.modal").classList.remove("modal_visible");
     }
 
   </script>

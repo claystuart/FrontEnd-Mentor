@@ -37,17 +37,24 @@ p {
 }
 
 /* Alert modal for number outside 1-5 */
-.modal {
+.modal {   
+    display: none;
+}
+
+.modal_visible {
     border-radius: 1em;
     position: absolute;
     width: 60%;
+    height: 50%;
     left: 10%;
     top: 28%;
     padding: 2em;
     z-index: 1000;
-    color: white;
-    background-color: grey;
-    display: none;
+    color: hsl(25, 97%, 53%);
+    background-color: #262e38;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .star {
