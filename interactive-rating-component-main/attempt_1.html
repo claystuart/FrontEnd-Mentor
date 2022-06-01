@@ -43,7 +43,8 @@
       let choice = document.feedbackForm.score; //get radio array
       choice[choice.value].checked = false; //uncheck previous choice
       feedbackPage.style.setProperty('display', 'inline-block');
-      scorePage.style.display = 'none';
+      // scorePage.style.display = 'none';
+      scorePage.style.cssText = 'display: none;';
     }
 
     function clearModal() {
