@@ -1,0 +1,56 @@
+/**
+- Mobile: 375px
+- Desktop: 1440px
+
+- 
+*/
+body {
+   background-color: hsl(212, 45%, 89%); /*Light gray */;
+}
+.emptyColorChart {
+color: hsl(0, 0%, 100%); /* white */
+color: hsl(212, 45%, 89%); /*Light gray */
+color: hsl(220, 15%, 55%); /*Grayish blue */
+color: hsl(218, 44%, 22%); /* Dark blue */
+}
+.attribution {
+    margin-top: 1em;
+    font-size: 11px; 
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.main-container {
+    background-color: hsl(0, 0%, 100%); /* white */
+    border-radius: 1em;
+    width: 400px;
+    margin: 2px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+img {
+    width: 80%;
+    margin: 2px;
+    border-radius: 1em;
+    margin-top: 1em;
+}
+
+section {
+    text-align: justify;
+    color: hsl(220, 15%, 55%); /*Grayish blue */
+    display: block;
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    margin-top: 1em;
+}
+
+section.tagline {
+    font-weight: bold;
+    font-size: 24px;
+    color: hsl(218, 44%, 22%); /* Dark blue */
+}
