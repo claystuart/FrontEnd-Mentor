@@ -4,18 +4,27 @@
 
 - 
 */
-body {
-   background-color: hsl(212, 45%, 89%); /*Light gray */;
-}
+
 .emptyColorChart {
-color: hsl(0, 0%, 100%); /* white */
-color: hsl(212, 45%, 89%); /*Light gray */
-color: hsl(220, 15%, 55%); /*Grayish blue */
-color: hsl(218, 44%, 22%); /* Dark blue */
+    color: hsl(0, 0%, 100%);
+    /* white */
+    color: hsl(212, 45%, 89%);
+    /*Light gray */
+    color: hsl(220, 15%, 55%);
+    /*Grayish blue */
+    color: hsl(218, 44%, 22%);
+    /* Dark blue */
 }
+
+body {
+    background-color: hsl(212, 45%, 89%);
+    /*Light gray */
+    ;
+}
+
 .attribution {
     margin-top: 1em;
-    font-size: 11px; 
+    font-size: 11px;
     text-align: center;
 }
 
@@ -24,13 +33,22 @@ color: hsl(218, 44%, 22%); /* Dark blue */
 }
 
 .main-container {
-    background-color: hsl(0, 0%, 100%); /* white */
+    background-color: hsl(0, 0%, 100%);
+    /* white */
     border-radius: 1em;
     width: 400px;
     margin: 2px auto;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+
+    width: 500px;
+
+    /* Center in middle of screen */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 img {
@@ -42,7 +60,8 @@ img {
 
 section {
     text-align: justify;
-    color: hsl(220, 15%, 55%); /*Grayish blue */
+    color: hsl(220, 15%, 55%);
+    /*Grayish blue */
     display: block;
     font-family: 'Outfit', sans-serif;
     font-size: 15px;
@@ -52,5 +71,6 @@ section {
 section.tagline {
     font-weight: bold;
     font-size: 24px;
-    color: hsl(218, 44%, 22%); /* Dark blue */
+    color: hsl(218, 44%, 22%);
+    /* Dark blue */
 }
