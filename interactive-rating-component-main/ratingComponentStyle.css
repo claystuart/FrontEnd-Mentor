@@ -36,26 +36,7 @@ p {
     max-width: 275px;
 }
 
-/* Alert modal for number outside 1-5 */
-.modal {   
-    display: none;
-}
 
-.modal_visible {
-    border-radius: 1em;
-    position: absolute;
-    width: 60%;
-    height: 50%;
-    left: 10%;
-    top: 28%;
-    padding: 2em;
-    z-index: 1000;
-    color: hsl(25, 97%, 53%);
-    background-color: #262e38;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
 
 .star {
     background-color: #262e37;
@@ -72,7 +53,6 @@ p {
     justify-content: space-evenly;
 }
 
-/* Attribute selector not strictly necessary - just used for demo */
 input[type="radio"] {
     display: none;
 }
@@ -142,4 +122,26 @@ label:hover {
 h3.thankYou {
     margin: 0%;
     padding: 0;
+}
+
+/* Alert modal for number outside 1-5 */
+.modal {   
+    display: none;
+    border-radius: 1em;
+    padding: 2em;
+    background-image: linear-gradient(to bottom, #1f2329, #191d26);
+
+    /* Center in middle of screen */
+    position: fixed;
+    width: 150px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal__text {
+    color: hsl(25, 97%, 53%);
+    background-color: #262e38;
+    padding: 1em;
+    border-radius: 1em;
 }

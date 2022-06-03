@@ -16,17 +16,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
 
   <script>
+    /**
+     * If score chose, displays it on score page
+     * else...displays a modal instructing user to select a score
+     */ 
     function processForm() {
       //set message for Thank You form.
       let score = document.feedbackForm.score.value;
       if (score < 1 || score > 5) {
-        // alert("You forgot to pick a score");
-        document.querySelector("div.modal").classList.add("modal_visible");
+        document.querySelector("div.modal").style.display = "block";
         return;
       }
-      else {
-        document.querySelector("div.modal").classList.remove("modal_visible");
-      }
+
       let message = document.getElementById('feedbackMessage');
       message.innerHTML = "You selected " + score + " out of 5";
 
@@ -39,16 +40,22 @@
       scorePage.style.setProperty('display', 'flex');
     }
 
+    /**
+     * Deselects radio score choice (by setting to false) and then
+     * hides feedback page and shows score page
+     */
     function reset_page() {
-      let choice = document.feedbackForm.score; //get radio array
+      let choice = document.feedbackForm.score; //get radio choice array
       choice[choice.value].checked = false; //uncheck previous choice
       feedbackPage.style.setProperty('display', 'inline-block');
-      // scorePage.style.display = 'none';
       scorePage.style.cssText = 'display: none;';
     }
 
+    /**
+     * Hides modal for non-pick
+     */ 
     function clearModal() {
-      document.querySelector("div.modal").classList.remove("modal_visible");
+      document.querySelector("div.modal").style.display = "none";
     }
 
   </script>
@@ -76,12 +83,7 @@
       to help us improve our offering!
     </p>
 
-    <form name="feedbackForm">
-      <div class="modal">
-        Enter a number from 1 to 5
-        <button class="pill" type="button" onclick="clearModal()">OK</button>
-      </div>
-    
+    <form name="feedbackForm">    
       <div class="radio_container">
         <input type="radio" name="score" hidden>
         <input type="radio" name="score" id="one" value="1">
@@ -158,6 +160,10 @@
     Coded by <a href="#">Clay Stuart</a>.
   </div>
 
+  <div class="modal">
+    <p class="modal__text">Enter a Score from 1 to 5</p>
+    <button class="pill" type="button" onclick="clearModal()">OK</button>
+  </div>
   
 </body>
 
