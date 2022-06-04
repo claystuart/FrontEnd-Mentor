@@ -1,0 +1,35 @@
+body {
+    background-color: hsl(217, 54%, 11%);
+}
+
+.card {
+    width: 350px;
+    height: 596px;
+    background-color: hsl(216, 50%, 16%);
+}
+
+.card__image {
+    width: 302px;
+    height: 302px;
+    margin: 1em auto;
+}
+
+.sale__item {
+    font-family: 'Outfit', sans-serif;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+p.item__description {
+    color: hsl(215, 51%, 70%)
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
