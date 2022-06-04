@@ -6,30 +6,69 @@ body {
     width: 350px;
     height: 596px;
     background-color: hsl(216, 50%, 16%);
+    margin-bottom: 3em;
 }
 
 .card__image {
+    display: block;
+    border-radius: 3%;
     width: 302px;
     height: 302px;
-    margin: 1em auto;
+    margin: 0 auto;
+    padding-top: 24px;
 }
 
-.sale__item {
+.item__title {
     font-family: 'Outfit', sans-serif;
     color: white;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 600;
+    margin-left: 24px;
 }
 
-p.item__description {
+.item__description{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    margin-left: 24px;
+    font-size: 20px;
+    line-height: 1.4em;
+}
+
+.cost {
+    display: inline;
+    text-align: left;
+}
+
+.time {
+    text-align: right;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.profile__pic {
+    height: 33px;
+    border: solid 2px white;
+    border-radius: 50%;
+}
+
+
+
+.lightBlue {
     color: hsl(215, 51%, 70%)
+}
+
+.cyan {
+    color: hsl(178, 100%, 50%);
 }
 
 .attribution {
     font-size: 11px;
     text-align: center;
-  }
+}
 
-  .attribution a {
+.attribution a {
     color: hsl(228, 45%, 44%);
-  }
+}
