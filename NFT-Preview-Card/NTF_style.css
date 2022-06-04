@@ -9,7 +9,7 @@ body {
     margin-bottom: 3em;
 }
 
-.card__image {
+.item__image {
     display: block;
     border-radius: 3%;
     width: 302px;
@@ -30,30 +30,42 @@ body {
     font-family: 'Outfit', sans-serif;
     font-weight: 300;
     margin-left: 24px;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.4em;
 }
 
 .bid {
     display: flex;
+    align-items: baseline;
     margin-left: 24px;
-    gap: 40%
+    gap: 30%;
+    margin-bottom: 1em;
 }
 
-.cost {
+.bid__cost {
     font-family: 'Outfit', sans-serif;
     font-weight: 600;
-    font-size: larger;
 }
 
-.time {
+.bid__time {
     font-family: 'Outfit', sans-serif;
-    font-weight: 600;
+    font-weight: 400;
+}
+
+.hrRule {
+    width: 302px;
+    height: 1px;
+    background-color: hsl(215, 32%, 27%);
+    margin-left: 24px;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .profile {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: left;
+    align-items: center;
+    margin-left: 24px;
 }
 
 .profile__pic {
@@ -62,6 +74,11 @@ body {
     border-radius: 50%;
 }
 
+.profile__info {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
 
 
 .lightBlue {
@@ -70,6 +87,10 @@ body {
 
 .cyan {
     color: hsl(178, 100%, 50%);
+}
+
+.white {
+    color: white;
 }
 
 .attribution {
