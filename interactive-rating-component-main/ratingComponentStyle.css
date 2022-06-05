@@ -10,10 +10,10 @@ body {
     font-family: 'Overpass', sans-serif;
     background-color: #141519;
 
-    display: grid;
+    /* display: grid;
     justify-content: center;
     align-items: center;
-    gap: 2em;
+    gap: 2em; */
 }
 
 h3 {
@@ -27,13 +27,13 @@ p {
 
 /* Contains feedback form */
 .feedback_page {
-    position: relative;
+    /* position: relative; */
     display: inline-block;
     border-radius: 3%;
     width: 375px;
     padding: 2em;
     background-image: linear-gradient(to bottom, #1f2329, #191d26);
-    max-width: 275px;   
+    max-width: 275px;
 }
 
 .star {
@@ -46,7 +46,6 @@ p {
 }
 
 .radio_container {
-    appearance: none;
     display: flex;
     justify-content: space-evenly;
 }
@@ -58,7 +57,6 @@ input[type="radio"] {
 input[type="radio"]:checked+label {
     color: white;
     background-color: hsl(217, 12%, 63%);
-    ;
 }
 
 label {
@@ -124,23 +122,41 @@ h3.thankYou {
 }
 
 /* Alert modal for number outside 1-5 */
-.modal {   
+.modal {
     display: none;
     border-radius: 1em;
     padding: 2em;
-    background-image: linear-gradient(to bottom, #1f2329, #191d26);
+    background-color: white;
 
     /* Center in middle of screen */
     position: fixed;
-    width: 150px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 .modal__text {
-    color: hsl(25, 97%, 53%);
-    background-color: #262e38;
+    color: black;
+    background-color: white;
     padding: 1em;
     border-radius: 1em;
+}
+
+.modal__button__color {
+    color: white;
+    background-color: blue;
+}
+
+.center {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.attribution {
+    position: fixed;
+    top: calc(50% + 250px);
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
