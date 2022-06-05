@@ -7,6 +7,11 @@ body {
     height: 596px;
     background-color: hsl(216, 50%, 16%);
     margin-bottom: 3em;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .item__image {
@@ -26,7 +31,7 @@ body {
     margin-left: 24px;
 }
 
-.item__description{
+.item__description {
     font-family: 'Outfit', sans-serif;
     font-weight: 300;
     margin-left: 24px;
@@ -94,8 +99,13 @@ body {
 }
 
 .attribution {
+    color: hsl(215, 56%, 39%);
     font-size: 11px;
     /* text-align: center; */
+    position: fixed;
+    top: calc(50% + 596px / 1.9);
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .attribution a {
