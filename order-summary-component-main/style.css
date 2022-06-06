@@ -12,9 +12,42 @@ body {
     background-color: hsl(225, 100%, 94%);
 }
 
+h1, h2 {
+    text-align: center;
+    margin: .5em 1em;
+}
+
+.hero__image {
+    width: 375px;
+    border-radius: 1em 1em 0 0;
+}
+
 .card {
     width: 375px;
     background-color: white;
+    border-radius: 1em;
+}
+
+.price {
     display: flex;
-    flex-flow: column nowrap;
+    align-items: center;
+    margin: 0 2em;
+}
+
+.price__plan {
+    margin: 0 auto;
+}
+
+button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button__proceed {
+    
+}
+.button__cancel {
+    background-color: white;
+    border: 0;
 }
