@@ -29,7 +29,7 @@ h2 {
     color: hsl(224, 23%, 55%);
     font-size: 18px;
     font-weight: 500;
-    line-height: 1.3em;
+    line-height: 1.6em;
 }
 
 .hero__image {
@@ -45,13 +45,38 @@ h2 {
 }
 
 .price {
+    height: 4em;
+    width: 275px;
+    background-color: hsl(225, 100%, 98%);
     display: flex;
     align-items: center;
-    margin: 0 2em;
+    justify-content: space-between;
+    margin: 2em auto;
 }
 
-.price__plan {
-    margin: 0 auto;
+.price a {
+    font-family: 'Red Hat Display', sans-serif;
+    color: #4032bb;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.price__plan p {
+    margin: 0px;
+}
+
+.price__plan .price--bold {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.price__plan .price--faint {
+    font-family: 'Red Hat Display', sans-serif;
+    color: hsl(224, 23%, 55%);
+    font-size: 14px;
+    font-weight: 500;
 }
 
 button {
