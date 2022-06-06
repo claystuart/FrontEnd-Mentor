@@ -43,18 +43,19 @@ body {
     display: flex;
     align-items: baseline;
     margin-left: 24px;
-    gap: 30%;
     margin-bottom: 1em;
 }
 
 .bid__cost {
     font-family: 'Outfit', sans-serif;
     font-weight: 600;
+    margin-right: auto;
 }
 
 .bid__time {
     font-family: 'Outfit', sans-serif;
     font-weight: 400;
+    margin-right: 24px;
 }
 
 .hrRule {
