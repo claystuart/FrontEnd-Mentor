@@ -15,7 +15,6 @@ body {
 h1, h2 {
     text-align: center;
     margin: .5em 1em;
-    font-family: 'Red Hat Display', sans-serif;
 }
 
 h1 {
@@ -42,6 +41,7 @@ h2 {
     width: 375px;
     background-color: white;
     border-radius: 1em;
+    font-family: 'Red Hat Display', sans-serif;
 }
 
 .price {
@@ -55,7 +55,6 @@ h2 {
 }
 
 .price a {
-    font-family: 'Red Hat Display', sans-serif;
     color: #4032bb;
     font-size: 14px;
     font-weight: 900;
@@ -66,14 +65,12 @@ h2 {
 }
 
 .price__plan .price--bold {
-    font-family: 'Red Hat Display', sans-serif;
     font-size: 15px;
     font-weight: 700;
     margin-bottom: 2px;
 }
 
 .price__plan .price--faint {
-    font-family: 'Red Hat Display', sans-serif;
     color: hsl(224, 23%, 55%);
     font-size: 14px;
     font-weight: 500;
@@ -87,7 +84,6 @@ button {
     height: 3.5em;
     border-radius: 15px;
     color: white;
-    font-family: 'Red Hat Display', sans-serif;
     font-size: 16px;
     font-weight: 700;
     background-color: hsl(245, 75%, 52%);
