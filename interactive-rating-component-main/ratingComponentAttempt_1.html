@@ -22,7 +22,7 @@
       //set message for Thank You form.
       let score = document.feedbackForm.score.value;
       if (score < 1 || score > 5) {
-        document.querySelector("div.modal").style.display = "block";
+        document.querySelector("article.modal").style.display = "block";
         return;
       }
 
@@ -53,7 +53,7 @@
      * Hides modal for non-pick
      */ 
     function clearModal() {
-      document.querySelector("div.modal").style.display = "none";
+      document.querySelector("article.modal").style.display = "none";
     }
 
   </script>
@@ -61,10 +61,10 @@
 </head>
 
 <body>
+<main>
+  <article class="feedback_page center" id="feedbackPage">
 
-  <div class="feedback_page center" id="feedbackPage">
-
-    <object data="./images/icon-star.svg" type="image/svg+xml" class="star"></object>
+    <object data="./images/icon-star.svg" type="image/svg+xml" class="star">Star Image</object>
 
     <h3 class="thankYou">
       How did we do?
@@ -92,12 +92,12 @@
       <button class="pill" type="button" onclick="processForm()">Submit</button>
     </form>
 
-  </div> <!-- End feedback form -->
+  </article> <!-- End feedback form -->
+</main>
+  
+  <article class="score_page center" id="scorePage" onclick="reset_page()"> <!-- form resets if you click on it -->
 
-
-  <div class="score_page center" id="scorePage" onclick="reset_page()"> <!-- form resets if you click on it -->
-
-    <object data="./images/illustration-thank-you.svg" type="image/svg+xml"></object>
+    <object data="./images/illustration-thank-you.svg" type="image/svg+xml">Accounting Machine Image</object>
 
     <!-- <div class="illustration-thank-you">
       <svg width="162" height="108" xmlns="http://www.w3.org/2000/svg">
@@ -147,18 +147,18 @@
       don&#39;t hesitate to get in touch!</p>
 
     <!-- Thank you state end -->
-  </div>
+    </article>
 
-  <div class="attribution">
+  <article class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.&nbsp;
     Coded by <a href="#">Clay Stuart</a>.
-  </div>
+  </article>
 
-  <div class="modal">
+  <article class="modal">
     <h3 class="modal__text">Error!</h3>
     <p class="modal__text">Enter a Score from 1 to 5</p>
     <button class="pill modal__button__color" type="button" onclick="clearModal()">OK</button>
-  </div>
+  </article>
   
 </body>
 
