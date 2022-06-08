@@ -66,13 +66,7 @@
 
   <div class="feedback_page center" id="feedbackPage">
 
-    <div class="star">
-      <svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="m9.067.43 1.99 4.031c.112.228.33.386.58.422l4.45.647a.772.772 0 0 1 .427 1.316l-3.22 3.138a.773.773 0 0 0-.222.683l.76 4.431a.772.772 0 0 1-1.12.813l-3.98-2.092a.773.773 0 0 0-.718 0l-3.98 2.092a.772.772 0 0 1-1.119-.813l.76-4.431a.77.77 0 0 0-.222-.683L.233 6.846A.772.772 0 0 1 .661 5.53l4.449-.647a.772.772 0 0 0 .58-.422L7.68.43a.774.774 0 0 1 1.387 0Z"
-          fill="#FC7614" />
-      </svg>
-    </div>
+    <object data="./images/icon-star.svg" type="image/svg+xml" class="star" alt="star"></object>
 
     <h3 class="thankYou">
       How did we do?
@@ -105,7 +99,9 @@
 
   <div class="score_page center" id="scorePage" onclick="reset_page()"> <!-- form resets if you click on it -->
 
-    <div class="illustration-thank-you">
+    <object data="./images/illustration-thank-you.svg" type="image/svg+xml" alt="calculator machine"></object>
+
+    <!-- <div class="illustration-thank-you">
       <svg width="162" height="108" xmlns="http://www.w3.org/2000/svg">
         <g fill="none">
           <path
@@ -142,14 +138,14 @@
             fill="#FFF" />
         </g>
       </svg>
-    </div>
+    </div> -->
 
     <!-- Add rating here -->
     <p id="feedbackMessage" class="thankYou"></p>
 
     <h3>Thank you!</h3>
 
-    <p class="" thankYou>We appreciate you taking the time to give a rating. If you ever need more support,
+    <p class="thankYou" >We appreciate you taking the time to give a rating. If you ever need more support,
       don&#39;t hesitate to get in touch!</p>
 
     <!-- Thank you state end -->
@@ -161,6 +157,7 @@
   </div>
 
   <div class="modal">
+    <h3 class="modal__text">Error!</h3>
     <p class="modal__text">Enter a Score from 1 to 5</p>
     <button class="pill modal__button__color" type="button" onclick="clearModal()">OK</button>
   </div>
