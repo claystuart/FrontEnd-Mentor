@@ -1,0 +1,28 @@
+.project__cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    width: 275px;
+    height: 375px;
+    cursor: pointer;
+    background-color: black;
+    color: orange;
+    text-align: center;
+    border-radius: 1em;
+}
+
+img {
+    /* padding-top: 20px; */
+    width: 80%;
+    object-fit: contain;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+.green {
+    color: green;
+}
