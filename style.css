@@ -23,6 +23,9 @@ h2 {
     font-size: 20px;
 }
 
-.green {
-    color: green;
+.submitted {
+    color: rgb(238, 238, 102);
+}
+.accepted {
+    color: rgb(49, 155, 49);
 }
