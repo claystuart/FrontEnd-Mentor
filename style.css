@@ -36,17 +36,19 @@ article {
     border-radius: 1em;
 }
 
-img {
+section {
     width: 80%;
-    object-fit: scale-down;
+    height: 250px;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    object-fit:scale-down;
 }
 
 h2 {
     font-size: 20px;
-}
-
-.in-process {
-    color: red;
 }
 
 .submitted {
