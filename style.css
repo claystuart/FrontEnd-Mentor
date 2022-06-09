@@ -1,6 +1,22 @@
-.project__cards {
+body {
+    background-color: white;
+    background-image: url("./images/mountain-background.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    font-family: 'Changa One', cursive;
+}
+
+header {
+    text-align: center;
+    color: #121817;
+    font-size: 24px;
+}
+
+main {
     display: flex;
     gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -8,24 +24,36 @@
     height: 375px;
     cursor: pointer;
     background-color: black;
-    color: orange;
+    letter-spacing: 110%;
+    word-spacing: 110%;
+    color: rgba(206, 152, 51, 0.925);
     text-align: center;
     border-radius: 1em;
 }
 
 img {
-    /* padding-top: 20px; */
     width: 80%;
-    object-fit: contain;
+    object-fit: scale-down;
 }
 
 h2 {
     font-size: 20px;
 }
 
+.in-process {
+    color: red;
+}
+
 .submitted {
     color: rgb(238, 238, 102);
 }
+
 .accepted {
     color: rgb(49, 155, 49);
+}
+
+@media (max-width: 800) {
+    body {
+        background-size: auto;
+    }
 }
