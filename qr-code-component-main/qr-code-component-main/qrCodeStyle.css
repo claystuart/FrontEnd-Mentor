@@ -40,3 +40,7 @@ p {
     color: hsl(220, 15%, 55%);
     margin: 0;
 }
+
+section > p {
+    font-size: 12px;
+}
