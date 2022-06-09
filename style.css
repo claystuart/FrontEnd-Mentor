@@ -1,8 +1,8 @@
 body {
     background-color: white;
-    background-image: url("./images/mountain-background.jpg");
     background-repeat: no-repeat;
-    background-size: auto;
+    background-image: linear-gradient(rgba(240, 161, 13, 0.815),rgba(233, 119, 13, 0.863));
+    background-attachment: fixed;
     font-family: 'Changa One', cursive;
 }
 
@@ -52,8 +52,8 @@ h2 {
     color: rgb(49, 155, 49);
 }
 
-@media (max-width: 800) {
+/* @media (min-width: 300) {
     body {
-        background-size: auto;
-    }
-}
+        background-size: 500%;
+    } 
+}  */
