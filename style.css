@@ -8,8 +8,13 @@ body {
 
 header {
     text-align: center;
-    color: #121817;
+    background-color: #121817;
+    color: rgba(206, 152, 51, 0.925);
     font-size: 24px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 1em;
+    word-spacing: 110%;
 }
 
 main {
@@ -19,11 +24,11 @@ main {
     flex-wrap: wrap;
 }
 
-.card {
+article {
     width: 275px;
     height: 375px;
     cursor: pointer;
-    background-color: black;
+    background-color: #121817;
     letter-spacing: 110%;
     word-spacing: 110%;
     color: rgba(206, 152, 51, 0.925);
@@ -51,9 +56,3 @@ h2 {
 .accepted {
     color: rgb(49, 155, 49);
 }
-
-/* @media (min-width: 300) {
-    body {
-        background-size: 500%;
-    } 
-}  */
