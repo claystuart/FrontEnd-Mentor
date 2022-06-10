@@ -2,12 +2,13 @@ body {
     background-color: hsl(217, 54%, 11%);
 }
 
-.card {
+main {
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(216, 50%, 16%);
+
     width: 350px;
     height: 596px;
-    background-color: hsl(216, 50%, 16%);
-    margin-bottom: 3em;
-
+    
     position: fixed;
     top: 50%;
     left: 50%;
@@ -19,12 +20,10 @@ body {
     border-radius: 3%;
     width: 302px;
     height: 302px;
-    margin: 0 auto;
-    padding-top: 24px;
+    margin: 24px;
 }
 
 .item__title {
-    font-family: 'Outfit', sans-serif;
     color: white;
     font-size: 24px;
     font-weight: 600;
@@ -32,7 +31,6 @@ body {
 }
 
 .item__description {
-    font-family: 'Outfit', sans-serif;
     font-weight: 300;
     margin-left: 24px;
     font-size: 18px;
@@ -47,15 +45,17 @@ body {
 }
 
 .bid__cost {
-    font-family: 'Outfit', sans-serif;
     font-weight: 600;
     margin-right: auto;
+    margin-left: 10px;
+    color: hsl(178, 100%, 50%);
 }
 
 .bid__time {
-    font-family: 'Outfit', sans-serif;
     font-weight: 400;
     margin-right: 24px;
+    margin-left: 10px;
+    color: hsl(215, 51%, 70%);
 }
 
 .hrRule {
@@ -63,7 +63,7 @@ body {
     height: 1px;
     background-color: hsl(215, 32%, 27%);
     margin-left: 24px;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
@@ -81,11 +81,9 @@ body {
 }
 
 .profile__info {
-    font-family: 'Outfit', sans-serif;
     font-size: 18px;
     font-weight: 500;
 }
-
 
 .lightBlue {
     color: hsl(215, 51%, 70%)
@@ -100,9 +98,8 @@ body {
 }
 
 .attribution {
-    color: hsl(215, 56%, 39%);
+    color: hsl(215, 67%, 51%);
     font-size: 11px;
-    /* text-align: center; */
     position: fixed;
     top: calc(50% + 596px / 1.9);
     left: 50%;
@@ -110,5 +107,5 @@ body {
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: hsl(228, 69%, 57%);
 }

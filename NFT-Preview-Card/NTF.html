@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | NFT preview card component</title>
@@ -15,36 +14,38 @@
 </head>
 
 <body>
-  <div class="card">
+  <main>
+    
+    <section class="item">
+      <img class="item__image" src="./images/image-equilibrium.jpg" alt="glowing cube">
+      <h1 class="item__title">Equilibrium #3429</h1>
+      <h2 class="item__description lightBlue">Our Equilibrium collection promotes balance and calm.</h2>
+    </section>
+    
+    <section class="bid">
+      <object data="./images/icon-ethereum.svg" type="image/svg+xml" title="diamond image"></object>
+      <p class="bid__cost">0.041 ETH</p>
+      <object data="./images/icon-clock.svg" type="image/svg+xml" title="clock image"></object>
+      <p class="bid__time">3 days left</p>
+    </section>
 
-    <img class="item__image" src="./images/image-equilibrium.jpg" alt="glowing cube">
-    <p class="item__title">Equilibrium #3429</p>
-    <p class="item__description lightBlue">Our Equilibrium collection
-      promotes balance and calm.</p>
+    <section class="hrRule"> </section>
 
-    <div class="bid">
-      <div class="bid__cost cyan"><svg width="11" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z" fill="#00FFF8"/></svg> &nbsp; 0.041 ETH</div>
-      
-      <div class="bid__time lightBlue"><svg width="17" height="17" xmlns="http://www.w3.org/2000/svg"><path d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z" fill="#8BACD9"/></svg>
-        &nbsp; 3 days left</div>
-    </div>
-
-    <div class="hrRule"> </div>
-
-    <div class="profile">
-      <img class="profile__pic" src="./images/image-avatar.png" alt="creator picture" >
+    <section class="profile">
+      <img class="profile__pic" src="./images/image-avatar.png" alt="creator picture">
       <p class="profile__info">&nbsp;&nbsp;
-        <span class="lightBlue">Creation of</span> 
-        <span class="white">Jules Wyvern</span> </p>
-    </div>
+        <span class="lightBlue">Creation of</span>
+        <span class="white">Jules Wyvern</span>
+      </p>
+    </section>
 
-  </div>
+    <section class="attribution">
+      <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Clay Stuart</a>.
+      </p>
+    </section>
 
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Clay Stuart</a>.
-  </div>
+  </main>
 </body>
 
 </html>
