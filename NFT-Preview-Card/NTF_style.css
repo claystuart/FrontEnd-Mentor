@@ -31,6 +31,7 @@ main {
 }
 
 .item__description {
+    color: hsl(215, 51%, 70%);
     font-weight: 300;
     margin-left: 24px;
     font-size: 18px;
@@ -39,7 +40,7 @@ main {
 
 .bid {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     margin-left: 24px;
     margin-bottom: 1em;
 }
@@ -62,9 +63,7 @@ main {
     width: 302px;
     height: 1px;
     background-color: hsl(215, 32%, 27%);
-    margin-left: 24px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10 0 10 24;
 }
 
 .profile {
@@ -85,25 +84,11 @@ main {
     font-weight: 500;
 }
 
-.lightBlue {
-    color: hsl(215, 51%, 70%)
-}
-
-.cyan {
-    color: hsl(178, 100%, 50%);
-}
-
-.white {
-    color: white;
-}
-
 .attribution {
     color: hsl(215, 67%, 51%);
     font-size: 11px;
-    position: fixed;
-    top: calc(50% + 596px / 1.9);
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
 }
 
 .attribution a {
