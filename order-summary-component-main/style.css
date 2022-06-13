@@ -36,7 +36,7 @@ h2 {
     border-radius: 1em 1em 0 0;
 }
 
-.card {
+article {
     margin: 1em;
     width: 375px;
     background-color: white;
@@ -88,6 +88,10 @@ button {
     font-weight: 700;
     background-color: hsl(245, 75%, 52%);
     border-style: solid;
+}
+
+button:hover {
+    color: hsl(223, 47%, 23%);
 }
 
 .button__cancel {
