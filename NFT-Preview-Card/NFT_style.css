@@ -8,12 +8,14 @@ main {
 
     width: 350px;
     height: 596px;
-    
+
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+
 
 .item__image {
     display: block;
@@ -21,6 +23,12 @@ main {
     width: 302px;
     height: 302px;
     margin: 24px;
+}
+
+.item__image:hover {
+   opacity: .6;
+   background-image: linear-gradient(90deg, transparent 50%,
+   hsl(178, 100%, 50%, .5) 50%);
 }
 
 .item__title {
@@ -93,4 +101,12 @@ main {
 
 .attribution a {
     color: hsl(228, 69%, 57%);
+}
+
+.name {
+    color: white;
+}
+
+.hover:hover {
+    color: hsl(178, 100%, 50%);
 }
