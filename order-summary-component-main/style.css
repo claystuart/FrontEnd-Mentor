@@ -37,11 +37,15 @@ h2 {
 }
 
 article {
-    margin: 1em;
     width: 375px;
     background-color: white;
     border-radius: 1em;
     font-family: 'Red Hat Display', sans-serif;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 .price {
