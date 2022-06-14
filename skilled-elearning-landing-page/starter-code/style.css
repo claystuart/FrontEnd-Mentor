@@ -1,0 +1,9 @@
+header {
+    display: flex;
+    background-color: black;
+}
+main {
+    width: 455px;
+    height: 2599px;
+    background-color: white;
+}
