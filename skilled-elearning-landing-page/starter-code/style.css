@@ -9,22 +9,21 @@ main {
     justify-content: center;
 }
 
-header {
+nav {
     width: 343px;
     height: 48px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 3em;
 }
 
-header>h1 {
+nav>h1 {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 28px;
     font-weight: 800;
 }
 
-header>button {
+nav>button {
     width: 140px;
     height: 48px;
     background-color: #13183f;
@@ -35,7 +34,7 @@ header>button {
     font-weight: 700;
 }
 
-header>button:hover{
+nav>button:hover{
     background-color: #666ca3;
 }
 
@@ -73,13 +72,14 @@ aside > button:hover {
 }
 
 img {
+    width: 327px;
+    height: 301px;
     /* content: url('./assets/image-hero-desktop.png'); */
-    align-self: left;
     transform: translate(-10%,0);
 }
 
 section {
-    /* width: 375px; */
+    width: 375px;
     height: 1695px;
     display: flex;
     flex-direction: column;
@@ -92,6 +92,7 @@ section > div {
     background-image: linear-gradient(#f02aa6, #ff6f48);
     color: white;
     border-radius: .5em;
+    margin: 0 auto;
 }
 
 section > div > h2 {
@@ -102,13 +103,21 @@ article {
     width: 343px;
     height: 283px;
     background-color: white;
-    margin: 16px auto;
+    margin: 1em auto;
     padding: 1em;
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 article > h3 {
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+article > p {
+    font-weight: 500;
+    color: #83869a;
+    line-height: 1.4em;
+    letter-spacing: .05em;
 }
 
 article > button {
@@ -128,7 +137,7 @@ footer {
     width: 375px;
     height: 120px;
     background-color: #13183f;    
-    margin: 3em auto 0 auto;
+    margin: 0 auto 0 auto;
     border-radius: .5em;
     display: flex;
     justify-content: space-between;
@@ -136,7 +145,6 @@ footer {
 }
 
 footer > h1 {
-    font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 28px;
     font-weight: 800;
     color: white;
@@ -153,4 +161,31 @@ footer > button {
     font-size: 16px;
     font-weight: 700;
     margin-right: 1em;
+}
+
+footer > button:hover {
+    opacity: 50%;
+}
+
+/* tablet */
+@media (min-width: 768px) {
+    main {
+        min-width: 768px;
+        margin: 0;
+    }
+    nav {
+        width: 100%;
+    }
+    img {
+        width: 327px;
+        height: 301px;
+        content: url('./assets/image-hero-desktop.png');
+        /* transform: translate(-10%,0); */
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
