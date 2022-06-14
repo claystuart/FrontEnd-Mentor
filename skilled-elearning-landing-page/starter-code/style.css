@@ -32,3 +32,24 @@ header > button {
     font-weight: 700;
 }
 
+aside > h1 {
+    text-align: center;
+    width: 343px;
+}
+
+section {
+    width: 375px;
+    height: 1695px;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(#fff, #979797);
+}
+
+article {
+    width: 343px;
+    height: 283px;
+    background-color: white;
+    margin: 16px 16px;
+    padding: 1em;
+}
+
