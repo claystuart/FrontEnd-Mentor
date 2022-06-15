@@ -30,6 +30,7 @@ main {
     color: white;
     border-radius: 10px;
     overflow: hidden;
+    /* protects top border-radius */
 }
 
 .image__container {
@@ -92,3 +93,37 @@ h4 {
     letter-spacing: 1px;
 }
 
+@media (min-width: 1110px) {
+    /* tablets and desktop */
+
+    main {
+        width: 1440px;
+        flex-direction: row;
+        justify-content: left;
+    }
+
+    .outer__container {
+        width: 1110px;
+        height: 446px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image__container {
+        order: 1;
+        width: 540px;
+        height: 446px;
+        background-image: url("./images/image-header-desktop.jpg");
+        background-repeat:no-repeat;
+    }
+
+    .inner__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .stats__container {
+        flex-direction: row;
+    }
+}
