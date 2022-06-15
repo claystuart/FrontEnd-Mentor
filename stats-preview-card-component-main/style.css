@@ -113,17 +113,36 @@ h4 {
     .image__container {
         order: 1;
         width: 540px;
-        height: 446px;
+        height: 100%;
         background-image: url("./images/image-header-desktop.jpg");
         background-repeat:no-repeat;
     }
 
-    .inner__container {
+    .text__container {
+        width: 570px;
         display: flex;
         flex-direction: column;
+        align-items: center;
+    }
+
+    .info__container {
+        margin: 0 2em;
     }
 
     .stats__container {
         flex-direction: row;
+        gap: 3em;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        margin: 0 3em;
+    }
+
+    .stats__container {
+        margin-top: 3em;;
     }
 }
