@@ -176,6 +176,7 @@ footer>button:hover {
     main {
         min-width: 768px;
         margin: 1em 1em;
+        justify-content: flex-start;
     }
 
     nav {
@@ -196,5 +197,9 @@ footer>button:hover {
 
     }
 
-    section {}
+    section {
+        justify-content: left;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }
