@@ -1,0 +1,65 @@
+/* tablet */
+
+@media (min-width: 768px) {
+    main {
+        display: block;
+        min-width: 768px;
+        margin: 1em 1em;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav button {
+        margin-right: 2em;
+    }
+
+    nav object {
+        margin-left: 2em;
+    }
+
+    img {
+        width: 327px;
+        height: 301px;
+        content: url('./assets/image-hero-desktop.png');
+        /* transform: translate(-10%,0); */
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+    }
+
+    section {
+        width: 768px;
+        height: 999px;
+        display: grid;
+        grid-template-rows: repeat(3, 283px);
+        grid-template-columns: repeat(2, 339px);
+        gap: 2em;
+    }
+
+    .course__listings {
+        width: 339px;
+        height: 259px;
+    }
+
+    article {
+        margin: 0 auto;
+        width: 339px;
+        height: 283px;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    footer h1 {
+        margin-left: 2em;
+    }
+
+    footer button {
+        margin-right: 2em;
+    }
+}

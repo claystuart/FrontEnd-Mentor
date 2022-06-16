@@ -1,3 +1,5 @@
+/* mobile */
+
 main {
     margin: 0;
     font-family: 'Plus Jakarta Sans', sans-serif;
@@ -7,6 +9,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     outline: red solid 1px;
 }
 
@@ -16,6 +19,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     outline: blue solid 1px;
 }
 
@@ -35,8 +39,9 @@ nav button:hover {
 }
 
 header {
-    outline: green solid 1px;
     margin-bottom: 1em;
+
+    outline: green solid 1px;
 }
 
 aside {
@@ -82,6 +87,7 @@ section {
     display: flex;
     flex-direction: column;
     background-image: linear-gradient(white, #97979723);
+
     outline: orange 1px solid;
 }
 
@@ -148,14 +154,14 @@ footer {
     align-items: center;
 }
 
-footer>h1 {
+footer h1 {
     font-size: 28px;
     font-weight: 800;
     color: white;
     margin-left: 1em;
 }
 
-footer>button {
+footer button {
     width: 140px;
     height: 48px;
     background-image: linear-gradient(#4851ff, #f02aa6);
@@ -167,39 +173,6 @@ footer>button {
     margin-right: 1em;
 }
 
-footer>button:hover {
+footer button:hover {
     opacity: 50%;
-}
-
-/* tablet */
-@media (min-width: 768px) {
-    main {
-        min-width: 768px;
-        margin: 1em 1em;
-        justify-content: flex-start;
-    }
-
-    nav {
-        width: 100%;
-
-    }
-
-    img {
-        width: 327px;
-        height: 301px;
-        content: url('./assets/image-hero-desktop.png');
-        /* transform: translate(-10%,0); */
-    }
-
-    header {
-        display: flex;
-        flex-direction: row;
-
-    }
-
-    section {
-        justify-content: left;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
 }
