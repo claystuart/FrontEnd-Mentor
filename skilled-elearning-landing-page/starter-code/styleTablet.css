@@ -33,7 +33,7 @@
 
     section {
         width: 768px;
-        height: 999px;
+        height: 930px;
         display: grid;
         grid-template-rows: repeat(3, 283px);
         grid-template-columns: repeat(2, 339px);

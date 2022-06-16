@@ -83,7 +83,7 @@ img {
 
 section {
     width: 375px;
-    height: 1695px;
+    height: 1400px;
     display: flex;
     flex-direction: column;
     background-image: linear-gradient(white, #97979723);
