@@ -1,12 +1,13 @@
 main {
-    margin: 0 1em;
+    margin: 0;
     font-family: 'Plus Jakarta Sans', sans-serif;
     width: 455px;
-    /* height: 2599px; */
     background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    outline: red solid 1px;
 }
 
 nav {
@@ -15,15 +16,10 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    outline: blue solid 1px;
 }
 
-nav>h1 {
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-size: 28px;
-    font-weight: 800;
-}
-
-nav>button {
+nav button {
     width: 140px;
     height: 48px;
     background-color: #13183f;
@@ -34,13 +30,17 @@ nav>button {
     font-weight: 700;
 }
 
-nav>button:hover{
+nav button:hover {
     background-color: #666ca3;
+}
+
+header {
+    outline: green solid 1px;
+    margin-bottom: 1em;
 }
 
 aside {
     width: 343px;
-    font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 aside>h1 {
@@ -67,14 +67,13 @@ aside>button {
     font-weight: 600;
 }
 
-aside > button:hover {
+aside>button:hover {
     opacity: 50%;
 }
 
 img {
     width: 327px;
     height: 301px;
-    transform: translate(-10%,0);
 }
 
 section {
@@ -82,19 +81,20 @@ section {
     height: 1695px;
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(#fff, #97979723);
+    background-image: linear-gradient(white, #97979723);
+    outline: orange 1px solid;
 }
 
-section > div {
+.course__listings {
     width: 343px;
     height: 120px;
     background-image: linear-gradient(#f02aa6, #ff6f48);
     color: white;
     border-radius: .5em;
-    margin: 0 auto;
+    margin: 0 auto 10px auto;
 }
 
-section > div > h2 {
+section div h2 {
     margin: 1.3em;
 }
 
@@ -102,32 +102,37 @@ article {
     width: 343px;
     height: 283px;
     background-color: white;
-    margin: 1em auto;
-    padding: 1em;
+    /* padding: 0 1em; */
     font-family: 'Plus Jakarta Sans', sans-serif;
+    margin: 0 auto 10px auto;
 }
 
-article > h3 {
+article object {
+    margin-left: 5px;
+}
+
+article h3 {
     font-size: 20px;
     font-weight: 800;
 }
 
-article > p {
+article p {
     font-weight: 500;
     color: #83869a;
     line-height: 1.4em;
     letter-spacing: .05em;
 }
 
-article > button {
+article button {
     color: #f74780;
     background-color: white;
     border: 0;
     font-size: 18px;
     font-weight: 800;
+    margin-top: 10px;
 }
 
-article > button:hover {
+article button:hover {
     opacity: 50%;
 }
 
@@ -135,25 +140,25 @@ footer {
     font-family: 'Plus Jakarta Sans', sans-serif;
     width: 375px;
     height: 120px;
-    background-color: #13183f;    
-    margin: 0 auto 0 auto;
+    background-color: #13183f;
+    margin: 30px auto 0 auto;
     border-radius: .5em;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-footer > h1 {
+footer>h1 {
     font-size: 28px;
     font-weight: 800;
     color: white;
     margin-left: 1em;
 }
 
-footer > button {
+footer>button {
     width: 140px;
     height: 48px;
-    background-image: linear-gradient(#4851ff,#f02aa6);
+    background-image: linear-gradient(#4851ff, #f02aa6);
     color: white;
     border-radius: 3em;
     border: 0;
@@ -162,7 +167,7 @@ footer > button {
     margin-right: 1em;
 }
 
-footer > button:hover {
+footer>button:hover {
     opacity: 50%;
 }
 
@@ -172,10 +177,12 @@ footer > button:hover {
         min-width: 768px;
         margin: 1em 1em;
     }
+
     nav {
         width: 100%;
-        
+
     }
+
     img {
         width: 327px;
         height: 301px;
@@ -186,10 +193,8 @@ footer > button:hover {
     header {
         display: flex;
         flex-direction: row;
-        
-    }
-
-    section {
 
     }
+
+    section {}
 }
