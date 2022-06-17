@@ -1,0 +1,15 @@
+main {
+    outline: red solid 1px;
+}
+
+nav {
+    outline: blue solid 1px;
+}
+
+header {
+    outline: green solid 1px;
+}
+
+section {
+    outline: orange 1px solid;
+}
