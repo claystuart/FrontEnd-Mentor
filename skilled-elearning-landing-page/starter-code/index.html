@@ -20,7 +20,6 @@
 
     <nav>
       <object data="./assets/logo-skilled.svg" type="image/svg+xml" title="skilled logo"></object>
-     
       <button>Get Started</button>
     </nav>
 
@@ -31,10 +30,18 @@
           will give you the knowledge you need to live the life you want.</p>
         <button>Get Started</button>
       </aside>
-  
-      <img class="img__hero" src="./assets/image-hero-mobile.png" alt="woman drinking coffee"></img>
+
+      <picture>
+        <source media="(min-width: 700px)" type="image/webp"
+          srcset="./assets/image-hero-tablet.webp, ./assets/image-hero-tablet@2x.webp 2x">
+        <source media="(min-width: 700px)" type="image/png"
+          srcset="./assets/image-hero-tablet.png, ./assets/image-hero-tablet@2x.png 2x">
+        <source srcset="./assets/image-hero-mobile.webp, ./assets/image-hero-mobile@2x.webp 2x" type="image/webp">
+        <img src="./assets/image-hero-mobile.png" alt="woman drinking coffee"
+          srcset="./assets/image-hero-mobile@2x.png 2x"></img>
+      </picture>
+
     </header>
-    
 
     <section>
 
@@ -79,13 +86,13 @@
         <button>Get Started</button>
       </article>
 
-      
     </section>
+
     <footer>
       <h1>skilled</h1>
       <button>Get Started</button>
     </footer>
-    
+
   </main>
 </body>
 
