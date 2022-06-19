@@ -1,3 +1,41 @@
 button:hover {
     opacity: 50%;
 }
+
+body {
+    display: grid;
+    place-items: center;
+}
+
+main {
+    width: auto;
+    height: auto;
+}
+
+nav {
+    width: 75%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+}
+
+article {
+    width: 350px;
+    height: 250px;
+}
+
+section {
+    width: 1110px;
+    height: 550px;
+    display: grid;
+    grid-template-rows: repeat(2, 230px);
+    grid-template-columns: repeat(3, 350px);
+    gap: 3em;
+}
+
+footer {
+    margin-top: 0;
+}
