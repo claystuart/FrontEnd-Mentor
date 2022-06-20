@@ -1,4 +1,5 @@
 # Completed and Submitted Frontend Mentor Projects:
+1. Equalizer landing page (NEWBIE)
 1. Skilled e-learning landing page (NEWBIE)
 1. Stats Preview Component (NEWBIE)
 1. Order Summary Component (NEWBIE)
