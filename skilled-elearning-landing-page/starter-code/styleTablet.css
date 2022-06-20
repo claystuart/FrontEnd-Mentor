@@ -16,16 +16,26 @@ nav object {
     margin-left: 2em;
 }
 
-img {
-    width: 327px;
-    height: 301px;
-    content: url('./assets/image-hero-desktop.png');
-}
-
 header {
     display: flex;
-    flex-direction: row;
+    overflow: hidden;
 }
+
+aside {
+    width: 100%;
+}
+
+img {
+    /* width: 327px;
+     height: 301px;
+      content: url('./assets/image-hero-desktop.png'); */
+      width: 100%;
+      height: 100%;
+      position: relative;
+      left: 100px;
+      bottom: 50px;
+      overflow: hidden;
+ }
 
 section {
     width: 768px;
