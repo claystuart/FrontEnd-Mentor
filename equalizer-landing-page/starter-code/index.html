@@ -9,6 +9,8 @@
     @import url(mobile.css);
     @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
 
+    /* Universal Styling */
+
     body {
       font-family: 'IBM Plex Sans', sans-serif;
     }
@@ -30,13 +32,17 @@
 
     <article>
       <h2>Premium EQ</h2>
-      <h3>Get expert-level control with a robust equalizer, volume mixer, and spatial audio. Take
-        your listening experience to a whole new level and access all our incredible features!</h3>
-      <h5>14</h5>
-      <h6>/ month</h6>
+      <h3>Get expert-level control with a robust equalizer, volume mixer, and spatial audio. Take your listening
+        experience to a whole new level and access all our incredible features!</h3>
 
-      <button>iOS Download</button>
-      <button>Android Download</button>
+      <div class="article__container">
+        <div class="article__price">$4</div>
+        <div class="article__month">/month</div>
+      </div>
+
+
+      <button class="ios">iOS Download</button>
+      <button class="android">Android Download</button>
     </article>
 
   </main>

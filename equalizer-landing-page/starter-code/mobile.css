@@ -3,5 +3,74 @@ body {
 }
 
 article {
+    height: 546px;
     background-color: #FA7453;
+    color: #FCFAF9;
+    border-radius: 10px;
+}
+
+
+
+h2 {
+    font-size: 32px;
+    font-weight: 700;
+    padding-top: 1em;
+    margin-left: 0;
+}
+
+h3 {
+    font-weight: 500;
+    line-height: 1.6em;
+    margin-top: 15px;
+}
+
+h2,
+h3,
+button,
+.article__price,
+.article__month {
+    margin-left: 2rem;
+    margin-right: 1.5rem;
+}
+
+.article__container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 15px;
+}
+
+.article__price {
+    font-size: 65px;
+    font-weight: bold;
+    margin-right: 0;
+}
+
+.article__month {
+    font-size: 20px;
+    margin-left: 0;
+}
+
+
+
+button {
+    margin: 1em auto;
+    display: block;
+    width: 296px;
+    height: 61px;
+    border-radius: 10px;
+    border: 0;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+button.ios {
+    background-color: #191826;
+    color: #FCFAF9;
+}
+
+button.android {
+    background-color: #FCFAF9;
+    color: #191826;
 }
