@@ -9,7 +9,7 @@
     @import url(styleMobile.css);
     @import url(styleTablet.css) screen and (min-width: 815px);
     @import url(styleDesktop.css) screen and (min-width: 1150px);
-    @import url(styleDebug.css);
+    /* @import url(styleDebug.css); */
     @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
   </style>
   <title>Frontend Mentor | Skilled e-learning landing page</title>
@@ -33,9 +33,13 @@
       </aside>
 
       <picture>
-        <source media="(min-width: 700px)" type="image/webp"
+        <source media="(min-width: 1150px)" type="image/webp"
+          srcset="./assets/image-hero-desktop.webp, ./assets/image-hero-desktop@2xwebp 2x">
+        <source media="(min-width: 1150px)" type="image/png" 
+          srcset="./assets/image-hero-desktop.png, ./assets/image-hero-desktop@2x.png 2x">
+        <source media="(min-width: 815px)" type="image/webp"
           srcset="./assets/image-hero-tablet.webp, ./assets/image-hero-tablet@2x.webp 2x">
-        <source media="(min-width: 700px)" type="image/png"
+        <source media="(min-width: 815px)" type="image/png"
           srcset="./assets/image-hero-tablet.png, ./assets/image-hero-tablet@2x.png 2x">
         <source srcset="./assets/image-hero-mobile.webp, ./assets/image-hero-mobile@2x.webp 2x" type="image/webp">
         <img src="./assets/image-hero-mobile.png" alt="woman drinking coffee"

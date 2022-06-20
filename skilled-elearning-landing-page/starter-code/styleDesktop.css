@@ -20,9 +20,10 @@ nav {
 header {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
-
 article {
+    
     width: 350px;
     height: 250px;
 }
