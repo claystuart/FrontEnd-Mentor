@@ -24,10 +24,21 @@
 <body>
 
   <header>
-    <h1>We make your music sound extraordinary.</h1>
-    <p>A system audio equalizer specifically designed for Android and iOS. Freely tune the
-      way your music sounds with a professional grade parametric EQ & volume mixer. Control
-      bass, mids, treble, gain control, reverb, and more!</p>
+    <object data="./assets/logo.svg" type="image/svg+xml" title="equalizer logo"></object>
+    
+    <picture>
+      <img srcset="./assets/bg-main-mobile.png 582w" 
+      sizes="(max-width: 700px) 600px"
+      alt="faded color smudges" >
+    </picture>
+
+    <div class="header__message">
+      <h1>We make your music sound extraordinary.</h1>
+      <p>A system audio equalizer specifically designed for Android and iOS. Freely tune the way your music sounds with
+        a professional grade parametric EQ & volume mixer. Control bass, mids, treble, gain control, reverb, and more!
+      </p>
+    </div>
+
   </header>
 
   <main>
@@ -57,7 +68,7 @@
   <footer>
     <object data="./assets/logo.svg" type="image/svg+xml" title="equalizer logo"></object>
 
-    <div class="message">
+    <div class="footer__message">
       <p>All rights reserved &copy; Equalizer 2021</p>
       <p>Have any problems? Contact us via social media or email us at</p>
       <address>equalizer@example.com</address>

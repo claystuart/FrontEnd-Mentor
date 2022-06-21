@@ -10,6 +10,30 @@ footer {
     width: 375px;
 }
 
+header {
+    position: relative;
+}
+
+img {
+    position: absolute;
+    top: -300px;
+    left: -10px
+} 
+
+header object {
+    margin-top: 30px;
+}
+
+header h1 {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 90%;
+}
+
+.header__message {
+    margin-top: 40px;
+}
+
 .card {
     height: 546px;
     background-color: #FA7453;
@@ -89,7 +113,7 @@ footer {
     margin-top: 40px;
 }
 
-footer .message {
+.footer__message {
     margin-top: 20px;
 }
 
