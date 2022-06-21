@@ -1,15 +1,19 @@
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main, header, footer {
     width: 375px;
 }
 
-article {
+.card {
     height: 546px;
     background-color: #FA7453;
     color: #FCFAF9;
     border-radius: 10px;
 }
-
-
 
 h2 {
     font-size: 32px;
@@ -27,35 +31,32 @@ h3 {
 h2,
 h3,
 button,
-.article__price,
-.article__month {
+.price__amount,
+.price__duration {
     margin-left: 2rem;
     margin-right: 1.5rem;
 }
 
-.article__container {
+.price__container {
     display: flex;
     justify-content: left;
     align-items: center;
     gap: 15px;
 }
 
-.article__price {
+.price__amount {
     font-size: 65px;
     font-weight: bold;
     margin-right: 0;
 }
 
-.article__month {
+.price__duration {
     font-size: 20px;
     margin-left: 0;
 }
 
-
-
 button {
     margin: 1em auto;
-    display: block;
     width: 296px;
     height: 61px;
     border-radius: 10px;
@@ -63,6 +64,9 @@ button {
     margin-bottom: 15px;
     font-size: 18px;
     font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 button.ios {
@@ -73,4 +77,8 @@ button.ios {
 button.android {
     background-color: #FCFAF9;
     color: #191826;
+}
+
+.button__label {
+    margin-left: 5px;
 }

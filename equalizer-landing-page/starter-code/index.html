@@ -7,8 +7,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <style>
     @import url(mobile.css);
-    @import url(tablet.css);  /* to be done */
-    @import url(desktop.css); /* to be done */
+    @import url(tablet.css);
+    @import url(desktop.css);
     @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
 
     /* Universal Styling */
@@ -32,24 +32,30 @@
 
   <main>
 
-    <article>
+    <div class="card">
       <h2>Premium EQ</h2>
       <h3>Get expert-level control with a robust equalizer, volume mixer, and spatial audio. Take your listening
         experience to a whole new level and access all our incredible features!</h3>
 
-      <div class="article__container">
-        <div class="article__price">$4</div>
-        <div class="article__month">/month</div>
+      <div class="price__container">
+        <div class="price__amount">$4</div>
+        <div class="price__duration">/month</div>
       </div>
 
-
-      <button class="ios">iOS Download</button>
-      <button class="android">Android Download</button>
-    </article>
+      <button class="ios">
+        <object data="./assets/icon-apple.svg" type="image/svg+xml" title="applce icon"></object>
+        <span class="button__label">iOS Download</span>
+      </button>
+      <button class="android">
+        <object data="./assets/icon-android.svg" type="image/svg+xml" title="android icon"></object>
+        <span class="button__label">Android Download</span>
+      </button>
+    </div>
 
   </main>
 
   <footer>
+    <object data="./assets/logo.svg" type="image/svg+xml" title="equalizer logo"></object>
     <p>All rights reserved © Equalizer 2021</p>
     <p>Have any problems? Contact us via social media or email us at <span>equalizer@example.com</span></p>
   </footer>
