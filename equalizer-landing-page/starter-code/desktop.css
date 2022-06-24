@@ -1,3 +1,41 @@
-header {
-    outline: deeppink dotted 5px;
+main,
+header,
+footer {
+    width: 80%;
+    max-width: 1200px;
+    margin-left: 3em;
+    outline: blue solid 1px;
+}
+
+body {
+    background-image: url("./assets/bg-main-tablet.png");
+    background-size: 110%;
+    background-position: -100px -150px;
+    background-repeat: no-repeat;
+}
+
+main {
+    width: 80%;
+}
+
+.background {
+    width: 100%;
+    background-color: black;
+    background-image: url("./assets/background_simpleThree.svg");
+    background-position: center -50px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.phone__image {
+    margin-left: -50%;
+    margin-bottom: -150px;
+}
+
+.card {
+    width: 399px;
+    height: 546px;
+    margin-left: 30%;
+    margin-top: -320px;
+    padding-bottom: 20px;
 }
