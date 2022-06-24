@@ -1,16 +1,7 @@
 body {
-    max-width: 768px;
+    max-width: 800px;
     display: grid;
     place-items: center;
-}
-
-#cornerImage {
-    width: 266px;
-    height: 400px;
-    display: block;
-    position: absolute;
-    top:0;
-    right:0;
 }
 
 main,
@@ -21,15 +12,24 @@ footer {
 
 header {
     outline: teal dashed 3px;
+    background-image: url("./assets/bg-main-tablet.png");
+    background-size: 200%;
+    position: relative;
+}
+
+.header__message {
+    max-width: 537px;
 }
 
 header h1 {
+    max-width: 500px;
     font-size: 64px;
     font-weight: bold;
 }
 
 header p {
     font-size: 18px;
+    max-width: 500px;
 }
 
 header img {

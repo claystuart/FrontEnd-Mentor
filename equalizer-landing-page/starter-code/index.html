@@ -7,8 +7,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <style>
     @import url(mobile.css);
-    /* @import url(tablet.css) screen and (min-width: 500px); */
-    /* @import url(desktop.css) screen and (min-width: 1081px); */
+    @import url(tablet.css) screen and (min-width: 600px);
+    @import url(desktop.css) screen and (min-width: 801px);
     @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
 
     /* Universal Styling */
@@ -23,38 +23,21 @@
 
 <body>
 
-  <div>
-    <object id="cornerImage" data="./assets/background_complicated.svg" type="image/svg+xml"
-      title="abstract shapes"></object>
-  </div>
-
   <header>
-    <object data="./assets/logo.svg" type="image/svg+xml" title="equalizer logo"></object>
+    <img src="./assets/logo.svg" alt="equalizer logo">
 
-    <picture class="backgroundImage">
-      <img srcset="./assets/bg-main-mobile.png 582w,
-      ./assets/bg-main-tablet.png 1283w,
-      ./assets/bg-main-desktop.png 1913w" sizes="(max-width: 700px) 600px, (max-width: 1400px) 800px, 1440px"
-        alt="faded color smudges">
-    </picture>
-
-    <div class="header__message">
+    <div">
       <h1>We make your music sound extraordinary.</h1>
       <p>A system audio equalizer specifically designed for Android and iOS. Freely tune the way your music sounds with
         a professional grade parametric EQ & volume mixer. Control bass, mids, treble, gain control, reverb, and more!
       </p>
-    </div>
-
-
-
+      </div>
   </header>
 
   <main>
-
-
     <picture class="phoneImage">
       <img class="main__image" alt="smart phone" srcset="./assets/illustration-app.png 624w"
-        sizes="(max-width: 700px) 208px, (max-width: 1400px) 270px, 312px">
+        sizes="(max-width: 600px) 208px, (max-width: 1000px) 270px, 312px">
     </picture>
 
     <div class="background"></div>
@@ -70,19 +53,18 @@
       </div>
 
       <button class="ios">
-        <object data="./assets/icon-apple.svg" type="image/svg+xml" title="applce icon"></object>
+        <img src="./assets/icon-apple.svg" alt="apple icon">
         <span class="button__label">iOS Download</span>
       </button>
       <button class="android">
-        <object data="./assets/icon-android.svg" type="image/svg+xml" title="android icon"></object>
+        <img src="./assets/icon-android.svg" alt="android icon">
         <span class="button__label">Android Download</span>
       </button>
     </div>
-
   </main>
 
   <footer>
-    <object data="./assets/logo.svg" type="image/svg+xml" title="equalizer logo"></object>
+    <img src="./assets/logo.svg" alt="equalizer logo">
 
     <div class="footer__message">
       <p>All rights reserved &copy; Equalizer 2021</p>
@@ -90,12 +72,11 @@
       <address>equalizer@example.com</address>
     </div>
 
-    <div class="icons">
-      <object data="./assets/icon-facebook.svg" type="image/svg+xml" title="facebook icon"></object>
-      <object data="./assets/icon-instagram.svg" type="image/svg+xml" title="instagram icon"></object>
-      <object data="./assets/icon-twitter.svg" type="image/svg+xml" title="twitter icon"></object>
+    <div class="footer__icons">
+      <img src="./assets/icon-facebook.svg" alt="facebook icon">
+      <img src="./assets/icon-instagram.svg" alt="instagram icon">
+      <img src="./assets/icon-twitter.svg" alt="twitter icon">
     </div>
-
   </footer>
 
 </body>
