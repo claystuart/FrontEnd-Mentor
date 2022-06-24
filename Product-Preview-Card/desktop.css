@@ -1,0 +1,9 @@
+body {
+    display: grid;
+    place-items: center;
+}
+
+.main__container {
+flex-direction: row;
+}
+

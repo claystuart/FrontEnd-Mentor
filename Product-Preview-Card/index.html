@@ -1,36 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Product preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    @import url(mobile.css);
+    @import url(desktop.css) screen and (min-width: 768px);
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
 
-  Preview
+  <div class="main__container">
 
-  Gabrielle Essence Eau De Parfum
+    <main>
 
-  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
+      <header>
+        <picture>
+          <source media="(min-width: 768px)" srcset="./images/image-product-desktop.jpg">
+          <img src="./images/image-product-mobile.jpg" alt="perfume bottle">
+        </picture>
+      </header>
 
-  $149.99
-  $169.99
+      <footer>
+        <div class="footer__margin">
+          <h2 class="simple-font">PERFUME</h2>
+          <h1 class="fancy-font">Gabrielle Essence Eau De Parfum</h1>
 
-  Add to Cart
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+          <p class="simple-font description">A floral, solar and voluptuous interpretation composed by Olivier Polge,
+            Perfumer-Creator for the House of CHANEL.</p>
+
+          <div class="price__container">
+            <span class="fancy-font discount-price">$149.99</span>
+            <span class="simple-font original-price">$169.99</span>
+          </div>
+
+          <button>
+            <img class="shopping-cart" src="./images/icon-cart.svg" alt="shopping card">
+            <span class="simple-font">Add to Cart</span>
+          </button>
+
+        </div>
+      </footer>
+
+      <div class="attribution">
+        <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+          Coded by <a href="#">Clay Stuart</a>.</p>
+      </div>
+
+    </main>
+
+    
+
   </div>
+
+  
 </body>
+
 </html>
