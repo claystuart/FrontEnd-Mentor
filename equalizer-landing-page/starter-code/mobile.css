@@ -30,7 +30,6 @@ header>div>h1 {
 
 header>div>p {
     margin-top: 40px;
-    margin-left: 2rem;
     margin-right: 1.5rem;
 }
 
@@ -59,6 +58,7 @@ main {
     background-color: #FA7453;
     color: #FCFAF9;
     border-radius: 10px;
+    padding-bottom: 20px;
 }
 
 h2 {
@@ -160,6 +160,6 @@ footer object {
     align-items: center;
 }
 
-footer>div>img:first-of-type~img {
-    margin-left: 2rem;
+.footer__icons img {
+    margin-right: 20px;
 }

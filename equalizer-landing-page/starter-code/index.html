@@ -7,8 +7,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <style>
     @import url(mobile.css);
-    @import url(tablet.css) screen and (min-width: 600px);
-    @import url(desktop.css) screen and (min-width: 801px);
+    @import url(tablet.css) screen and (min-width: 768px);
+    @import url(desktop.css) screen and (min-width: 1000px);
     @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
 
     /* Universal Styling */
@@ -26,19 +26,17 @@
   <header>
     <img src="./assets/logo.svg" alt="equalizer logo">
 
-    <div">
+    <div>
       <h1>We make your music sound extraordinary.</h1>
       <p>A system audio equalizer specifically designed for Android and iOS. Freely tune the way your music sounds with
         a professional grade parametric EQ & volume mixer. Control bass, mids, treble, gain control, reverb, and more!
       </p>
-      </div>
+    </div>
   </header>
 
   <main>
-    <picture class="phoneImage">
-      <img class="main__image" alt="smart phone" srcset="./assets/illustration-app.png 624w"
-        sizes="(max-width: 600px) 208px, (max-width: 1000px) 270px, 312px">
-    </picture>
+    <img class="phone__image" alt="smart phone" srcset="./assets/illustration-app.png 624w"
+      sizes="(max-width: 750px) 208px, (max-width: 1000) 208px, 312px">
 
     <div class="background"></div>
 
@@ -64,18 +62,24 @@
   </main>
 
   <footer>
+
+
     <img src="./assets/logo.svg" alt="equalizer logo">
 
-    <div class="footer__message">
-      <p>All rights reserved &copy; Equalizer 2021</p>
-      <p>Have any problems? Contact us via social media or email us at</p>
-      <address>equalizer@example.com</address>
-    </div>
+    <div class="footer__container">
 
-    <div class="footer__icons">
-      <img src="./assets/icon-facebook.svg" alt="facebook icon">
-      <img src="./assets/icon-instagram.svg" alt="instagram icon">
-      <img src="./assets/icon-twitter.svg" alt="twitter icon">
+      <div class="footer__message">
+        <p>All rights reserved &copy; Equalizer 2021</p>
+        <p>Have any problems? Contact us via social media or email us at</p>
+        <address>equalizer@example.com</address>
+      </div>
+
+
+      <div class="footer__icons">
+        <img src="./assets/icon-facebook.svg" alt="facebook icon">
+        <img src="./assets/icon-instagram.svg" alt="instagram icon">
+        <img src="./assets/icon-twitter.svg" alt="twitter icon">
+      </div>
     </div>
   </footer>
 
