@@ -20,11 +20,14 @@ img {
     width: 300px;
     height: 450px;
     border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
 }
 
 footer {
     width: 300px;
     height: 450px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
 }
 
 h2 {
