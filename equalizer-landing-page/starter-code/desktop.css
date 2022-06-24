@@ -48,13 +48,15 @@ button.android:hover {
 }
 
 footer {
+    height: auto;
+   
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
 }
 
-.footer__container {
-    display: flex;
-    justify-content: space-between;
-
-    /* note: convert footer to grid for all three css*/
+footer>img {
+    outline: red dotted 1px;
+    grid-area: 1/1/1/2;
+    align-self: center;
 }
