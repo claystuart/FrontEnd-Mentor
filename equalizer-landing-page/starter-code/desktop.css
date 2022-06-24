@@ -56,7 +56,6 @@ footer {
 }
 
 footer>img {
-    outline: red dotted 1px;
     grid-area: 1/1/1/2;
     align-self: center;
 }
