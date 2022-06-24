@@ -4,7 +4,6 @@ footer {
     width: 80%;
     max-width: 1200px;
     margin-left: 3em;
-    outline: blue solid 1px;
 }
 
 body {
@@ -38,4 +37,24 @@ main {
     margin-left: 30%;
     margin-top: -320px;
     padding-bottom: 20px;
+}
+
+button.ios:hover {
+    background-color: #66E2DC;
+}
+
+button.android:hover {
+    background-color: #FFB964;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+
+    /* note: convert footer to grid for all three */
 }
