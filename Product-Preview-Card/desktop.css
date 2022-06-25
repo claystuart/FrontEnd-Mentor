@@ -1,6 +1,8 @@
 body {
     display: grid;
-    place-items: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
     background-color: #F2EAE2;
 }
 
@@ -8,12 +10,18 @@ body {
     flex-direction: column;
     width: auto;
     height: auto;
+    position: relative;
 }
 
 main {
+    margin: 0;
     width: 600px;
     height: 450px;
     flex-direction: row;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 img {
