@@ -1,3 +1,68 @@
 body {
-    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Red Hat Display', sans-serif;
+    margin: 1em 0;
+}
+
+
+header,
+main,
+footer {
+    outline: red dotted 2px;
+    max-width: 1440px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 1.5em 0;
+    overflow: hidden;
+}
+
+#heroLeft {
+    position: relative;
+    left: -40px;
+}
+
+#heroRight {
+    position: relative;
+    right: -30px;
+}
+
+header article {
+    outline: green dotted 2px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 64px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+p {
+    font-size: 18px;
+    text-align: center;
+}
+
+button {
+    color: white;
+    font-size: 16px;
+    margin: 1em;
+    padding: 15px;
+    border-radius: 25px;
+    border: 0;
+    font-weight: bold;
+}
+
+.button__top-download {
+    background-color: #4d96a9;
+    padding: 15px 25px;
 }
