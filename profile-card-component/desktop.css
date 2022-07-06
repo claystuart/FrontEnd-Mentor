@@ -12,7 +12,9 @@ body {
     width: 100%;
     background-color: #19a1ae;
     font-family: 'Kumbh Sans', sans-serif;
-    
+    background-image: url("./images/bg-pattern-top.svg");
+    background-position: 150% -50%;
+    background-repeat: no-repeat;
 }
 
 .image_topLeft {
