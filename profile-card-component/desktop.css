@@ -6,3 +6,40 @@
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header, article, footer {
+    width: 350px;
+}
+
+header {
+    height: 140px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-image: url("./images/bg-pattern-card.svg");
+    background-color: red;
+}
+
+.image__victor {
+    background-color: white;
+    padding: 5px;
+    border-radius: 50%;
+    height: 96px;
+    width: 96px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
