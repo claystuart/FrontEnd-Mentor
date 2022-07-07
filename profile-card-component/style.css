@@ -1,0 +1,117 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #19a1ae;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-image: url("./images/bg-pattern-top.svg");
+    background-position: 150% -50%;
+    background-repeat: no-repeat;
+}
+
+.image_topLeft {
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+.image_bottomRight {
+    position: absolute;
+    transform: translate(50%,50%);
+}
+
+main {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    overflow: hidden;
+    background-color: #19a1ae;
+    
+}
+
+header, article, footer {
+    width: 350px;
+}
+
+header {
+    height: 140px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-image: url("./images/bg-pattern-card.svg");    
+}
+
+.image__victor {
+    background-color: white;
+    padding: 5px;
+    border-radius: 50%;
+    height: 96px;
+    width: 96px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+article {
+    background-color: white;
+    height: 134px;
+    border-bottom: 1px solid #E8E9EC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article  h1 {
+    margin-top: 55px;
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+article span {
+    color: #6B7082;
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+article h2 {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #6B7082;
+    font-weight: 400;
+}
+
+footer {
+    background-color: white;
+    height: 100px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+footer section {
+    margin-top: 10px;
+    text-align: center;
+}
+
+footer h1 {
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+footer p {
+    margin-top: 5px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #6B7082;
+}
