@@ -1,8 +1,77 @@
-.attribution {
-    font-size: 11px;
-    text-align: center;
+body {
+    background: hsl(0, 0%, 95%);
+}
+article {
+    width: 327px;
+    height: 442px;
+    font-family: 'Big Shoulders Display', cursive;
+    margin: 0 auto;
 }
 
-.attribution a {
-    color: hsl(228, 45%, 44%);
+.top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #e28625;
+}
+
+.middle {
+    background-color: #006971;
+}
+
+.bottom {
+    background-color: #004140;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+img,
+h1,
+p,
+button {
+    margin-left: 40px;
+}
+
+h1 {
+    color: hsl(0, 0%, 95%);
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+p {
+    width: 231px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 400;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 1.5em;
+}
+
+img {
+    height: 40px;
+    width: 64px;
+    margin-top: 40px;
+}
+
+button {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    margin-top: 20px;
+    border: 0;
+    border-radius: 20px;
+    width: 146px;
+    height: 48px;
+}
+
+.top>button {
+    color: #e28625;
+}
+
+.middle>button {
+    color:  #006971;
+}
+
+.bottom>button{
+    color: #004140;
 }
