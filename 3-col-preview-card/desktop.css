@@ -16,3 +16,20 @@ main {
     border-bottom-left-radius: 0px;
     border-top-right-radius: 10px;
 }
+
+article {
+    width: 307px;
+    height: 500px;
+}
+
+p {
+    line-height: 1.75em;
+}
+
+img {
+    margin-top: 50px;
+}
+
+button {
+    margin-top: 60px;
+}
