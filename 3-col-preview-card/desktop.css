@@ -1,0 +1,18 @@
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+}
+
+.top {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+}
+
+.bottom {
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 10px;
+}

@@ -1,6 +1,8 @@
 body {
     background: hsl(0, 0%, 95%);
+    margin: 0;
 }
+
 article {
     width: 327px;
     height: 442px;
@@ -68,10 +70,28 @@ button {
     color: #e28625;
 }
 
-.middle>button {
-    color:  #006971;
+.top>button:hover {
+    border: 1px solid white;
+    color: white;
+    background-color: #e28625;
 }
 
-.bottom>button{
+.middle>button {
+    color: #006971;
+}
+
+.middle>button:hover {
+    border: 1px solid white;
+    color: white;
+    background-color: #006971;
+}
+
+.bottom>button {
     color: #004140;
+}
+
+.bottom>button:hover {
+    border: 1px solid white;
+    color: white;
+    background-color: #004140;
 }
