@@ -1,0 +1,30 @@
+main {
+    width: 375px;
+}
+
+header article {
+    background-color: #F7F2F7;
+}
+
+h1 {
+    color: #512051;
+}
+
+p {
+    color: #927B91;
+}
+
+header h2 {
+    color: #512051;
+}
+
+footer article {
+    width: 327px;
+    height: 248px;
+    background-color: #512051;
+    color: white;
+}
+
+.verifiedBuyer {
+    color: #EE69A4;
+}
