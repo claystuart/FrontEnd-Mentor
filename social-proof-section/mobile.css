@@ -4,12 +4,17 @@ main {
     font-family: 'League Spartan', sans-serif;
 }
 
+header {
+    margin-bottom: 40px;
+}
+
 article {
     margin: 0 auto;
 }
 
 header .blurb {
     margin-top: 50px;
+    margin-bottom: 50px;
     width: 327px;
     height: 219px;
     background-color: white;
@@ -19,6 +24,9 @@ header article {
     height: 78px;
     width: 327px;
     background-color: #F7F2F7;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
 }
 
 header h1 {
@@ -36,7 +44,15 @@ header p {
     font-size: 19px;
 }
 
+.star_images {
+    margin-top: 15px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
 header h2 {
+    margin-top: 10px;
     text-align: center;
     font-size: 17px;
     font-weight: bold;
@@ -44,6 +60,7 @@ header h2 {
 }
 
 footer article {
+    border-radius: 10px;
     width: 327px;
     height: 248px;
     background-color: #512051;
