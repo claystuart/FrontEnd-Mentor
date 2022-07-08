@@ -9,8 +9,10 @@ article {
 }
 
 header .blurb {
+    margin-top: 50px;
     width: 327px;
     height: 219px;
+    background-color: white;
 }
 
 header article {
@@ -20,14 +22,24 @@ header article {
 }
 
 header h1 {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px;
     color: #512051;
 }
 
 header p {
+    text-align: center;
     color: #927B91;
+    line-height: 20px;
+    font-size: 19px;
 }
 
 header h2 {
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
     color: #512051;
 }
 
