@@ -1,17 +1,29 @@
 main {
+    margin: 10px auto;
     width: 375px;
     font-family: 'League Spartan', sans-serif;
 }
 
+article {
+    margin: 0 auto;
+}
+
+header .blurb {
+    width: 327px;
+    height: 219px;
+}
+
 header article {
+    height: 78px;
+    width: 327px;
     background-color: #F7F2F7;
 }
 
-h1 {
+header h1 {
     color: #512051;
 }
 
-p {
+header p {
     color: #927B91;
 }
 
