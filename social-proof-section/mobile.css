@@ -70,3 +70,21 @@ footer article {
 .verifiedBuyer {
     color: #EE69A4;
 }
+
+.pic__and__name {
+    margin-top: 15px;
+    width: 162px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.pic__and__name img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.pic__and__name h2{
+   font-size: 17px;
+}
