@@ -65,6 +65,7 @@ footer article {
     height: 248px;
     background-color: #512051;
     color: white;
+    margin-bottom: 20px;
 }
 
 .verifiedBuyer {
@@ -72,19 +73,34 @@ footer article {
 }
 
 .pic__and__name {
-    margin-top: 15px;
+    padding-top: 40px;
+    padding-left: 37px;
     width: 162px;
     height: 40px;
     display: flex;
     align-items: center;
 }
 
-.pic__and__name img{
+.pic__and__name img {
     height: 40px;
     width: 40px;
     border-radius: 50%;
 }
 
-.pic__and__name h2{
-   font-size: 17px;
+.pic__and__name h2 {
+    margin-top: 0;
+    font-size: 17px;
+}
+
+.name__and__verifiedBuyer {
+    white-space: nowrap;
+    margin-left: 30px;
+}
+
+.name__and__verifiedBuyer p{
+    margin: 0;
+}
+
+blockquote {
+    margin-top: 35px;
 }
