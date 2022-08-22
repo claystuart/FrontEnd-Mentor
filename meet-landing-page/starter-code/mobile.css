@@ -1,0 +1,13 @@
+.container {
+    width: 100%;
+    display: grid;
+    flex-direction: column;
+}
+
+.logo {
+    margin: 48px auto 0 auto;
+}
+
+.header {
+    margin-top: 0;
+}

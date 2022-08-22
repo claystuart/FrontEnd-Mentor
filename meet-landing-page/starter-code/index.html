@@ -7,35 +7,39 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <title>Frontend Mentor | Meet landing page</title>
   <style>
-    @import url("desktop.css");
+    @import url("style.css");
+    @import url("mobile.css");
+    /* @import url("tablet.css") screen and (min-width: 500x);
+    @import url("desktop.css") screen and (min-width: 769px); */
     @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&display=swap');
   </style>
 </head>
 
 <body>
-  <img class="logo" src="./assets/logo.svg" alt="meet logo">
+  <div class="container">
 
-  <header>
+    <div class="logo">
+      <img src="./assets/logo.svg" alt="meet logo">
+    </div>
 
-    <picture id="heroLeft">
-      <source media="(min-width: 850px)" srcset="./assets/desktop/image-hero-left.png">
-      <source media="(min-width: 500px)" srcset="./assets/tablet/image-hero.png">
-      <img src="./assets/image-hero.png" alt="smiling faces" >
-    </picture>
-
-    <article>
-      <h1>Group Chat for Everyone</h1>
-      <p>Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
-      <div class="button__container">
-        <button class="button__top-download">Download <span>v1.3</span></button>
-        <button class="button__top-what-is-it">What is it?</button>
+    <div class="header">
+      <div>
+        <h1>Group Chat for Everyone</h1>
+        <p>Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
+        <div class="button__container">
+          <button class="button__top-download">Download <span>v1.3</span></button>
+          <button class="button__top-what-is-it">What is it?</button>
+        </div>
       </div>
-    </article>
 
-    <img src="./assets/desktop/image-hero-right.png" alt="smiling faces" id="heroRight">
-  </header>
+      <img src="./assets/desktop/image-hero-right.png" alt="smiling faces" id="heroRight">
+    </div>
 
-  <main>
+
+  </div>
+
+
+  <!-- <main>
     <section>01</section>
 
     <div class="four__images">
@@ -61,7 +65,8 @@
         <button>Download v1.3</button>
     </article>
 
-  </footer>
+  </footer> 
+-->
 
 </body>
 
