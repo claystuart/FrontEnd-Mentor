@@ -1,5 +1,5 @@
 .container {
-    width: 100%;
+    width: 375px;
     display: grid;
     flex-direction: column;
 }
@@ -8,6 +8,13 @@
     margin: 48px auto 0 auto;
 }
 
-.header {
-    margin-top: 0;
+.hero {
+    margin-top: 35px;
+    margin-left: -25px;
+    width: 500px;
+}
+
+.hero img {
+    width: 100%;
+    object-fit: scale-down;
 }
