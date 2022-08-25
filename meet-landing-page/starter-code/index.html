@@ -8,9 +8,10 @@
   <title>Frontend Mentor | Meet landing page</title>
   <style>
     @import url("style.css");
-    @import url("mobile.css");
+    @import url("mobileFlex.css");
     /* @import url("tablet.css") screen and (min-width: 500x);
     @import url("desktop.css") screen and (min-width: 769px); */
+
     @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&display=swap');
   </style>
 </head>
@@ -18,60 +19,52 @@
 <body>
   <div class="container">
 
-    <div class="logo">
-      <img src="./assets/logo.svg" alt="meet logo">
+    <img class="logo" src="./assets/logo.svg" alt="meet logo">
+
+    <img class="hero" src="./assets/tablet/image-hero.png" alt="faces">
+
+    <h1 class="headerText">Group Chat for Everyone</h1>
+
+    <p class="headerExplanation">Meet makes it easy to connect with others face-to-face virtually and collaborate across
+      any device.</p>
+
+    <button class="download">Download <span>v1.3</span></button>
+    <button class="what">What is it?</button>
+
+    <div class="line">
+      &nbsp;
+    </div>
+    <div class="circle">
+      <p>01</p>
     </div>
 
-    <div class="hero">
-      <img src="./assets/tablet/image-hero.png" alt="faces">
+    <div class="four__happy__images">
+
     </div>
 
-    <!-- <div class="header">
-      <div>
-        <h1>Group Chat for Everyone</h1>
-        <p>Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
-        <div class="button__container">
-          <button class="button__top-download">Download <span>v1.3</span></button>
-          <button class="button__top-what-is-it">What is it?</button>
-        </div>
-      </div>
 
-      <img src="./assets/desktop/image-hero-right.png" alt="smiling faces" id="heroRight">
-    </div> -->
-
-
-  </div>
-
-
-  <!-- <main>
-    <section>01</section>
-
-    <div class="four__images">
-    </div>
-
-    <article>
+    <div class="mainInfo">
       <h2>Built for modern use</h2>
       <h1>Smarter meetings, all in one place</h2>
         <p>Send messages, share files, show your screen, and record your meetings — all in one workspace. Control who
           can join with invite-only team access, data encryption, and data export.</p>
-    </article>
+    </div>
 
-  </main>
+    <div class="line">
+      &nbsp;
+    </div>
+    <div class="circle">
+      <p>02</p>
+    </div>
 
-  <footer>
-    <section>02</section>
+  </div>
+  <div class="footer">
+    <!-- <h1>Experience more together</h1> -->
 
-    <article>
-      <h1>Experience more together</h2>
+    <!-- <p>Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
 
-        <p>Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
-
-        <button>Download v1.3</button>
-    </article>
-
-  </footer> 
--->
-
+    <button>Download <span>v1.3</span></button>
+  </div> -->
 </body>
 
 </html>

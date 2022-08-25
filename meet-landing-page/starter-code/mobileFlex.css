@@ -1,0 +1,114 @@
+body {
+    margin-left: 0;
+    margin-bottom: 0;
+    width: 375px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.container {
+    margin-left: 24px;
+    margin-right: 24px;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+img.logo {
+    margin: 28px auto 0 auto;
+    width: 118px;
+    height: 28px;
+}
+
+img.hero {
+    margin-top: 54px;
+    margin-left: -45px;
+    width: 415px;
+    height: 153px;
+    object-fit: contain;
+}
+
+h1.headerText {
+    margin: 48px auto 0 auto;
+    height: 88px;
+    text-align: center;
+}
+
+p.headerExplanation {
+    margin-top: 24px;
+    margin: 24px auto 0 auto;
+    height: 78px;
+    text-align: center;
+}
+
+button.download {
+    margin: 32px auto 0 auto;
+    height: 58px;
+    width: 193px;
+    background-color: #4D96A9;
+}
+
+button.what {
+    margin: 16px auto 0 auto;
+    height: 58px;
+    width: 139px;
+    background-color: #855FB1;
+}
+
+button {
+    color: white;
+    font-size: 16;
+    font-weight: bold;
+    border-radius: 3em;
+    border: 0;
+}
+
+button span {
+    color: #8FE3F9;
+}
+
+.line{
+    width: 1px;
+    height: 84px;
+    background: #D8D8D8;
+    margin: 64px auto 0 auto;
+}
+
+.circle {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 1px solid #87879D64;
+    margin: 0 auto 0 auto;          /* centers in row */
+    text-align: center;             /* centers in text block */
+    z-index: 10;
+    background-color: white;
+}
+
+.circle  p {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: bold;
+    color: #87879D;;
+}
+
+.four__happy__images{
+    margin: 64px auto 0 auto;
+    height: 310px;
+    width: 327px;
+    outline: 1px solid red;
+}
+
+.mainInfo {
+    margin: 64px auto 0 auto;
+    height: 284px;
+    width: 327px;
+    outline: 1px solid green;
+}
+
+.footer {
+    z-index: -1;
+    margin: -28px auto 0 auto;
+    height: 428px;
+    width: 375px;
+    background: #4D96A9;
+    float: left/right;
+}
