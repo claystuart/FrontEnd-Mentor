@@ -1,10 +1,8 @@
 body {
     margin-left: 0;
     margin-bottom: 0;
-   
     font-family: 'Red Hat Display', sans-serif;
 }
-
 
 .container {
     width: 375px;
@@ -164,15 +162,30 @@ img.bot-right {
 }
 
 .footer {
-    z-index: -1;
     margin: -28px auto 0 auto;
     height: 428px;
     width: 375px;
-    background: #4D96A9;
     display: flex;
     flex-direction: column;
+    position: relative;
+}
+
+.footer__image {
+    height: 100%;
+    width: 100%;
     background-image: url("./assets/mobile/image-footer.jpg");
+    position: absolute;
     background-size: cover;
+    z-index: -100;
+}
+
+.green__overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #4D96A9;
+    position: absolute;
+    opacity: .9;
+    z-index: -50;
 }
 
 .footer h1 {
@@ -201,4 +214,5 @@ img.bot-right {
 
 .footer button span {
     color: #D9B8FF;
+    z-index: 10;
 }
