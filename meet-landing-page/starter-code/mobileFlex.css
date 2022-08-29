@@ -1,13 +1,16 @@
 body {
     margin-left: 0;
     margin-bottom: 0;
-    width: 375px;
+   
     font-family: 'Red Hat Display', sans-serif;
 }
 
+
 .container {
+    width: 375px;
     margin-left: 24px;
     margin-right: 24px;
+    margin: 0 auto;
 
     display: flex;
     flex-direction: column;
@@ -21,8 +24,9 @@ img.logo {
 
 img.hero {
     margin-top: 54px;
-    margin-left: -45px;
+    margin-left: -85px;
     width: 415px;
+    width: 120vw;
     height: 153px;
     object-fit: contain;
 }
@@ -169,6 +173,8 @@ img.bot-right {
     background: #4D96A9;
     display: flex;
     flex-direction: column;
+    background-image: url("./assets/mobile/image-footer.jpg");
+    background-size: cover;
 }
 
 .footer h1 {
