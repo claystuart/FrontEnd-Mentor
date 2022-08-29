@@ -8,7 +8,7 @@ body {
 .container {
     margin-left: 24px;
     margin-right: 24px;
-    
+
     display: flex;
     flex-direction: column;
 }
@@ -56,7 +56,7 @@ button.what {
 
 button {
     color: white;
-    font-size: 16;
+    font-size: 16px;
     font-weight: bold;
     border-radius: 3em;
     border: 0;
@@ -66,7 +66,7 @@ button span {
     color: #8FE3F9;
 }
 
-.line{
+.line {
     width: 1px;
     height: 84px;
     background: #D8D8D8;
@@ -78,30 +78,87 @@ button span {
     height: 56px;
     border-radius: 50%;
     border: 1px solid #87879D64;
-    margin: 0 auto 0 auto;          /* centers in row */
-    text-align: center;             /* centers in text block */
+    margin: 0 auto 0 auto;
+    /* centers in row */
+    text-align: center;
+    /* centers in text block */
     z-index: 10;
     background-color: white;
 }
 
-.circle  p {
+.circle p {
     font-family: 'Red Hat Display', sans-serif;
     font-weight: bold;
-    color: #87879D;;
+    color: #87879D;
+    margin-bottom: 0;
 }
 
-.four__happy__images{
+.four__happy__images {
     margin: 64px auto 0 auto;
     height: 310px;
     width: 327px;
-    outline: 1px solid red;
+    display: grid;
+    grid-template-rows: 143px 24px 143px;
+    grid-template-columns: 151px 25px 151px;
+    grid-template-areas:
+        "top-left top-gap top-right"
+        "gap gap gap"
+        "bot-left bot-gap bot-right";
+}
+
+.four__happy__images img {
+    width: 151px;
+    height: 143px;
+    margin: 0;
+}
+
+img.top-left {
+    grid-area: top-left;
+}
+
+img.top-right {
+    grid-area: top-right;
+}
+
+img.bot-left {
+    grid-area: bot-left;
+}
+
+img.bot-right {
+    grid-area: bot-right;
 }
 
 .mainInfo {
     margin: 64px auto 0 auto;
     height: 284px;
     width: 327px;
-    outline: 1px solid green;
+}
+
+.mainInfo h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #4D96A9;
+    font-size: 16px;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.mainInfo h1 {
+    margin-top: 20px;
+    margin-bottom: 0;
+    color: #28283D;
+    font-size: 36px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.mainInfo p {
+    margin-top: 24px;
+    margin-bottom: 0;
+    color: #87879D;
+    font-size: 16px;
+    text-align: center;
+    line-height: 26px;
 }
 
 .footer {
@@ -110,5 +167,34 @@ button span {
     height: 428px;
     width: 375px;
     background: #4D96A9;
-    float: left/right;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer h1 {
+    margin: 0;
+    padding-top: 92px;
+    color: #FAFAFA;
+    font-size: 32px;
+    text-align: center;
+}
+
+.footer p {
+    width: 327px;
+    margin: 24px 24px 0 24px;
+    color: #FAFAFA;
+    font-size: 18px;
+    text-align: center;
+    line-height: 26px;
+}
+
+.footer button {
+    width: 193px;
+    height: 58px;
+    background-color: #855FB1;
+    margin: 32px auto;
+}
+
+.footer button span {
+    color: #D9B8FF;
 }
