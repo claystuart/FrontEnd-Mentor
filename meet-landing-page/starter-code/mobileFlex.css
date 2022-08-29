@@ -24,9 +24,7 @@ img.logo {
 
 img.hero {
     margin-top: 54px;
-    margin-left: -85px;
     width: 415px;
-    width: 120vw;
     height: 153px;
     object-fit: contain;
 }
