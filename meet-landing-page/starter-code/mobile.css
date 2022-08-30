@@ -2,6 +2,7 @@ body {
     margin-left: 0;
     margin-bottom: 0;
     font-family: 'Red Hat Display', sans-serif;
+    background-color: #F2F2F2;
 }
 
 main {
@@ -9,7 +10,9 @@ main {
     margin-left: 24px;
     margin-right: 24px;
     margin: 0 auto;
-
+    position: relative;
+    background-color: #FAFAFA;
+    z-index: -10;
     display: flex;
     flex-direction: column;
 }
@@ -31,6 +34,7 @@ h1.headerText {
     margin: 48px auto 0 auto;
     height: 88px;
     text-align: center;
+    color: #28283D;
 }
 
 p.headerExplanation {
@@ -38,6 +42,13 @@ p.headerExplanation {
     margin: 24px auto 0 auto;
     height: 78px;
     text-align: center;
+    color: #87879D;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 button.download {
