@@ -45,7 +45,7 @@ p.headerExplanation {
     color: #87879D;
 }
 
-.buttons {
+.button__container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -98,7 +98,6 @@ button span {
 }
 
 .circle p {
-    font-family: 'Red Hat Display', sans-serif;
     font-weight: bold;
     color: #87879D;
     margin-bottom: 0;
@@ -152,6 +151,7 @@ img.bot-right {
     font-size: 16px;
     letter-spacing: 4px;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .mainInfo h1 {
@@ -178,7 +178,8 @@ img.bot-right {
     width: 375px;
     display: flex;
     flex-direction: column;
-    position: relative;  /* Creates container for footer__image */
+    position: relative;
+    /* Creates container for footer__image */
 }
 
 .footer__image {
@@ -187,7 +188,8 @@ img.bot-right {
     background-image: url("./assets/mobile/image-footer.jpg");
     position: absolute;
     background-size: cover;
-    z-index: -100;     /* places image behind everything else in footer */
+    z-index: -100;
+    /* places image behind everything else in footer */
 }
 
 .green__overlay {
@@ -196,7 +198,8 @@ img.bot-right {
     background-color: #4D96A9;
     position: absolute;
     opacity: .9;
-    z-index: -50;       /* overlay over image but behind everything in footer */
+    z-index: -50;
+    /* overlay over image but behind everything in footer */
 }
 
 .footer h1 {

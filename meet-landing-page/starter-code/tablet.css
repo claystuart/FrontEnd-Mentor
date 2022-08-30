@@ -13,7 +13,7 @@ h1.headerText {
     font-size: 48px;
     margin: 72px 200px 0 200px;
     line-height: 48px;
-    
+
     font-weight: 700;
 }
 
@@ -23,3 +23,68 @@ p.headerExplanation {
     margin: 24px 155px 0 155px;
 }
 
+.button__container {
+    width: 348px;
+    height: 58px;
+    margin: 32px auto 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+button.download,
+button.what {
+    margin: 0;
+}
+
+.line, .circle  {
+    flex-shrink: 0;
+}
+
+.four__happy__images {
+    width: 689px;
+    height: 156px;
+    display: flex;
+    justify-content: space-between;
+    margin: 67px 39.5px 0 39.5px;
+    /* gap: 11px; */
+}
+
+.four__happy__images img {
+    width: 164px;
+    height: 156px;
+    margin: 0;
+}
+
+.mainInfo {
+    width: 573px;
+    height: 240px;
+    margin-top: 48px;
+}
+
+.mainInfo h1 {
+    width: 445px;
+    margin: 16px auto;
+}
+
+.footer {
+    width: 100%;
+}
+
+.footer__image {
+    background-image: url("./assets/tablet/image-footer.jpg");
+}
+
+.footer h1 {
+    font-size: 40px;
+    width: 457px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer p {
+    width: 573px;
+    margin-left: auto;
+    margin-right: auto;
+}
