@@ -25,9 +25,13 @@ img.logo {
 
 img.hero {
     margin-top: 54px;
-    width: 415px;
-    height: 153px;
+    width: 100%;
+    height: auto;
     object-fit: contain;
+}
+
+.desktop__hero-right {
+    display: none;
 }
 
 h1.headerText {

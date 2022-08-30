@@ -8,8 +8,8 @@
   <title>Frontend Mentor | Meet landing page</title>
   <style>
     @import url("mobile.css");
-    @import url("tablet.css") screen and (min-width: 576px);
-    /* @import url("desktop.css") screen and (min-width: 992px); */
+    @import url("tablet.css") screen and (min-width: 768px);
+    @import url("desktop.css") screen and (min-width: 992px);
 
     @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&display=swap');
   </style>
@@ -22,21 +22,32 @@
 
     <img class="logo" src="./assets/logo.svg" alt="meet logo">
 
-    <picture>
-      <img class="hero" src="./assets/tablet/image-hero.png" alt="faces">
-    </picture>
+    <div class="header">
+      
+      <picture>
+        <source media="(min-width: 992px)" srcset="./assets/desktop/image-hero-left.png">
+        <img class="hero" src="./assets/tablet/image-hero.png" alt="faces">
+      </picture>
 
+      <div class="text__and__buttons">
+        <h1 class="headerText">Group Chat for Everyone</h1>
 
-    <h1 class="headerText">Group Chat for Everyone</h1>
+        <p class="headerExplanation">Meet makes it easy to connect with others face-to-face virtually and collaborate
+          across
+          any device.</p>
 
-    <p class="headerExplanation">Meet makes it easy to connect with others face-to-face virtually and collaborate
-      across
-      any device.</p>
+        <div class="button__container">
+          <button class="download">Download <span>v1.3</span></button>
+          <button class="what">What is it?</button>
+        </div>
+      </div>
 
-    <div class="button__container">
-      <button class="download">Download <span>v1.3</span></button>
-      <button class="what">What is it?</button>
+      <!-- hidden below 992px vw -->
+      <img class="desktop__hero-right" src="./assets/desktop/image-hero-right.png" alt="faces">
+      </picture>
+
     </div>
+
 
     <div class="line">
       &nbsp;
@@ -44,7 +55,6 @@
     <div class="circle">
       <p>01</p>
     </div>
-
 
 
     <div class="four__happy__images">
