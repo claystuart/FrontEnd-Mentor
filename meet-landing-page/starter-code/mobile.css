@@ -4,7 +4,7 @@ body {
     font-family: 'Red Hat Display', sans-serif;
 }
 
-.container {
+main {
     width: 375px;
     margin-left: 24px;
     margin-right: 24px;
