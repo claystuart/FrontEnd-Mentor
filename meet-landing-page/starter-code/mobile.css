@@ -230,7 +230,7 @@ img.bot-right {
     width: 193px;
     height: 58px;
     background-color: #855FB1;
-    margin: 32px auto;
+    margin: 32px 91px 0 91px;
     position: relative;
     z-index: 10;
 }

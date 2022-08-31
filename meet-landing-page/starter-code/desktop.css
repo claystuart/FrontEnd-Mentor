@@ -46,10 +46,11 @@ button.download:hover {
     background-color: #71C0D4;
 }
 
-button.what:hover, button.footer__download:hover {
+button.what:hover,
+button.footer__download:hover {
     background-color: #B18BDD;
 }
- 
+
 img.hero,
 img.hero__right {
     width: 90%;
@@ -75,4 +76,66 @@ img.hero__right {
 .four__happy__images img {
     width: 255px;
     height: 242px;
+}
+
+.mainInfo {
+    margin-top: 80px;
+    width: 540px;
+    height: 240px;
+}
+
+.mainInfo h1 {
+    width: 420px;
+    font-size: 40px;
+    line-height: 44px;
+    font-weight: 700;
+}
+
+.mainInfo p {
+    font-size: 18px;
+    width: 505px;
+    margin-top: 32px;
+}
+
+.footer__image {
+    background-image: url("./assets/desktop/image-footer.jpg");
+}
+
+.footer {
+    width: 1440px;
+    height: 308px;
+}
+
+.footer__content {
+    margin: 116px auto 0 auto;
+    width: 1110px;
+    height: 88px;
+        
+    position: relative;
+    z-index: 10;
+
+    display: grid;
+    grid-template-columns: 1fr 350px 1fr;
+    grid-template-rows: 88px;
+}
+
+.footer h1 {
+    width: 350px;
+    text-align: center;
+    padding: 0;
+    font-size: 40px;
+    margin: 0;
+    
+}
+
+.footer p {
+    width: 350px;
+    height: 88px;
+    justify-self: center; 
+}
+
+.footer button {
+    margin: 0;
+    justify-self: center;
+    align-self: center;
 }

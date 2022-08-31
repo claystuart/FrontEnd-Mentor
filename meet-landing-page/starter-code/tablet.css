@@ -87,3 +87,7 @@ button.what {
     margin-left: auto;
     margin-right: auto;
 }
+
+.footer button {
+    margin: 32px 287.5px 0 287.5px;
+}
