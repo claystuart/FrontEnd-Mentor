@@ -12,7 +12,6 @@ main {
     margin: 0 auto;
     position: relative;
     background-color: #FAFAFA;
-    z-index: -10;
     display: flex;
     flex-direction: column;
 }
@@ -30,7 +29,7 @@ img.hero {
     object-fit: contain;
 }
 
-.desktop__hero-right {
+img.hero__right {
     display: none;
 }
 
@@ -192,7 +191,7 @@ img.bot-right {
     background-image: url("./assets/mobile/image-footer.jpg");
     position: absolute;
     background-size: cover;
-    z-index: -100;
+    z-index: 1;
     /* places image behind everything else in footer */
 }
 
@@ -212,6 +211,8 @@ img.bot-right {
     color: #FAFAFA;
     font-size: 32px;
     text-align: center;
+    position: relative;
+    z-index: 10;
 }
 
 .footer p {
@@ -221,6 +222,8 @@ img.bot-right {
     font-size: 18px;
     text-align: center;
     line-height: 26px;
+    position: relative;
+    z-index: 10;
 }
 
 .footer button {
@@ -228,9 +231,14 @@ img.bot-right {
     height: 58px;
     background-color: #855FB1;
     margin: 32px auto;
+    position: relative;
+    z-index: 10;
 }
 
 .footer button span {
     color: #D9B8FF;
     z-index: 10;
 }
+
+
+

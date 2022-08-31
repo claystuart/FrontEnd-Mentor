@@ -9,15 +9,13 @@
   <style>
     @import url("mobile.css");
     @import url("tablet.css") screen and (min-width: 768px);
-    @import url("desktop.css") screen and (min-width: 992px);
+    @import url("desktop.css") screen and (min-width: 1440px);
 
     @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&display=swap');
   </style>
 </head>
 
 <body>
-
-
   <main>
 
     <img class="logo" src="./assets/logo.svg" alt="meet logo">
@@ -25,11 +23,12 @@
     <div class="header">
       
       <picture>
-        <source media="(min-width: 992px)" srcset="./assets/desktop/image-hero-left.png">
+        <source media="(min-width: 1440px)" srcset="./assets/desktop/image-hero-left.png"
+        width="482px" height="358px">
         <img class="hero" src="./assets/tablet/image-hero.png" alt="faces">
       </picture>
 
-      <div class="text__and__buttons">
+      <div class="center__content">
         <h1 class="headerText">Group Chat for Everyone</h1>
 
         <p class="headerExplanation">Meet makes it easy to connect with others face-to-face virtually and collaborate
@@ -37,15 +36,13 @@
           any device.</p>
 
         <div class="button__container">
-          <button class="download">Download <span>v1.3</span></button>
+          <button class="download" onclick="">Download <span>v1.3</span></button>
           <button class="what">What is it?</button>
         </div>
       </div>
 
       <!-- hidden below 992px vw -->
-      <img class="desktop__hero-right" src="./assets/desktop/image-hero-right.png" alt="faces">
-      </picture>
-
+      <img class="hero__right" src="./assets/desktop/image-hero-right.png" alt="faces">
     </div>
 
 
@@ -89,7 +86,7 @@
 
       <p>Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
 
-      <button>Download <span>v1.3</span></button>
+      <button class="footer__download">Download <span>v1.3</span></button>
     </div>
 
   </main>

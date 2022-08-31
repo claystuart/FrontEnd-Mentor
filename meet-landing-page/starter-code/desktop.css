@@ -1,32 +1,72 @@
 main {
-    max-width: 1440px;
+    width: 1440px;
+    height: auto;
 }
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    margin: 1.5em 0;
-    overflow: hidden;
-}
-
-.desktop__hero-right {
-    display: inline;
+    width: 100vw;
+    height: 358px;
 }
 
 .header {
-    width: 100%;
+    margin-top: 61px;
+    max-width: 1440px;
     height: 358px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 540px 1fr;
+    grid-template-rows: 0 358px;
 }
 
-.text__and__buttons {
+.center__content {
     width: 540px;
-    height: 304px;
+    height: 358px;
+    margin: 0;
 }
 
-img.hero, img.desktop__hero-right {
-    width: 100px;
-    height: 100px;
+.center__content h1 {
+    width: 455px;
+    height: 128px;
+    margin: 47px auto 0 auto;
+    font-size: 64px;
+    line-height: 64px;
+}
+
+.center__content p {
+    width: 540px;
+    height: 52px;
+    margin: 34px auto 0 auto;
+}
+
+img.hero__right {
+    /* img.hero__right is hidden in mobile.css - overriden here to reveal */
+    display: block;
+}
+
+button.download:hover {
+    background-color: #71C0D4;
+}
+
+button.what:hover, button.footer__download:hover {
+    background-color: #B18BDD;
+}
+ 
+img.hero,
+img.hero__right {
+    width: 90%;
+    /* height: auto; */
+    margin: auto;
+    object-fit: contain;
+}
+
+img.hero__right {
+    margin-top: 45px;
+    padding-left: 25px;
+}
+
+.line {
+    margin-top: 110px;
+}
+
+.four__happy__images {
+    margin: 64px auto 0 auto;
 }
