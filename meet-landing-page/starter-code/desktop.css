@@ -53,7 +53,6 @@ button.what:hover, button.footer__download:hover {
 img.hero,
 img.hero__right {
     width: 90%;
-    /* height: auto; */
     margin: auto;
     object-fit: contain;
 }
@@ -69,4 +68,11 @@ img.hero__right {
 
 .four__happy__images {
     margin: 64px auto 0 auto;
+    width: 1110px;
+    height: 242px;
+}
+
+.four__happy__images img {
+    width: 255px;
+    height: 242px;
 }
