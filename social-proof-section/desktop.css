@@ -1,4 +1,78 @@
 main {
     width: 1440px;
     height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 1110px;
+    height: 245px;
+    margin: 0;
+    margin-top: 200px;
+
+    display: grid;
+    grid-template-columns: 445px 125px 540px;
+    grid-template-rows: 245px;
+    grid-template-areas: "blurb space ratings";
+}
+
+header .blurb {
+    margin: 0;
+    width: 455px;
+    height: 245px;
+    grid-area: blurb;
+}
+
+header h1 {
+    font-size: 56px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+header p {
+    margin-top: 75px;
+    text-align: left;
+}
+
+header .stars__and_reviews {
+    margin: 0;
+    width: 555px;
+    height: 245px;
+    grid-area: ratings;
+}
+
+header article {
+    width: 445px;
+    height: 56px;
+    margin-top: 10px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.star_images {
+    margin: 0;
+    display: inline-block;
+}
+
+article h2 {
+    margin: 0;
+    display: inline-block;
+}
+
+
+.first__review {
+
+}
+
+footer {
+    width: 1110px;
+    height: 266px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+
+    margin: 71px 0 auto 0;
 }

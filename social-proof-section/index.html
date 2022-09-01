@@ -7,8 +7,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
   <title>Frontend Mentor | Social proof section</title>
   <style>
-    @import url(mobile.css) screen and (max-width: 900px);
-    @import url(desktop.css) screen and (min-width: 900px );
+    @import url(mobile.css);
+    @import url(desktop.css) screen and (min-width: 1400px);
     @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
 
     body {
@@ -21,15 +21,15 @@
   <main>
 
     <header>
-      <article class="blurb">
+      <div class="blurb">
         <h1>10,000+ of our users love our products.</h1>
         <p>We only provide great products combined with excellent customer service.
           See what our satisfied customers are saying about our services.</p>
-      </article>
+      </div>
 
       <div class="stars__and_reviews">
 
-        <article class="header__reviews">
+        <article class="header__reviews first__review">
           <div class="star_images">
             <img src="./images/icon-star.svg" alt="star">
             <img src="./images/icon-star.svg" alt="star">
@@ -42,7 +42,7 @@
           <h2>Rated 5 Stars in Reviews</h2>
         </article>
 
-        <article>
+        <article class="second__review">
           <div class="star_images">
             <img src="./images/icon-star.svg" alt="star">
             <img src="./images/icon-star.svg" alt="star">
@@ -54,7 +54,7 @@
           <h2>Rated 5 Stars in Report Guru</h2>
         </article>
 
-        <article>
+        <article class="third__review">
           <div class="star_images">
             <img src="./images/icon-star.svg" alt="star">
             <img src="./images/icon-star.svg" alt="star">
@@ -73,7 +73,7 @@
 
     <footer>
       <article class="colton__review">
-        
+
         <div class="pic__and__name">
           <img src="./images/image-colton.jpg" alt="small headshot">
           <div class="name__and__verifiedBuyer">
