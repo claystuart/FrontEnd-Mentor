@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    width: 100vw;
+    /* height: 856px; */
+    background-color: #E6EFF5;
+    font-family: 'Karla', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+main {
+    max-width: 375px;
+    margin: 72px 32px;
+}
+
+header, center, footer {
+    display: inline-block;
+}
+
+.header {
+    background-color: white;
+}
+
+.center {
+    background-color: #2AB3B1;
+    margin: 0 auto;
+}
+
+.footer {
+    margin-top: 0;
+    background-color: #00DBD8;
+}
+
+h1 {
+    margin: 0;
+}
