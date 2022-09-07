@@ -1,12 +1,11 @@
 body {
     margin: 0;
     width: 100vw;
-    /* height: 856px; */
+    height: 100vh;
     background-color: #E6EFF5;
     font-family: 'Karla', sans-serif;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
 }
 
 main {
@@ -14,8 +13,10 @@ main {
     margin: 72px 32px;
 }
 
-header, center, footer {
-    display: inline-block;
+h1,
+h2,
+p {
+    margin: 0;
 }
 
 .header {
@@ -32,6 +33,11 @@ header, center, footer {
     background-color: #00DBD8;
 }
 
-h1 {
-    margin: 0;
+
+
+@media screen and (min-width: 800px) {
+    body {
+        background-color: blue; /* debug only to signal cross-over */
+        align-items: center;
+    }
 }
