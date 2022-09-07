@@ -28,11 +28,25 @@ p {
 }
 
 .header h1 {
-    padding-top: 28px;
-    padding-left: 8px;
+    padding-top: 20px;
+    padding-left: 20px;
     font-size: 20px;
     font-weight: 700;
     color: #2AB3B1;
+}
+
+.header h2 {
+    color: #C0DF33;
+    font-size: 15px;
+    padding: 20px 20px 0 20px;
+    
+}
+
+.header p {
+    color: #9AA7BE;
+    font-size: 14px;
+    padding: 20px 20px 0 20px;
+    line-height: 2em;
 }
 
 .center {
