@@ -17,10 +17,22 @@ h1,
 h2,
 p {
     margin: 0;
+    width: 311px;
 }
 
 .header {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    height: 267px;
     background-color: white;
+}
+
+.header h1 {
+    padding-top: 28px;
+    padding-left: 8px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #2AB3B1;
 }
 
 .center {
@@ -31,13 +43,16 @@ p {
 .footer {
     margin-top: 0;
     background-color: #00DBD8;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 650px) {
     body {
-        background-color: blue; /* debug only to signal cross-over */
+        background-color: blue;
+        /* debug only to signal cross-over */
         align-items: center;
     }
 }
