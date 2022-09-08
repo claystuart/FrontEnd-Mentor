@@ -99,7 +99,7 @@ button span {
 .footer {
     margin-top: 0;
     margin-bottom: 20px;
-    background-color: #00DBD8;
+    background-color: hsl(179, 62%, 43%, .75);
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     display: flex;
@@ -121,8 +121,6 @@ button span {
     margin: auto;
     opacity: .75;
 }
-
-
 
 @media screen and (min-width: 650px) {
     body {
