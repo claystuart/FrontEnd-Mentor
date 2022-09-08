@@ -122,7 +122,7 @@ button span {
     opacity: .75;
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 800px) {
     body {
         align-items: center;
     }
@@ -156,7 +156,7 @@ button span {
         border-bottom-left-radius: 10px;
     }
 
-    .center h1, .center h2, .center p, button {
+    .center h1, .center h2, .center p, button, .footer h1, .footer h2 {
         margin-left: 40px;
     }
 
