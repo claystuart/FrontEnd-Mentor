@@ -12,6 +12,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+
+  <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
 </head>
 
 <body>
@@ -23,36 +28,63 @@
         to ensure that your project is successful</p>
     </div>
 
-    <div class="content">
+    <div class="content" id="content"> </div>
 
-      <div class="card">
-        <h2 >Supervisor</h2>
-        <h3>Monitors activity to identify project roadblocks</h3>
-        <img src="./images/icon-supervisor.svg" alt="Magnifying Glass">
-      </div>
 
-      <div class="card">
-        <h2>Team Builder</h2>
-        <h3>Scans our talent network to create the optimal team for your project</h3>
-        <img src="./images/icon-team-builder.svg" alt="House">
-      </div>
-
-      <div class="card">
-        <h2>Karma</h2>
-        <h3>Regularly evaluates our talent to ensure quality
-        </h3>
-        <img src="./images/icon-karma.svg" alt="Light Bulb">
-      </div>
-
-      <div class="card">
-        <h2>Calculator</h2>
-        <h3>Uses data from past projects to provide better delivery estimates</h3>
-        <img src="./images/icon-calculator.svg" alt="Computer Monitor">
-      </div>
-      
-    </div>
-    
   </main>
+
+  <script type="text/babel">
+    class Card extends React.Component {
+      constructor() {
+        super();
+      }
+
+      render() {
+        let cardStyle = {
+          borderTop: `solid 3.5px ${this.props.children}`,
+          width: 311,
+          borderTopRightRadius: 5,
+          borderTopLeftRadius: 5,
+          boxShadow: `-0.5 4 10 -2 #CFC5C5`,
+          marginBottom: 25,
+        }
+        return (
+          <div class="card" style={cardStyle} >
+            <h2> {this.props.title} </h2>
+            <h3> {this.props.subHeading} </h3>
+            <img src={this.props.src} alt={this.props.alt} />
+          </div>
+        );
+      }
+    }
+
+    ReactDOM.render(
+      <div>
+        <Card title="Supervisor" subHeading="Monitors activity to identify project roadblocks"
+          src="./images/icon-supervisor.svg" alt="Magnifying Glass">
+          #00C8C8
+        </Card>
+
+        <Card title="Team Builder" subHeading="Scans our talent network to create the optimal team for your project"
+          src="./images/icon-team-builder.svg" alt="House">
+          red
+        </Card>
+
+        <Card title="Karma" subHeading="Regularly evaluates our talent to ensure quality"
+          src="./images/icon-karma.svg" alt="Light Bulb">
+          red
+        </Card>
+
+        <Card title="Calculator" subHeading="Uses data from past projects to provide better delivery estimates"
+          src="./images/icon-calculator.svg" alt="Computer Monitor">
+          red
+        </Card>
+
+      </div>,
+      document.querySelector("#content")
+    );
+
+  </script>
 </body>
 
 </html>
