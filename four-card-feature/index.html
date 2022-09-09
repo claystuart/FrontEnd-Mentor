@@ -21,6 +21,7 @@
 
 <body>
   <main>
+
     <div class="header">
       <h1 class="header__light">Reliable, efficient delivery</h1>
       <h1>Powered by Technology</h1>
@@ -29,8 +30,6 @@
     </div>
 
     <div class="content" id="content"> </div>
-
-
   </main>
 
   <script type="text/babel">
@@ -43,8 +42,6 @@
         let cardStyle = {
           card: {
             borderTop: `solid 3.5px ${this.props.children}`,
-            width: 311,
-            height: 222,
             borderTopRightRadius: 5,
             borderTopLeftRadius: 5,
             boxShadow: '1px 2px 9px #CFC5C5',
@@ -53,7 +50,7 @@
 
           h2: { fontSize: 20, marginLeft: 20},
           h3: { fontSize: 13, opacity: .5, marginLeft: 20},
-          img: {width: 57, height: 57, marginLeft: 220, marginTop: 33 }
+          img: {width: 57, height: 57, marginLeft: "70%"}
 
         }
         return (
