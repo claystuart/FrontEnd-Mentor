@@ -30,28 +30,30 @@
     </div>
 
     <div class="content" id="content">
-     
+
     </div>
-    <div id="superviser"> </div>
+    <div id="supervisor"></div>
     <div id="teamBuilder"> </div>
     <div id="karma"> </div>
     <div id="calculator"> </div>
+
   </main>
 
   <script type="text/babel">
     class Card extends React.Component {
       constructor() {
         super();
+
+        this.radius = 5;
       }
 
       render() {
         let cardStyle = {
           card: {
             borderTop: `solid 3.5px ${this.props.children}`,
-            borderTopRightRadius: 5,
-            borderTopLeftRadius: 5,
+            borderTopRightRadius: this.radius,
+            borderTopLeftRadius: this.radius,
             boxShadow: '1px 2px 9px #CFC5C5',
-            marginBottom: 25,
           },
 
           h2: { fontSize: 20, marginLeft: 20 },
@@ -69,21 +71,27 @@
       }
     }
 
-    //debugged and good
-    addEventListener('resize', ev => console.log(`Screen width: ${window.innerWidth}`));
-
-    //debugged and good
+    //debugged and working - draws on initial load
     window.addEventListener('load', drawWindow);
 
-
+    //debugged and working - redraws on resize
     window.addEventListener('resize', drawWindow);
+    addEventListener('resize', ev => console.log(`Screen width: ${window.innerWidth}`));
 
     function drawWindow() {
       if (window.innerWidth < 1110) {
+
+        //blank renders to to invidual divs
+        ReactDOM.render(<div></div>, document.querySelector("#supervisor"));
+        ReactDOM.render(<div></div>, document.querySelector("#teamBuilder"));
+        ReactDOM.render(<div></div>, document.querySelector("#karma"));
+        ReactDOM.render(<div></div>, document.querySelector("#calculator"));
+
+
         ReactDOM.render(
           <div>
             <Card id="supervisor1"
-            title="Supervisor" subHeading="Monitors activity to identify project roadblocks"
+              title="Supervisor" subHeading="Monitors activity to identify project roadblocks"
               src="./images/icon-supervisor.svg" alt="Magnifying Glass">
               #00C8C8
             </Card>
@@ -106,11 +114,14 @@
           </div>,
           document.querySelector("#content")
         );
+
+
       }
       else {
 
-        //blank reder to content
+        //blank render to content
         ReactDOM.render(<div></div>, document.querySelector("#content"));
+
 
         ReactDOM.render(
           <Card
@@ -148,34 +159,6 @@
 
       }
     }
-
-    // ReactDOM.render(
-    //   <div>
-    //     <Card title="Supervisor" subHeading="Monitors activity to identify project roadblocks"
-    //       src="./images/icon-supervisor.svg" alt="Magnifying Glass">
-    //       #00C8C8
-    //     </Card>
-
-    //     <Card title="Team Builder" subHeading="Scans our talent network to create the optimal team for your project"
-    //       src="./images/icon-team-builder.svg" alt="House">
-    //       #FF637B
-    //     </Card>
-
-    //     <Card title="Karma" subHeading="Regularly evaluates our talent to ensure quality"
-    //       src="./images/icon-karma.svg" alt="Light Bulb">
-    //       #FCAE4A
-    //     </Card>
-
-    //     <Card title="Calculator" subHeading="Uses data from past projects to provide better delivery estimates"
-    //       src="./images/icon-calculator.svg" alt="Computer Monitor">
-    //       #549EF2
-    //     </Card>
-
-    //   </div>,
-    //   document.querySelector("#content")
-    // );
-
-
 
   </script>
 </body>

@@ -48,6 +48,7 @@ img {
 .content div {
     width: 311px;
     height: 222px;
+    margin-bottom: 25px;
 }
 
 
@@ -57,19 +58,20 @@ img {
         align-items: center;
     }
 
-    .content div {
-        width: 350px;
-        height: 250px;
-    }
-
     img {
         margin-top: 50px;
     }
 
     .content {
-        width: 1110px;
-        height: 530px;
-        outline: 1px solid red;
-        position: relative;
+        display: none;
+    }
+
+    div#supervisor,
+    div#teamBuilder,
+    div#karma,
+    div#calculator {
+        width: 350px;
+        height: 250px;
+        margin: 0 !important;
     }
 }
