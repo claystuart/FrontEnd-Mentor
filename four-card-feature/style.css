@@ -70,7 +70,6 @@ img {
         width: 1110px;
         height: 530px;
         outline: 1px solid red;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        position: relative;
     }
 }
