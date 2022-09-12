@@ -81,12 +81,11 @@
     function drawWindow() {
       if (window.innerWidth < 1110) {
 
-        //blank renders to to invidual divs
+        // Empty divs painted 
         ReactDOM.render(<div></div>, document.querySelector("#supervisor"));
         ReactDOM.render(<div></div>, document.querySelector("#teamBuilder"));
         ReactDOM.render(<div></div>, document.querySelector("#karma"));
         ReactDOM.render(<div></div>, document.querySelector("#calculator"));
-
 
         ReactDOM.render(
           <div>
@@ -115,13 +114,11 @@
           document.querySelector("#content")
         );
 
-
       }
       else {
 
         //blank render to content
         ReactDOM.render(<div></div>, document.querySelector("#content"));
-
 
         ReactDOM.render(
           <Card
