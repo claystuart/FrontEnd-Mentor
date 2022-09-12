@@ -68,11 +68,19 @@ div#calculator {
     }
 
     img {
-        margin-top: 50px;
+        margin-top: 30px;
+        margin-bottom: 20px;
     }
 
     .content {
-        display: none;
+        /* outline: 1px solid red; */
+        width: 1110px;
+        height: 530px;
+        position: relative;
+    }
+
+    h3 {
+        width: 286px;
     }
 
     div#supervisor,
@@ -82,7 +90,27 @@ div#calculator {
         width: 350px;
         height: 250px;
         margin: 0 !important;
+        position: absolute;
     }
 
-    #supervisor
+    #supervisor {
+        top: 140px;
+    }
+
+    #calculator {
+        top: 140px;
+        left: 760px;
+    }
+
+    #teamBuilder {
+        left: 380px;
+    }
+
+    #karma {
+        left: 380px;
+        top: 280px;
+    }
+
+
+
 }
