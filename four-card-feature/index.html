@@ -29,9 +29,6 @@
         to ensure that your project is successful</p>
     </div>
 
-    <div class="content" id="content">
-
-    </div>
     <div id="supervisor"></div>
     <div id="teamBuilder"> </div>
     <div id="karma"> </div>
@@ -79,82 +76,41 @@
     addEventListener('resize', ev => console.log(`Screen width: ${window.innerWidth}`));
 
     function drawWindow() {
-      if (window.innerWidth < 1110) {
 
-        // Empty divs painted 
-        ReactDOM.render(<div></div>, document.querySelector("#supervisor"));
-        ReactDOM.render(<div></div>, document.querySelector("#teamBuilder"));
-        ReactDOM.render(<div></div>, document.querySelector("#karma"));
-        ReactDOM.render(<div></div>, document.querySelector("#calculator"));
+      ReactDOM.render(
+        <Card
+          title="Supervisor"
+          subHeading="Monitors activity to identify project roadblocks"
+          src="./images/icon-supervisor.svg"
+          alt="Magnifying Glass"> #00C8C8 </Card>,
+        document.querySelector("#supervisor")
+      );
 
-        ReactDOM.render(
-          <div>
-            <Card id="supervisor1"
-              title="Supervisor" subHeading="Monitors activity to identify project roadblocks"
-              src="./images/icon-supervisor.svg" alt="Magnifying Glass">
-              #00C8C8
-            </Card>
+      ReactDOM.render(
+        <Card
+          title="Team Builder"
+          subHeading="Scans our talent network to create the optimal team for your project"
+          src="./images/icon-team-builder.svg"
+          alt="House"> #FF637B </Card>,
+        document.querySelector("#teamBuilder")
+      );
 
-            <Card title="Team Builder" subHeading="Scans our talent network to create the optimal team for your project"
-              src="./images/icon-team-builder.svg" alt="House">
-              #FF637B
-            </Card>
+      ReactDOM.render(
+        <Card title="Karma" subHeading="Regularly evaluates our talent to ensure quality"
+          src="./images/icon-karma.svg" alt="Light Bulb">
+          #FCAE4A
+        </Card>,
+        document.querySelector("#karma")
+      );
 
-            <Card title="Karma" subHeading="Regularly evaluates our talent to ensure quality"
-              src="./images/icon-karma.svg" alt="Light Bulb">
-              #FCAE4A
-            </Card>
+      ReactDOM.render(
+        <Card title="Calculator" subHeading="Uses data from past projects to provide better delivery estimates"
+          src="./images/icon-calculator.svg" alt="Computer Monitor">
+          #549EF2
+        </Card>,
+        document.querySelector("#calculator")
+      );
 
-            <Card title="Calculator" subHeading="Uses data from past projects to provide better delivery estimates"
-              src="./images/icon-calculator.svg" alt="Computer Monitor">
-              #549EF2
-            </Card>
-
-          </div>,
-          document.querySelector("#content")
-        );
-
-      }
-      else {
-
-        //blank render to content
-        ReactDOM.render(<div></div>, document.querySelector("#content"));
-
-        ReactDOM.render(
-          <Card
-            title="Supervisor"
-            subHeading="Monitors activity to identify project roadblocks"
-            src="./images/icon-supervisor.svg"
-            alt="Magnifying Glass"> #00C8C8 </Card>,
-          document.querySelector("#supervisor")
-        );
-
-        ReactDOM.render(
-          <Card
-            title="Team Builder"
-            subHeading="Scans our talent network to create the optimal team for your project"
-            src="./images/icon-team-builder.svg"
-            alt="House"> #FF637B </Card>,
-          document.querySelector("#teamBuilder")
-        );
-
-        ReactDOM.render(
-          <Card title="Karma" subHeading="Regularly evaluates our talent to ensure quality"
-            src="./images/icon-karma.svg" alt="Light Bulb">
-            #FCAE4A
-          </Card>,
-          document.querySelector("#karma")
-        );
-
-        ReactDOM.render(
-          <Card title="Calculator" subHeading="Uses data from past projects to provide better delivery estimates"
-            src="./images/icon-calculator.svg" alt="Computer Monitor">
-            #549EF2
-          </Card>,
-          document.querySelector("#calculator")
-        );
-
-      }
     }
 
   </script>
