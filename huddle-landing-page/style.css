@@ -70,6 +70,20 @@ button {
     border: none;
 }
 
+.footer {
+    width: 104px;
+    height: 28px;
+    margin: 64px 135.5px 0 135.5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+i {
+    height: 27.5px;
+    width: 28px;
+}
+
 
 @media (min-width: 1000px) {
     body {}
