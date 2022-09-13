@@ -35,7 +35,6 @@
       <div id="karma"> </div>
       <div id="calculator"> </div>
     </div>
-    
 
   </main>
 
@@ -71,50 +70,43 @@
       }
     }
 
-    //debugged and working - draws on initial load
-    window.addEventListener('load', drawWindow);
+    // window.addEventListener('load', drawWindow);    //draws on load
+    // window.addEventListener('resize', drawWindow);  //draws on resize
+    // addEventListener('resize', ev => console.log(`Screen width: ${window.innerWidth}`));
 
-    //debugged and working - redraws on resize
-    window.addEventListener('resize', drawWindow);
-    addEventListener('resize', ev => console.log(`Screen width: ${window.innerWidth}`));
+    ReactDOM.render(
+      <Card
+        title="Supervisor"
+        subHeading="Monitors activity to identify project roadblocks"
+        src="./images/icon-supervisor.svg"
+        alt="Magnifying Glass"> #00C8C8 </Card>,
+      document.querySelector("#supervisor")
+    );
 
-    function drawWindow() {
+    ReactDOM.render(
+      <Card
+        title="Team Builder"
+        subHeading="Scans our talent network to create the optimal team for your project"
+        src="./images/icon-team-builder.svg"
+        alt="House"> #FF637B </Card>,
+      document.querySelector("#teamBuilder")
+    );
 
-      ReactDOM.render(
-        <Card
-          title="Supervisor"
-          subHeading="Monitors activity to identify project roadblocks"
-          src="./images/icon-supervisor.svg"
-          alt="Magnifying Glass"> #00C8C8 </Card>,
-        document.querySelector("#supervisor")
-      );
+    ReactDOM.render(
+      <Card title="Karma" subHeading="Regularly evaluates our talent to ensure quality"
+        src="./images/icon-karma.svg" alt="Light Bulb">
+        #FCAE4A
+      </Card>,
+      document.querySelector("#karma")
+    );
 
-      ReactDOM.render(
-        <Card
-          title="Team Builder"
-          subHeading="Scans our talent network to create the optimal team for your project"
-          src="./images/icon-team-builder.svg"
-          alt="House"> #FF637B </Card>,
-        document.querySelector("#teamBuilder")
-      );
-
-      ReactDOM.render(
-        <Card title="Karma" subHeading="Regularly evaluates our talent to ensure quality"
-          src="./images/icon-karma.svg" alt="Light Bulb">
-          #FCAE4A
-        </Card>,
-        document.querySelector("#karma")
-      );
-
-      ReactDOM.render(
-        <Card title="Calculator" subHeading="Uses data from past projects to provide better delivery estimates"
-          src="./images/icon-calculator.svg" alt="Computer Monitor">
-          #549EF2
-        </Card>,
-        document.querySelector("#calculator")
-      );
-
-    }
+    ReactDOM.render(
+      <Card title="Calculator" subHeading="Uses data from past projects to provide better delivery estimates"
+        src="./images/icon-calculator.svg" alt="Computer Monitor">
+        #549EF2
+      </Card>,
+      document.querySelector("#calculator")
+    );
 
   </script>
 </body>

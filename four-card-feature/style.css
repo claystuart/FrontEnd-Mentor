@@ -38,19 +38,6 @@ img {
     margin-top: 10px;
 }
 
-/* .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 1300px;
-}
-
-.content div {
-    width: 311px;
-    height: 222px;
-    margin-bottom: 25px;
-} */
-
 div#supervisor,
 div#teamBuilder,
 div#karma,
@@ -60,8 +47,7 @@ div#calculator {
     margin: 0 auto 0 auto !important;
 }
 
-
-@media (min-width: 1115px) {
+@media (min-width: 1200px) {
     main {
         height: 1550px;
         align-items: center;
@@ -110,7 +96,4 @@ div#calculator {
         left: 380px;
         top: 280px;
     }
-
-
-
 }
