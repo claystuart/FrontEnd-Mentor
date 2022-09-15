@@ -35,9 +35,13 @@ img.mockups {
     position: absolute;
     top: 0;
     height: 400px;
-    width: 375px;
+    width: 100%;
     background-image: url(./images/bg-mobile.svg);
     z-index: 1;
+}
+
+.desktop__background {
+    display: none;
 }
 
 .content {
@@ -83,6 +87,41 @@ i {
     color: #DDD;
 }
 
-@media (min-width: 1000px) {
-    body {}
+
+@media (min-width: 1440px) {
+    main {
+        width: 1440px;
+        height: 800px;
+    }
+
+    img.logo {
+        width: 120px;
+        height: 19px;
+        margin: 38px 0 0 40px;
+    }
+
+    img.mockups {
+        position: relative;
+        z-index: 2;
+        width: 296px;
+        height: 209px;
+        margin: 67px 39.5px 0 39.5px;
+        opacity: 1;
+    }
+
+    .mobile__background {
+        display: none;
+    }
+
+    .desktop__background {
+        display: block;
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-image: url(./images/bg-desktop.svg);
+        z-index: 1;
+    }
+
+
 }
