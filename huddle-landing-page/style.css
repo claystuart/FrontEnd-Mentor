@@ -80,10 +80,8 @@ button {
 }
 
 i {
-    height: 27.5px;
-    width: 28px;
+    color: #DDD;
 }
-
 
 @media (min-width: 1000px) {
     body {}
