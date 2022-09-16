@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+}
+
+main {
+    width: 327px;
+    height: 504px;
+}
+
+.header__image {
+    width: 327px;
+    height: 200px;
+}
