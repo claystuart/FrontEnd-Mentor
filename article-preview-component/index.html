@@ -23,27 +23,26 @@
       <h2>Ever been in a room and felt like something was missing? Perhaps
         it felt slightly bare and uninviting. I’ve got some simple tips
         to help you make any room feel complete.</h2>
-    </div>
 
-    <div class="footer" id="footer">
-      <img class="avatar" src="./images/avatar-michelle.jpg" alt="Woman's profile">
-      <div class="footer__info">
-        <h2 class="name">Michelle Appleton</h2>
-        <h2 class="date">28 Jun 2020</h2>
+      <div class="footer" id="footer">
+        <img class="avatar" src="./images/avatar-michelle.jpg" alt="Woman's profile">
+        <div class="footer__info">
+          <h2 class="name">Michelle Appleton</h2>
+          <h2 class="date">28 Jun 2020</h2>
+        </div>
+        <button id="showIcons"><img src="./images/icon-share.svg" alt="Show icon"></button>
       </div>
-      <button id="showIcons"><img src="./images/icon-share.svg" alt="Show icon"></button>
+
+      <aside>
+        <h2>Share</h2>
+        <div class="socialMedia">
+          <img src="./images/icon-facebook.svg" alt="facebook">
+          <img src="./images/icon-twitter.svg" alt="twitter">
+          <img src="./images/icon-pinterest.svg" alt="pinterest">
+        </div>
+        <button id="hideIcons"><img src="./images/icon-share.svg" alt="Share icon"></button>
+      </aside>
     </div>
-
-    <aside>
-      <h2>Share</h2>
-      <div class="socialMedia">
-        <img src="./images/icon-facebook.svg" alt="facebook">
-        <img src="./images/icon-twitter.svg" alt="twitter">
-        <img src="./images/icon-pinterest.svg" alt="pinterest">
-      </div>
-      <button id="hideIcons"><img src="./images/icon-share.svg" alt="Share icon"></button>
-    </aside>
-
   </main>
 
   <script>
@@ -51,13 +50,13 @@
     document.querySelector("#hideIcons").addEventListener("click", hideIcons);
 
     function showIcons() {
-      console.log('showIcons clicked...');
+      // console.log('showIcons clicked...');
       document.getElementById("footer").style = "display: none;"
       document.querySelector("aside").style = "display: flex;"
     }
 
     function hideIcons() {
-      console.log('hideIcons clicked...');
+      // console.log('hideIcons clicked...');
       document.querySelector("aside").style = "display: none;"
       document.getElementById("footer").style = "display: flex;"
     }
