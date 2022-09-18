@@ -11,13 +11,15 @@ body {
 
 main {
     width: 327px;
-    height: 504px;
     background-color: white;
+    border-radius: 10px;
 }
 
 .header__image {
     width: 327px;
     height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .content>h1 {
@@ -33,7 +35,7 @@ main {
     width: 263px;
     height: 100px;
     font-size: 13px;
-    font-weight: 400;
+    font-weight: 500;
     margin: 12px auto 0 auto;
     color: #6E8098;
 }
@@ -43,6 +45,8 @@ main {
     height: 64px;
     display: flex;
     background-color: white;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
     align-items: center;
 }
 
@@ -65,14 +69,58 @@ img.avatar {
     margin: 0 0 0 16px;
 }
 
-button {
+button#showIcons {
     height: 32px;
     width: 32px;
     border: 0;
     border-radius: 50%;
-    margin-left: 70px;
+    margin-left: 57px;
 }
 
-.footer__share {
+button#hideIcons {
+    height: 32px;
+    width: 32px;
+    border: 0;
+    border-radius: 50%;
+    margin-left: 50px;
+}
+
+button#showIcons:hover,
+#hideIcons:hover {
+    cursor: pointer;
+    color: white;
+    height: 40px;
+    width: 40px;
+}
+
+aside {
+    width: 327px;
+    height: 64px;
+    background-color: #48556A;
+    display: flex;
+    align-items: center;
     display: none;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+aside h2 {
+    margin-left: 32px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #9DAEC2;
+}
+
+aside .socialMedia {
+    width: 92px;
+    margin-left: 21px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gray__button {
+    height: 32px;
+    width: 32px;
 }
