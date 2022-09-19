@@ -31,7 +31,7 @@ main {
     color: #48556A;
 }
 
-.content h2 {
+.content > h2 {
     width: 263px;
     height: 100px;
     font-size: 13px;
@@ -58,16 +58,24 @@ img.avatar {
     margin-left: 32px;
 }
 
+.footer__info {
+    width: 116px;
+    height: 40px;
+    margin-left: 16px;
+}
+
 .name {
     font-size: 13px;
-    font-weight: bold;
-    margin: 15px 0 0 16px;
+    font-weight: 700;
+    color: #48556A;
+    margin: 0;
 }
 
 .date {
     font-size: 13px;
     font-weight: 400;
-    margin: 0 0 0 16px;
+    color: #9DAEC2;
+    margin: 0;
 }
 
 button#showIcons {
@@ -75,7 +83,7 @@ button#showIcons {
     width: 32px;
     border: 0;
     border-radius: 50%;
-    margin-left: 57px;
+    margin-left: 50px;
 }
 
 button#hideIcons {
@@ -140,7 +148,6 @@ aside .socialMedia {
     }
 
     .content {
-        /* width: 100%; */
         height: 216px;
         margin: 32px 0 0 40px;
     }
@@ -162,8 +169,33 @@ aside .socialMedia {
     #footer {
         width: 365px;
         height: 40px;
-        /* border-radius: initial; */
+        margin: 30px 0 0 0;
+    }
+
+    img.avatar {
+        margin-left: 0;
+    }
+
+    h2.name {
+        margin-top: 5px;
+        height: 20px;
+        width: 116px;
+    }
+
+    h2.date {
         margin: 0;
+        height: 20px;
+        width: 116px;
+    }
+
+    button#showIcons {
+        margin-left: 140px;
+    }
+
+    aside {
+        position: absolute;
+        width: 248px;
+        height: 67px;
     }
 
 
