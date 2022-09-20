@@ -14,7 +14,7 @@
 
 <body>
 
-  <main id="main">
+  <main>
     <img class="header__image" src="./images/drawers.jpg" alt="Drawers with vase on top">
 
     <div class="content">
@@ -47,15 +47,18 @@
 
   <script>
     document.querySelector("#footer__button").addEventListener("click", toggleIcons);
-    document.querySelector("#aside__button").addEventListener("click", hideIcons);
+    document.querySelector("#aside__button").addEventListener("click", toggleIcons);
 
-
-    let main = document.getElementById("main");
-    var iconsVisible = false;
+    const main = document.querySelector("main");
+    let iconsVisible = false;
 
     //show and hide footer on mobile size based on whether icons visible or not
     window.addEventListener("resize", adjust_icons_based_on_screen_width);
 
+    /**
+     * Adjust where the iconModal pops up
+     * the aside__button also disappears on desktop iconModal but visible for mobile
+     */
     function adjust_icons_based_on_screen_width() {
       if (main.getBoundingClientRect().width < 400 && iconsVisible == false) {
         document.getElementById("footer").style = "display: flex;";
@@ -67,7 +70,6 @@
       }
       else if (main.getBoundingClientRect().width > 400 && iconsVisible == true) {
         document.getElementById("footer").style = "display: flex;"
-        document.querySelector("aside").className = "desktopAside";
         document.getElementById("footer__button").style = "display: inline";
         document.getElementById("aside__button").style = "display: none";
       }
@@ -83,38 +85,23 @@
      */
     function toggleIcons() {
 
-      //you show and hide icons on desktop with same share button
       if (iconsVisible == true) {
-        hideIcons();
+        iconsVisible = false;
+        document.querySelector("aside").style = "display: none;"
+        document.getElementById("footer").style = "display: flex;"
         return;
       }
       else
         iconsVisible = true;
 
-
-      var viewSize = main.getBoundingClientRect();
-      console.log(viewSize.width, viewSize.height);
-
-      if (viewSize.width < 400) {
+      if (main.getBoundingClientRect().width < 400) {
         document.getElementById("footer").style = "display: none;"
         document.querySelector("aside").style = "display: flex;"
       }
       else {
-        const iconElement = document.querySelector("aside");
-        iconElement.style.display = "flex";
-        iconElement.className = "desktopAside";
+        document.querySelector("aside").style.display = "flex";
         document.getElementById('aside__button').style.display = "none";
       }
-
-    }
-
-    /** 
-     * Hide icon modal from mobile layout
-     */
-    function hideIcons() {
-      iconsVisible = false;
-      document.querySelector("aside").style = "display: none;"
-      document.getElementById("footer").style = "display: flex;"
     }
   </script>
 
