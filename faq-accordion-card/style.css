@@ -54,9 +54,28 @@ h2 {
     font-weight: 400;
     color: #1E1F36;
 }
+h2:hover {
+    cursor: pointer;
+    color: #F47B56;
+}
 
 p {
     font-size: 12px;
     font-weight: 400;
     color: #787887;
+
+    margin: 0 0 0 24px;
+    width: 236px;
+    display: none;
+}
+
+.horizontal__line {
+    width: 279px;
+    height: 1px;
+    background-color: #E8E8EA;
+    margin: 8px 0 0 24px;
+}
+
+.bottom__line {
+    margin-bottom: 30px;
 }

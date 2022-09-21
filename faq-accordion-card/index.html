@@ -22,64 +22,78 @@
 
     <div id="teamMemberLimit" class="faq__entry" toggled="false">
       <header>
-        <h2 clas="question">How many team members can I invite?</h2>
+        <h2 class="question" onclick="toggleAnswer(this)">How many team members can I invite?</h2>
         <img class="arrow" src="./images/icon-arrow-down.svg" alt="tiny arrow" direction="down">
       </header>
-      
       <p class="answer">You can invite up to 2 additional users on the Free plan. There is no limit on
         team members for the Premium plan.</p>
+      <div class="horizontal__line"></div>
     </div>
 
     <div id="fileSizeLimit" class="faq__entry" toggled="false">
       <header>
-        <h2 clas="question">What is the maximum file upload size?</h2>
+        <h2 class="question" onclick="toggleAnswer(this)">What is the maximum file upload size?</h2>
         <img class="arrow" src="./images/icon-arrow-down.svg" alt="tiny arrow" direction="down">
       </header>
       <p class="answer">No more than 2GB. All files in your account must fit your allotted storage space.</p>
+      <div class="horizontal__line"></div>
     </div>
 
     <div id="passwordReset" class="faq__entry" toggled="false">
       <header>
-        <h2 clas="question">How do I reset my password?</h2>
+        <h2 class="question" onclick="toggleAnswer(this)">How do I reset my password?</h2>
         <img class="arrow" src="./images/icon-arrow-down.svg" alt="tiny arrow" direction="down">
       </header>
       <p class="answer">Click “Forgot password” from the login page or “Change password” from your profile page.
         A reset link will be emailed to you.</p>
+      <div class="horizontal__line"></div>
     </div>
 
     <div id="cancelSubscription" class="faq__entry" toggled="false">
       <header>
-        <h2 clas="question">Can I cancel my subscription?</h2>
+        <h2 class="question" onclick="toggleAnswer(this)">Can I cancel my subscription?</h2>
         <img class="arrow" src="./images/icon-arrow-down.svg" alt="tiny arrow" direction="down">
       </header>
       <p class="answer">Yes! Send us a message and we’ll process your request no questions asked.</p>
+      <div class="horizontal__line">&nbsp;</div>
     </div>
 
     <div id="additionSupport" class="faq__entry" toggled="false">
       <header>
-        <h2 clas="question">Do you provide additional support?</h1>
+        <h2 class="question" onclick="toggleAnswer(this)">Do you provide additional support?</h1>
           <img class="arrow" src="./images/icon-arrow-down.svg" alt="tiny arrow" direction="down">
       </header>
-        <p class="answer">Chat and email support is available 24/7. Phone lines are open during normal business hours.
-        </p>
+      <p class="answer">Chat and email support is available 24/7. Phone lines are open during normal business hours.
+      </p>
+      <div class="horizontal__line bottom__line"></div>
     </div>
-  </div>
 
+    <script>
 
+      function toggleAnswer(clickedElement) {
+        // console.log(`Question:\t ${clickedElement.textContent}`);
+        let questionDiv = clickedElement.parentNode.parentNode;
+        let answer = questionDiv.querySelector(".answer");
+        let arrow = questionDiv.querySelector(".arrow");
 
-  <br>
-  <button onclick="toggle(true)">Toggle On</button>
-  <button onclick="toggle(false)">Toggle Off</button>
+        if (questionDiv.getAttribute("toggled") == "true") {
+          console.log("Setting 'toggled' to FALSE and HIDING answer");
+          answer.style.display = "none";
+          arrow.style = "transform: rotate(0deg)";
+          questionDiv.setAttribute("toggled", false);
+        }
+        else {
+          console.log("Setting toggled to TRUE and SHOWING answer");
+          answer.style.display = "block";
+          arrow.style = "transform: rotate(180deg)";
+          questionDiv.setAttribute("toggled", true);
+        }
 
-  <script>
-
-    function toggle(flag) {
-      if (flag == true)
-        document.querySelector("#teamMemberLimit").setAttribute("toggled", "true");
-      else
-        document.querySelector("#teamMemberLimit").setAttribute("toggled", "false");
-    }
-  </script>
+        //Debugging information
+        // console.log(`\t ${answer.tagName}`);
+        // console.log(`\t ${answer.textContent}`);
+      }
+    </script>
 </body>
 
 </html>
