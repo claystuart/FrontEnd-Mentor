@@ -16,6 +16,15 @@ main {
     margin: 0;
 }
 
+.mobile__shadow {
+    margin-top: -85px;
+}
+
+.mobile__image {
+    position: relative;
+    margin: -101px;
+}
+
 .faq__section {
     margin: 0;
     background-color: white;
@@ -33,7 +42,7 @@ h1 {
     color: #1E1F36;
     font-size: 32px;
     font-weight: 700;
-    margin: 132px auto 0 auto;
+    margin: 115px auto 10px auto;
 }
 
 header {
@@ -79,3 +88,8 @@ p {
 .bottom__line {
     margin-bottom: 30px;
 }
+
+@media (min-width: 910px) {
+    
+}
+
