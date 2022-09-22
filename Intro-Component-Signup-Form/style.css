@@ -12,7 +12,6 @@ body {
 
 main {
     width: 375px;
-    height: 1000px;
     background-color: #FF7979;
     background-image: url("./images/bg-intro-mobile.png");
     display: flex;
@@ -31,7 +30,6 @@ h1 {
 footer {
     margin: 64px auto 0 auto;
     width: 327px;
-    height: 554px;
 }
 
 h2 {
