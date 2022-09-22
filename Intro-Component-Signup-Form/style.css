@@ -14,25 +14,54 @@ main {
     width: 375px;
     height: 1000px;
     background-color: #FF7979;
+    background-image: url("./images/bg-intro-mobile.png");
+    display: flex;
+    flex-direction: column;
 }
 
-.form__container {
-    background-color: white;
+header {
+    width: 327px;
+    margin: 88px auto 0 auto;
 }
 
-.price__container {
+h1 {
+    text-align: center;
+}
+
+footer {
+    margin: 64px auto 0 auto;
+    width: 327px;
+    height: 554px;
+}
+
+h2 {
     background-color: #5E54A4;
 }
 
 form {
+    background-color: white;
     color: #3D3B48;
+    margin-bottom: 0;
 }
 
 button {
+    display: block;
     color: white;
     background-color: #38CC8B;
 }
 
 h3 {
-color: #BAB7D4;
+    margin-top: 0;
+    background-color: white;
+    color: #BAB7D4;
+}
+
+@media (min-width: 1500px) {
+    main {
+        width: 1440px;
+        height: 800px;
+        background-image: url("./images/bg-intro-desktop.png");
+        flex-direction: row;
+
+    }
 }
