@@ -29,7 +29,7 @@
       <p> Hello fellow shoppers! We're currently building our new fashion store.
         Add your email below to stay up-to-date with announcements and our launch deals.</p>
 
-      <div class="email__container">
+      <div class="email__container" id="email__container">
         <input type="email" name="email" id="email" placeholder="Email Address">
         <button onclick="checkEmail()">
           <img class="error" id="errorIMG" src="./images/icon-error.svg" alt="error">
@@ -58,11 +58,13 @@
         // console.error(`${entry} is not valid!`);
         errorMSG.style = "display: block;";
         errorIMG.style = "display: block;"
+        email__container.style = "border: 3px solid #F96464;";
       }
       else {
         // console.log(`${entry} is valid`);
         errorMSG.style = "display: none;";
-        errorIMG.style = "display: none;"
+        errorIMG.style = "display: none;";
+        email__container.style = "border: 1px solid #CE9898;";
       }
     }
   </script>
