@@ -9,7 +9,6 @@ body {
 }
 
 main {
-    /* outline: 1px solid red; */
     width: 375px;
     height: 800px;
     display: flex;
@@ -35,7 +34,6 @@ header {
 .content {
     width: 311px;
     height: 310px;
-    /* outline: 1px solid blue; */
     margin: 64px auto 0 auto;
 }
 
@@ -78,12 +76,12 @@ p {
 
 #email {
     border: none;
-    outline: none;
+
     /* disables input box outline when gets focus */
+    outline: none;
+    
     margin-left: 24px;
     font-size: 14px;
-    /* opacity: .8;
-    text-shadow: 1px 1px 0px #CE9898; */
     color: black;
     position: relative;
     z-index: 5;
@@ -128,7 +126,6 @@ img.error {
         height: 800px;
         flex-direction: row;
         position: relative;
-        outline: 1px solid;
     }
 
     .logo {
@@ -143,7 +140,6 @@ img.error {
         position: relative;
         top: 164px;
         left: -102px;
-        /* outline: 1px solid red; */
     }
 
     header {
@@ -162,4 +158,55 @@ img.error {
         width: 610px;
         height: 800px;
     }
+
+    h1 {
+        font-size: 64px;
+        letter-spacing: 17.32;
+        line-height: 71px;
+        text-align: left;
+    }
+
+    p {
+        width: 444px;
+        height: 84px;
+        font-size: 16px;
+        text-align: left;
+        line-height: 28px;
+    }
+
+    .email__container {
+        width: 445px;
+        height: 52px;
+    }
+
+    button {
+        position: absolute;
+        margin-left: 351px;
+        border-radius: 30px;
+        width: 100px;
+        height: 56px;
+    }
+
+    button:hover {
+        cursor: pointer; 
+        width: 100px;
+        height: 60px;
+        box-shadow: 0px 10px 10px #F8BFBF;
+    }
+
+    img.error {
+        left: -47px;
+    }
+
+    h2.error__message {
+        margin: 0;
+        position: absolute;
+        top: 642px;
+        left: 233px;
+        font-size: 13px;
+        line-height: 28px;
+        font-weight: 400;
+    }
+
+
 }
