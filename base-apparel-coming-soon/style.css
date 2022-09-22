@@ -12,10 +12,8 @@ main {
     outline: 1px solid red;
     width: 375px;
     height: 800px;
-}
-
-.hero__desktop__container{
-    display: none;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -25,9 +23,104 @@ header {
     margin-left: 32px;
 }
 
+.logo {
+    width: 100px;
+    height: 20px;
+}
+
+.hero__desktop__container {
+    display: none;
+}
+
 .content {
+    width: 311px;
+    height: 310px;
+    /* outline: 1px solid blue; */
     margin: 64px auto 0 auto;
 }
+
+.pink {
+    color: #CE9898;
+    font-weight: 300;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 10.83px;
+    line-height: 42px;
+    margin: 0 auto 0 auto;
+    color: #423A3A;
+}
+
+p {
+    width: 311px;
+    height: 88px;
+    color: #CE9898;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    margin: 16px auto 0 auto;
+    line-height: 22px;
+}
+
+.email__container {
+    border: 1px solid #CE9898;
+    border-radius: 25px;
+    width: 311px;
+    height: 48px;
+    margin: 32px auto 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+#email {
+    border: none;
+    outline: none;
+    /* disables input box outline when gets focus */
+    margin-left: 24px;
+    font-size: 14px;
+    /* opacity: .8;
+    text-shadow: 1px 1px 0px #CE9898; */
+    color: black;
+    position: relative;
+    z-index: 5;
+}
+
+button {
+    width: 72px;
+    height: 54px;
+    background: linear-gradient(#F8BFBF, #EE8B8B);
+    border-radius: 50%;
+    border: 0;
+    margin-left: 39px;
+    box-shadow: 0px 5px 40px #EE8B8B;
+    position: relative;
+}
+
+button:hover {
+    cursor: pointer;
+    width: 74px;
+    height: 56px;
+}
+
+img.error {
+    position: absolute;
+    left: -30px;
+    display: none;
+}
+
+.error__message {
+    margin-top: 8px;
+    margin-left: 60px;
+    color: #F96464;
+    font-size: 13px;
+    font-weight: 400;
+    display: none;
+}
+
 
 @media (min-width: 1440px) {
     main {
@@ -41,7 +134,7 @@ header {
         display: none;
     }
 
-    .hero__desktop__container{
+    .hero__desktop__container {
         display: block;
         width: 610px;
         height: 800px;

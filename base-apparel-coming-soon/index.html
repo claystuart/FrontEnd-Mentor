@@ -16,30 +16,56 @@
 
   <main>
     <header>
-      <img src="./images/logo.svg" alt="base apparel logo">
+      <img class="logo" src="./images/logo.svg" alt="base apparel logo">
     </header>
-      
+
     <div class="hero__mobile__container">
       <img src="./images/hero-mobile.jpg" alt="woman posing">
     </div>
 
     <div class="content">
-      We're coming soon
+      <h1><span class="pink">We're</span> coming soon</h1>
 
-      Hello fellow shoppers! We're currently building our new fashion store.
-      Add your email below to stay up-to-date with announcements and our launch deals.
-  
-      Email Address
+      <p> Hello fellow shoppers! We're currently building our new fashion store.
+        Add your email below to stay up-to-date with announcements and our launch deals.</p>
+
+      <div class="email__container">
+        <input type="email" name="email" id="email" placeholder="Email Address">
+        <button onclick="checkEmail()">
+          <img class="error" id="errorIMG" src="./images/icon-error.svg" alt="error">
+          <img class="arrow" src="./images/icon-arrow.svg" alt="right arrow">
+        </button>
+      </div>
     </div>
-    
-    
+
+    <h2 class="error__message" id="errorMSG">Please provide a valid email</h2>
 
     <div class="hero__desktop__container">
       <img src="./images/hero-desktop.jpg" alt="woman posing">
     </div>
   </main>
 
+  <script>
 
+    function checkEmail() {
+      const entry = document.getElementById("email").value;
+
+      //REGEX solution from https://stackoverflow.com/a/13178771/392301
+      const emailCheck = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/i;
+
+      // console.log( emailCheck.test(entry) );
+      if (!emailCheck.test(entry)) {
+        // console.error(`${entry} is not valid!`);
+        errorMSG.style = "display: block;";
+        errorIMG.style = "display: block;"
+      }
+      else {
+        // console.log(`${entry} is valid`);
+        errorMSG.style = "display: none;";
+        errorIMG.style = "display: none;"
+      }
+    }
+  </script>
 
 </body>
 
