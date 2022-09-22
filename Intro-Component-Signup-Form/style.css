@@ -1,4 +1,38 @@
 body {
+    width: 100vw;
+    height: 100vh;
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+main {
+    width: 375px;
+    height: 1000px;
+    background-color: #FF7979;
+}
+
+.form__container {
+    background-color: white;
+}
+
+.price__container {
+    background-color: #5E54A4;
+}
+
+form {
+    color: #3D3B48;
+}
+
+button {
+    color: white;
+    background-color: #38CC8B;
+}
+
+h3 {
+color: #BAB7D4;
 }
