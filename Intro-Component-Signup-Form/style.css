@@ -126,13 +126,40 @@ h3 {
         height: 800px;
         background-image: url("./images/bg-intro-desktop.png");
         flex-direction: row;
+    }
 
+    header {
+        width: 525px;
+        height: 220px;
+        margin: 290px 45px auto 165px;
+    }
+
+    h1 {
+        width: 525px;
+        height: 131px;
+        font-size: 50px;
+        line-height: 55px;
+        letter-spacing: -.52px;
+        margin-bottom: 0;
+        text-align: left;
+    }
+
+    p {
+        margin-top: 0;
+        text-align: left;
     }
 
     footer {
         width: 540px;
         height: 646px;
     }
+
+    .center {
+        width: 540px;
+        height: 60px;
+    }
+
+    h2 { width: auto;}
 
     form {
         width: 540px;
