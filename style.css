@@ -12,9 +12,13 @@ header {
     color: white;
     font-size: 24px;
     margin: 20px;
-    padding: 10px;
     border-radius: 1em;
     word-spacing: 110%;
+}
+
+h1 {
+    padding: 10px;
+    letter-spacing: 1px;
 }
 
 main {
