@@ -28,12 +28,20 @@
         <h2>Try it free 7 days <span>then 120/mo. thereafter</span></h2>
       </div>
 
-      <form action="">
-        <input type="text" class="first_input" placeholder="First Name">
-        <input type="text" placeholder="Last Name">
-        <input type="email" placeholder="Email Address">
-        <input type="password" placeholder="Password">
-        <button>Claim your free trial</button>
+      <form action="#">
+        <input id="firstName" type="text" class="first_input" placeholder="First Name">
+        <h4 id="fn_errorMsg">First Name cannot be empty</h4>
+
+        <input id="lastName" type="text" placeholder="Last Name">
+        <h4 id="ln_errorMsg">Last Name cannot be empty</h4>
+
+        <input id="email" type="email" placeholder="Email Address">
+        <h4 id="email_errorMsg">Looks like this is not an email</h4>
+
+        <input id="password" type="password" placeholder="Password">
+        <h4 id="pw_errorMsg">Password cannot be empty</h4>
+
+        <button id="submit">Claim your free trial</button>
         <h3>By clicking the button, you are agreeing to our
           <span style="color: #FF7979;">Terms and Services</span>
         </h3>
@@ -45,29 +53,55 @@
   </main>
 
   <script>
-    /**
-     *  Use email verification from base-apparel-component 
-     *  Update for intro-component-signup-form
-     */
-    function checkEmail() {
-      const entry = document.getElementById("email").value;
 
-      //REGEX solution from https://stackoverflow.com/a/13178771/392301
-      const emailCheck = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/i;
+    document.getElementById("submit").addEventListener("click", verifyForm);
 
-      // console.log( emailCheck.test(entry) );
-      if (!emailCheck.test(entry)) {
-        // console.error(`${entry} is not valid!`);
-        errorMSG.style = "display: block;";
-        errorIMG.style = "display: block;"
-        email__container.style = "border: 3px solid #F96464;";
+    function verifyForm() {
+      console.log("Verifying form");
+
+      if (document.getElementById("firstName").value.length == 0) {
+        console.error("firstName is empty");
+        document.getElementById("firstName").className += " error";
+        document.getElementById("fn_errorMsg").style.display = "block";
+      } else {
+        document.getElementById("firstName").className = "first_input";
+        document.getElementById("fn_errorMsg").style.display = "none";
+      }
+
+      if (document.getElementById("lastName").value.length == 0) {
+        console.error("lastName is empty");
+        document.getElementById("lastName").className += " error";
+        document.getElementById("ln_errorMsg").style.display = "block";
       }
       else {
-        // console.log(`${entry} is valid`);
-        errorMSG.style = "display: none;";
-        errorIMG.style = "display: none;";
-        email__container.style = "border: 1px solid #CE9898;";
+        document.getElementById("lastName").className = "";
+        document.getElementById("ln_errorMsg").style.display = "none";
       }
+
+      const emailCheck = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/i;
+      const entry = document.getElementById("email").value;
+
+      if (entry.length === 0 || !emailCheck.test(entry)) {
+        console.error("Email error");
+
+        const entry = document.getElementById("email").value;
+        document.getElementById("email").className += " error";
+        document.getElementById("email_errorMsg").style.display = "block";
+      } else {
+        document.getElementById("email").className = "";
+        document.getElementById("email_errorMsg").style.display = "none";
+      }
+
+      if (document.getElementById("password").value.length == 0) {
+        console.error("Password is empty");
+        document.getElementById("password").className += " error";
+        document.getElementById("pw_errorMsg").style.display = "block";
+      } else {
+        document.getElementById("password").className = "";
+        document.getElementById("pw_errorMsg").style.display = "none";
+      }
+
+
     }
   </script>
 </body>

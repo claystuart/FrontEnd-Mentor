@@ -94,6 +94,7 @@ input {
     padding-left: 15px;
     letter-spacing: .25;
     opacity: .75;
+    border-radius: 10px;
 }
 
 button {
@@ -119,6 +120,23 @@ h3 {
     line-height: 21px;
     color: #BAB7D4;
     text-align: center;
+}
+
+h4 {
+    font-size: 11px;
+    color: #FF7979;
+    height: 17px;
+    margin-bottom: 0;
+    text-align: right;
+    margin: 8px 16px 0 0;
+    display: none;
+}
+
+.error {
+    border: none;
+    background: url(./images/icon-error.svg) no-repeat 420px;
+    border: 4px solid red;
+    opacity: 1;
 }
 
 @media (min-width: 1500px) {
@@ -192,9 +210,18 @@ h3 {
         height: 56px;
     }
 
+    button:hover {
+        cursor: pointer;
+        background-color: #77E2B3;
+    }
+
     form h3 {
         width: 400px;
         height: 26px;
         font-size: 11px;
+    }
+
+    h4 {
+        margin-right: 34px;
     }
 }
