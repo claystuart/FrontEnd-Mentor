@@ -44,7 +44,7 @@ p {
 footer {
     margin: 0px auto 0 auto;
     width: 327px;
-    
+
 }
 
 .center {
@@ -73,6 +73,7 @@ h2 span {
 
 form {
     background-color: white;
+    border-radius: 10px;
     color: #3D3B48;
     margin: 24px auto 0 auto;
     width: 327px;
@@ -99,7 +100,7 @@ button {
     margin: 24px auto 0 auto;
     padding: 0;
     border-radius: 8px;
-    width: 279px;
+    width: 300px;
     height: 56px;
     display: block;
     color: white;
@@ -151,18 +152,49 @@ h3 {
 
     footer {
         width: 540px;
-        height: 646px;
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-    .center {
+    footer .center {
+        margin: 0;
         width: 540px;
         height: 60px;
+        flex-direction: row;
     }
 
-    h2 { width: auto;}
+    h2 {
+        width: 316px;
+        height: 26px;
+    }
 
     form {
         width: 540px;
-        height: 562px;
+        height: auto;
+    }
+
+    input {
+        width: 460px;
+        height: 56px;
+        margin-top: 20px;
+    }
+
+    .first_input {
+        margin-top: 40px;
+    }
+
+    button {
+        margin-top: 40px;
+        width: 485px;
+        height: 56px;
+    }
+
+    form h3 {
+        width: 400px;
+        height: 26px;
+        font-size: 11px;
     }
 }
