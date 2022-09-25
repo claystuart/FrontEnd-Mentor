@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #C5E4E7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    margin: 50px auto 0 auto;
+    width: 86px;
+    height: 53px;
+}
+
+main {
+    margin: 41px auto 0 auto;
+    width: 375px;
+    height: 789px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #00474B;
+}
+
+@media (min-width: 1400px){
+    main {
+        display: flex;
+        width: 920px;
+        height: 481px;
+    }
+}
