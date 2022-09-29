@@ -19,7 +19,6 @@ img {
 main {
     margin: 41px auto 0 auto;
     width: 375px;
-    height: 789px;
     background-color: white;
     border-radius: 10px;
     display: flex;
@@ -27,7 +26,29 @@ main {
     align-items: center;
 }
 
-h2 {
+header {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.tip__entry {
+    position: relative;
+}
+
+img.icon{
+    margin: 0;
+    position: absolute;
+    left: 53px;
+    top: 68px;
+    width: 13px;
+    height: 16px;
+}
+
+header h2 {
     font-size: 16px;
     color: #5E7A7D;
     font-weight: bold;
@@ -35,14 +56,17 @@ h2 {
 }
 
 input {
-    width: 311px;
+    width: 291px;
     height: 48px;
     margin-left: 32px;
     margin-bottom: 12px;
     border: 0;
     background-color: #F3F9FA;
     color: #00474B;
+    font-weight: bold;
     font-size: 24px;
+    text-align: right;
+    padding-right: 20px;
 }
 
 .tip__amount {
@@ -75,18 +99,56 @@ button.custom {
     border: 0;
 }
 
-header {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    width: 375px;
-    display: flex;
-    flex-direction: column;
+div.tippers {
+    position: relative;
+}
+#peopleCount {
+    margin-bottom: 0;
 }
 
 footer {
+    margin: 32px auto 32px auto;
+    border-radius: 10px;
     width: 327px;
-    height: 257px;
     background-color: #00474B;
+}
+
+.result__perPerson {
+    margin: 24px 24px 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.result__total {
+    margin: 20px 24px 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer h1 {
+    margin: 0;
+    color: #26C2AE;
+    font-size: 32px;
+}
+
+footer h2 {
+    margin: 0;
+    width: 98px;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.result__total h2 {
+    width: 64px;
+}
+
+footer span {
+    color: #7F9D9F;
+    font-size: 13px;
 }
 
 button.reset {
@@ -96,6 +158,8 @@ button.reset {
     color: #00474B;
     font-size: 20px;
     text-transform: uppercase;
+    margin: 24px 24px 24px 24px;
+    border-color: #017379;
 }
 
 @media (min-width: 1400px) {
