@@ -270,8 +270,29 @@ button.reset {
         height: 417px;
     }
 
+    .result__perPerson {
+        margin-top: 44px;
+        margin-left: 44px;
+    }
+
+    .result__total {
+        margin-top: 41px;
+        margin-left: 44px;
+    }
+
     img.icon {
         top: 48px;
         left: 20px;
+    }
+
+    footer h1 {
+        font-size: 48px;
+        margin-right: 20px;
+    }
+
+    footer button.reset {
+        width: 333px;
+        height: 48px;
+        margin: 100px 40px 0 40px;
     }
 }
