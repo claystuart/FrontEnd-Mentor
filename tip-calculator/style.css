@@ -39,7 +39,7 @@ header {
     position: relative;
 }
 
-img.icon{
+img.icon {
     margin: 0;
     position: absolute;
     left: 53px;
@@ -51,7 +51,6 @@ img.icon{
 header h2 {
     font-size: 16px;
     color: #5E7A7D;
-    font-weight: bold;
     margin-left: 32px;
 }
 
@@ -93,6 +92,14 @@ button.fifteenPercent {
     color: #00474B;
 }
 
+.tip__amount input {
+    width: 146px;
+    height: 48px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
 button.custom {
     background-color: #F3F9FA;
     color: #547878;
@@ -102,6 +109,7 @@ button.custom {
 div.tippers {
     position: relative;
 }
+
 #peopleCount {
     margin-bottom: 0;
 }
@@ -162,20 +170,108 @@ button.reset {
     border-color: #017379;
 }
 
+#errorMsg {
+    color: #E17457;
+    padding-left: 13px;
+    display: none;
+}
+
 @media (min-width: 1400px) {
+    body img {
+        margin: 0;
+    }
+
+    body {
+        justify-content: center;
+    }
+
     main {
-        display: flex;
+        margin-top: 88px;
+        flex-direction: row;
         width: 920px;
         height: 481px;
     }
 
     header {
+        margin-left: 48px;
         width: 379px;
         height: 388px;
+    }
+
+    .tip__entry h2 {
+        margin: 0;
+    }
+
+    input {
+        margin: 6px 0 0 0;
+        width: 94%
+    }
+
+    .tip__entry input:hover {
+        cursor: pointer;
+        border: 2px solid #26C2AE;
+        border-radius: 10px;
+    }
+
+    header h2 {
+        margin: 40px 0 0 0;
+    }
+
+    button {
+        width: 117px;
+        height: 48px;
+        padding: 0;
+    }
+
+    .tip__amount input {
+        width: 117px;
+        height: 48px;
+    }
+
+    .tip__amount input:focus {
+        outline: none;
+        border: 3px solid #26C2AE;
+        border-radius: 5px;
+    }
+
+    button:hover {
+        color: #00474B;
+        background-color: #9FE8DF;
+    }
+
+    .tip__amount {
+        margin: 16px 0 0 0;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 16px;
+        column-gap: 14px;
+    }
+
+    .tippers h2 {
+        margin-top: 40px;
+    }
+
+    .badInput {
+        cursor: pointer;
+        border: 3px solid #E17052;
+        border-radius: 10px;
+    }
+
+    .tippers img.icon {
+        top: 89px;
+    }
+
+    #errorMsg {
+        padding-left: 81px;
     }
 
     footer {
         width: 413px;
         height: 417px;
+    }
+
+    img.icon {
+        top: 48px;
+        left: 20px;
     }
 }
