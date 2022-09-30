@@ -85,11 +85,18 @@ button {
     color: white;
     font-size: 24px;
     border-radius: 8px;
+    outline: none;
 }
 
-button.fifteenPercent {
+button:focus {
     background-color: #26C2AE;
     color: #00474B;
+}
+
+.tip__amount input:focus {
+    outline: none;
+    border: 3px solid #26C2AE;
+    border-radius: 5px;
 }
 
 .tip__amount input {
@@ -98,12 +105,6 @@ button.fifteenPercent {
     margin: 0;
     padding: 0;
     text-align: center;
-}
-
-button.custom {
-    background-color: #F3F9FA;
-    color: #547878;
-    border: 0;
 }
 
 div.tippers {
@@ -226,6 +227,7 @@ button.reset {
     .tip__amount input {
         width: 117px;
         height: 48px;
+        font-size: 16px;
     }
 
     .tip__amount input:focus {

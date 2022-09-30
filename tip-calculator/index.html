@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -18,18 +18,19 @@
     <header>
       <div class="tip__entry">
         <h2>Bill</h2>
-        <input type="text" name="bill" id="bill">
+        <input type="text" name="bill" id="bill" onchange="calculateTip()">
         <img class="icon" src="./images/icon-dollar.svg" alt="dollar sign">
       </div>
 
       <h2>Select Tip %</h2>
       <div class="tip__amount">
-        <button>5%</button>
-        <button>10%</button>
-        <button class="fifteenPercent">15%</button>
-        <button>25%</button>
-        <button>50%</button>
-        <input class="custom" placeholder="Custom">
+        <button onclick="calculateTip(.05)">5%</button>
+        <button onclick="calculateTip(.10)">10%</button>
+        <button autofocus onclick="calculateTip(.15)">15%</button>
+        <button onclick="calculateTip(.25)">25%</button>
+        <button onclick="calculateTip(.50)">50%</button>
+        <input class="custom" placeholder="Custom" 
+          onchange="calculateTip((this.value * .01))">
       </div>
 
       <div class="tippers">
@@ -43,21 +44,36 @@
     <footer>
       <div class="result__perPerson">
         <h2 class="price">Tip Amount
-          <span>/ person</span></h2>
+          <span>/ person</span>
+        </h2>
         <h1 class="result">$0.00</h1>
       </div>
 
       <div class="result__total">
         <h2 class="price">Total
-          <span>/ person</span> </h2>
+          <span>/ person</span>
+        </h2>
         <h1 class="total">$0.00</h1>
       </div>
 
-      <button class="reset">Reset</button>
+      <button id="reset" class="reset" onclick="location.reload(true)">Reset</button>
     </footer>
 
   </main>
 
+  <script>
+    let bill_ref = document.getElementById("bill");
+    let people_ref = document.getElementById("peopleCount");
+    var percentage = .15;
+
+    bill_ref.addEventListener("change", calculateTip(percentage));
+
+    function calculateTip(percentage) {
+      let total = bill_ref.value * percentage;
+      console.log(total);
+    }
+
+  </script>
 </body>
 
 </html>
