@@ -2,13 +2,31 @@
 const resetPtr = document.getElementById("reset");
 const billPtr = document.getElementById("bill");
 const peopleSumPtr = document.getElementById("peopleSum");
-
-const percentageButtons = document.querySelector(".tip__amount > button");
+const customTipAmount = document.getElementById("custom");
 
 /* VARIABLES */
 let amount = .00;
 let numberOfPeoplePaying = 1;
 let tipAmount = .15;
+
+/**
+ * Percentage buttons
+ * If user clicks a percentage button, it sets the percentage to something else
+ */
+function updateTipPercentage(percentage) {
+    console.log(`Tip Percentage changed to ${percentage.toFixed(2)}`);
+    tipAmount = percentage;
+    updateDisplay();
+}
+
+/**
+ * Custom Tip Calculator
+ * Lets user enter a custom percentage to leave as a tip
+ */
+customTipAmount.addEventListener("change", function(event){
+    updateTipPercentage(event.target.value / 100);
+});
+
 
 /* RESET BUTTON */
 resetPtr.addEventListener("click", function (event) {
@@ -16,8 +34,11 @@ resetPtr.addEventListener("click", function (event) {
     billPtr.value = "";
     peopleSumPtr.value = "";
     amount = 0;
+    tipAmount = .15;
     numberOfPeoplePaying = 1;
     updateDisplay();
+    document.getElementById("15%").focus();
+    document.getElementById("custom").value = "";
 });
 
 /**

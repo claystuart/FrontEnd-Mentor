@@ -24,12 +24,12 @@
 
       <h2>Select Tip %</h2>
       <div class="tip__amount">
-        <button onclick="calculateTip(.05)">5%</button>
-        <button onclick="calculateTip(.10)">10%</button>
-        <button autofocus onclick="calculateTip(.15)">15%</button>
-        <button onclick="calculateTip(.25)">25%</button>
-        <button onclick="calculateTip(.50)">50%</button>
-        <input class="custom" placeholder="Custom" onchange="calculateTip((this.value * .01))">
+        <button onclick="updateTipPercentage(.05)">5%</button>
+        <button onclick="updateTipPercentage(.10)">10%</button>
+        <button id="15%" autofocus onclick="updateTipPercentage(.15)">15%</button>
+        <button onclick="updateTipPercentage(.25)">25%</button>
+        <button onclick="updateTipPercentage(.50)">50%</button>
+        <input class="custom" id="custom" placeholder="Custom">
       </div>
 
       <div class="tippers">
