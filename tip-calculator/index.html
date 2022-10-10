@@ -18,7 +18,7 @@
     <header>
       <div class="tip__entry">
         <h2>Bill</h2>
-        <input type="text" name="bill" id="bill" onchange="calculateTip()">
+        <input type="text" name="bill" id="bill">
         <img class="icon" src="./images/icon-dollar.svg" alt="dollar sign">
       </div>
 
@@ -61,12 +61,14 @@
 
   </main>
 
+  <script src="main.js"></script>
+
   <script>
-    let bill_ref = document.getElementById("bill");
+    document.getElementById("bill").addEventListener("change", calculateTip(percentage));
     let people_ref = document.getElementById("peopleCount");
     var percentage = .15;
 
-    bill_ref.addEventListener("change", calculateTip(percentage));
+   
 
     function calculateTip(percentage) {
       let total = bill_ref.value * percentage;
