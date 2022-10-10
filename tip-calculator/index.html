@@ -29,8 +29,7 @@
         <button autofocus onclick="calculateTip(.15)">15%</button>
         <button onclick="calculateTip(.25)">25%</button>
         <button onclick="calculateTip(.50)">50%</button>
-        <input class="custom" placeholder="Custom" 
-          onchange="calculateTip((this.value * .01))">
+        <input class="custom" placeholder="Custom" onchange="calculateTip((this.value * .01))">
       </div>
 
       <div class="tippers">
@@ -46,36 +45,22 @@
         <h2 class="price">Tip Amount
           <span>/ person</span>
         </h2>
-        <h1 class="result">$0.00</h1>
+        <h1 id="result" class="result">$0.00</h1>
       </div>
 
       <div class="result__total">
         <h2 class="price">Total
           <span>/ person</span>
         </h2>
-        <h1 class="total">$0.00</h1>
+        <h1 id="total" class="total">$0.00</h1>
       </div>
 
-      <button id="reset" class="reset" onclick="location.reload(true)">Reset</button>
+      <button id="reset" class="reset">Reset</button>
     </footer>
 
   </main>
 
   <script src="main.js"></script>
-
-  <script>
-    document.getElementById("bill").addEventListener("change", calculateTip(percentage));
-    let people_ref = document.getElementById("peopleCount");
-    var percentage = .15;
-
-   
-
-    function calculateTip(percentage) {
-      let total = bill_ref.value * percentage;
-      console.log(total);
-    }
-
-  </script>
 </body>
 
 </html>
