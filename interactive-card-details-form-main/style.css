@@ -95,6 +95,48 @@ h2 {
 
 footer {
     width: 327px;
-    height: 328px;
+    height: auto;
     margin: 91px auto 24px auto;
 }
+
+
+
+
+/* Submitted Message  */
+.dataEntry__complete {
+    display: flex;
+    display: none; /* beggining state to keep hidden */
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon__complete {
+    width: 80px;
+    height: 80px;
+}
+
+.thankYou {
+    color: #21092f;
+    margin: 0;
+    margin-top: 35px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.detailsAdded {
+    margin: 0;
+    margin-top: 22px;
+    color: #443950c7;
+    font-size: 22px;
+}
+
+button {
+    margin-top: 48px;
+    width: 327px;
+    height: 53px;
+    color: white;
+    font-size: 27px;
+    background-color: #21092f;
+    border-radius: 10px;
+}
+

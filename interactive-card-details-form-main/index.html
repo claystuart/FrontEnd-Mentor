@@ -31,39 +31,48 @@
 
 
     <footer>
+
       <div class="dataEntry__inProgress">
-        Cardholder Name
-        e.g. Jane Appleseed
+        <div class="name__container">
+          <p class="form__Text">Cardholder Name</p>
+          <input type="text" placeholder="e.g. Jane Appleseed">
+        </div>
 
-        Card Number
-        e.g. 1234 5678 9123 0000
+        <div class="cardNumber__container">
+          <p class="form__Text">Card Number</p>
+          <input type="text" placeholder="e.g. 1234 5678 9123 0000">
+        </div>
 
-        Exp. Date (MM/YY)
-        MM
-        YY
 
-        CVC
-        e.g. 123
+        <div class="misc__container">
 
+          <div class="exp__container">
+            <p class="form__Text">Exp. Date (MM/YY)</p>
+            <input type="text" name="MM" id="MM" placeholder="MM">
+            <input type="text" name="YY" id="YY" placeholder="YY">
+          </div>
+
+          <div class="cvc__container">
+            <p class="form__Text">CVC</p>
+            <input type="text" name="CVC" id="CVC" placeholder="e.g. 123"></input>
+          </div>
+
+        </div>
         <button>Confirm</button>
       </div>
 
+
+      <!-- Completed state start -->
       <div class="dataEntry__complete">
-        Thank you!
-        We've added your card details
-        <button>Continue</button>
+        <img class="icon__complete" src="./images/icon-complete.svg" alt="check mark">
+        <p class="thankYou">Thank you!</p>
+        <p class="detailsAdded">We've added your card details</p>
+        <button class="continue">Continue</button>
       </div>
 
     </footer>
 
   </main>
-
-
-
-
-
-  <!-- Completed state start -->
-
 
 </body>
 
