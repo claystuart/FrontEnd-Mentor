@@ -34,7 +34,23 @@ img.background {
     border-radius: 10px;
 }
 
-.card__back h2 {
+h1 {
+    position: absolute;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 2.2px;
+}
+
+h2 {
+    position: absolute;
+    color: white;
+    font-size: 9px;
+    letter-spacing: 1.29px;
+    text-transform: uppercase;
+}
+
+.card__cvc {
+    /* on card back */
     position: absolute;
     top: 65px;
     left: 224px;
@@ -50,20 +66,29 @@ img.background {
     border-radius: 10px;
 }
 
-h1{
-    color: white;
-    font-size: 18px;
-    letter-spacing: 2.2px;
+.card__number {
+    top: 72px;
+    left: 16px;
+    z-index: 10;
 }
 
-h2 {
-    color: white;
-    font-size: 9px;
-    letter-spacing: 1.29px;
-    text-transform: uppercase;
+.card__name {
+    position: absolute;
+    top: 119px;
+    left: 32px;
+    z-index: 11;
 }
 
-.card__front img {
+.card__date {
+    top: 119px;
+    left: 234px;
+    z-index: 12;
+}
+
+.card__logo {
+    position: absolute;
+    top: 23px;
+    left: 19px;
     width: 54px;
     height: 30px;
 }
