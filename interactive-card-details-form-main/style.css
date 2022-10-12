@@ -3,7 +3,6 @@ body {
     font-family: 'Space Grotesk', sans-serif;
     background-color: #F2F2F2;
     width: 100vw;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,9 +11,11 @@ body {
 main {
     margin-top: 30px;
     width: 375px;
-    height: 704px;
-    position: relative;
     background-color: white;
+}
+
+header {
+    position: relative;
 }
 
 img.background {
@@ -95,19 +96,39 @@ h2 {
 
 footer {
     width: 327px;
-    height: auto;
     margin: 91px auto 24px auto;
 }
 
+/* Date Entry Page */
+.dataEntry__inProgress {
+    width: 327px;
+    /* height: 328px; */
+}
+
+.name__container,
+.cardNumber__container,
+.misc__container {
+    width: 327px;
+    height: 48px;
+    margin: 0;
+}
+
+.form__text {
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
 
 
-
-/* Submitted Message  */
+/* Confirmation Page  */
 .dataEntry__complete {
     display: flex;
-    display: none; /* beggining state to keep hidden */
     flex-direction: column;
     align-items: center;
+
+    display: none;
+    /* beggining state to keep hidden */
 }
 
 .icon__complete {
@@ -139,4 +160,3 @@ button {
     background-color: #21092f;
     border-radius: 10px;
 }
-
