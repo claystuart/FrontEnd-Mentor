@@ -35,26 +35,31 @@
       <div class="dataEntry__inProgress">
         <div class="name__container">
           <p class="form__text">Cardholder Name</p>
-          <input class="large" type="text" placeholder="e.g. Jane Appleseed">
+          <input class="large__input" type="text" placeholder="e.g. Jane Appleseed">
         </div>
 
         <div class="cardNumber__container">
           <p class="form__text">Card Number</p>
-          <input class="large" type="text" placeholder="e.g. 1234 5678 9123 0000">
+          <input class="large__input" type="text" placeholder="e.g. 1234 5678 9123 0000">
         </div>
+        <p class="number__errorMsg">Wrong format, numbers only</p>
 
 
-        <div class="misc__container">
+        <div class="expiration__container">
 
-          <div class="exp__container">
-            <p class="form__text">Exp. Date (MM/YY)</p>
-            <input class="small" type="text" name="MM" id="MM" placeholder="MM">
-            <input class="small" type="text" name="YY" id="YY" placeholder="YY">
+          <div class="small__container">
+            <p class="form__text">Exp. Date</p>
+            <input class="small__input" type="text" name="MM" id="MM" placeholder="MM">
           </div>
 
-          <div class="cvc__container">
+          <div class="small__container">
+            <p class="form__text">(MM/YY)</p>
+            <input class="small__input" type="text" name="YY" id="YY" placeholder="YY">
+          </div>
+
+          <div class="medium__container">
             <p class="form__text">CVC</p>
-            <input class="medium" type="text" name="CVC" id="CVC" placeholder="e.g. 123"></input>
+            <input class="medium__input" type="text" name="CVC" id="CVC" placeholder="e.g. 123"></input>
           </div>
 
         </div>
@@ -67,7 +72,7 @@
         <img class="icon__complete" src="./images/icon-complete.svg" alt="check mark">
         <p class="thankYou">Thank you!</p>
         <p class="detailsAdded">We've added your card details</p>
-        <button class="continue">Continue</button>
+        <button >Continue</button>
       </div>
 
     </footer>
