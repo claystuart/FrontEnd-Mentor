@@ -18,61 +18,63 @@
       <img class="background" src="./images/bg-main-mobile.png" alt="purple background">
 
       <div class="card__back">
-        <h2 class="card__cvc">000</h2>
+        <h2 id='cardBack' class="card__cvc">000</h2>
       </div>
 
       <div class="card__front">
         <img class="card__logo" src="./images/card-logo.svg" alt="logo two circles">
-        <h1 class="card__number">0000 0000 0000 0000</h1>
-        <h2 class="card__name">Jane Appleseed</h2>
-        <h2 class="card__date">00/00</h2>
+        <h1 id="cardNumber" class="card__number">0000 0000 0000 0000</h1>
+        <h2 id="cardName" class="card__name">Jane Appleseed</h2>
+        <h2 id="cardExp" class="card__date">00/00</h2>
       </div>
     </header>
 
 
     <footer>
 
-      <div class="dataEntry__inProgress">
+      <div id="entryField" class="dataEntry__inProgress">
         <div class="name__container">
           <p class="form__text">Cardholder Name</p>
-          <input class="large__input" type="text" placeholder="e.g. Jane Appleseed">
+          <input id="inpCard__Name" class="large__input" type="text" placeholder="e.g. Jane Appleseed">
         </div>
 
         <div class="cardNumber__container">
           <p class="form__text">Card Number</p>
-          <input class="large__input" type="text" placeholder="e.g. 1234 5678 9123 0000">
+          <input id="inpCard" class="large__input" type="text" placeholder="e.g. 1234 5678 9123 0000">
+          <p id="inpCard__Msg" class="errorMsg hidden">Wrong format, numbers only</p>
         </div>
-        <p class="number__errorMsg">Wrong format, numbers only</p>
-
 
         <div class="expiration__container">
 
           <div class="small__container">
             <p class="form__text">Exp. Date</p>
-            <input class="small__input" type="text" name="MM" id="MM" placeholder="MM">
+            <input id="inpExpMonth" class="small__input" type="text" name="MM" id="MM" placeholder="MM">
+            <p id="inpExpMonth__Msg" class="errorMsg hidden">Can't be blank</p>
           </div>
 
           <div class="small__container">
             <p class="form__text">(MM/YY)</p>
-            <input class="small__input" type="text" name="YY" id="YY" placeholder="YY">
+            <input id="inpExpYear" class="small__input " type="text" name="YY" id="YY" placeholder="YY">
+            <p id="inpExpYear__Msg" class="errorMsg hidden">Can't be blank</p>
           </div>
 
           <div class="medium__container">
             <p class="form__text">CVC</p>
-            <input class="medium__input" type="text" name="CVC" id="CVC" placeholder="e.g. 123"></input>
+            <input id="inpCVC" class="medium__input" type="text" name="CVC" placeholder="e.g. 123"></input>
+            <p id="inpCVC__Msg" class="errorMsg hidden">Can't be blank</p>
           </div>
 
         </div>
-        <button>Confirm</button>
+        <button id="btnConfirm">Confirm</button>
       </div>
 
 
       <!-- Completed state start -->
-      <div class="dataEntry__complete">
+      <div id="completedField" class="dataEntry__complete hidden">
         <img class="icon__complete" src="./images/icon-complete.svg" alt="check mark">
         <p class="thankYou">Thank you!</p>
         <p class="detailsAdded">We've added your card details</p>
-        <button >Continue</button>
+        <button id="btnContinue">Continue</button>
       </div>
 
     </footer>
@@ -80,5 +82,97 @@
   </main>
 
 </body>
+<script>
+  "use strict";
+
+  btnConfirm.addEventListener("click", () => {
+    let numberFilled, monthFilled, yearFilled, cvcFilled;
+
+    inpCard.value = inpCard.value.replace(/ /g, '');
+
+    // Check that card number is correct
+    if (inpCard.value == "" || isNaN(inpCard.value) || inpCard.value.length != 16) {
+      inpCard.classList.add('borderRed');
+      inpCard__Msg.classList.remove('hidden');
+      numberFilled = false;
+    } else {
+      inpCard.classList.remove('borderRed');
+      inpCard__Msg.classList.add('hidden');
+      numberFilled = true;
+    }
+
+    // Check that month input box is filled
+    monthFilled = verifierFunc(inpExpMonth, inpExpMonth__Msg);
+
+    // Check that year input box is filled
+    yearFilled = verifierFunc(inpExpYear, inpExpYear__Msg);
+
+    // Check that CVC input box is filled
+    cvcFilled = verifierFunc(inpCVC, inpCVC__Msg);
+
+    // Check that all boolean flags are true
+    // If all true -> display completed field
+    // If not all true -> continue to display entryField with errors
+    if (numberFilled && monthFilled && yearFilled && cvcFilled) {
+      entryField.classList.add('hidden');
+      completedField.classList.remove('hidden');
+
+      // Print name on card
+      document.getElementById('cardName').innerHTML = inpCard__Name.value;
+
+      let outCardString = '';
+      let s = inpCard.value.match(/.{1,4}/g).forEach(element => {
+        outCardString += element + ' ';
+      });
+      document.getElementById('cardNumber').innerHTML = outCardString;
+      document.getElementById('cardExp').innerHTML = inpExpMonth.value + '/' + inpExpYear.value;
+      document.getElementById('cardBack').innerHTML = inpCVC.value;
+    }
+    else {
+      completedField.classList.add('hidden');
+    }
+  });
+
+  /**
+   * Helper function for verifying whether or not the card dates were filled in correctly
+   */
+  function verifierFunc(id, id__Msg) {
+    let filledBool = false;
+
+    if (id.value == "") {
+      id.classList.add('borderRed');
+      id__Msg.classList.remove('hidden');
+      filledBool = false;
+    } else {
+      id.classList.remove('borderRed');
+      id__Msg.classList.add('hidden');
+      filledBool = true;
+    }
+
+    return filledBool;
+  }
+
+  /**
+   * Return to entry field and clear all input boxes
+   */
+  btnContinue.addEventListener('click', () => {
+    //Reset Credit Card
+    document.getElementById('cardName').innerHTML = "JANE APPLESEED";
+    document.getElementById('cardNumber').innerHTML = '0000 0000 0000 0000';
+      document.getElementById('cardExp').innerHTML = "00/00";
+      document.getElementById('cardBack').innerHTML = "000";
+
+    //Reset Input Fields
+    inpCard__Name.value = "";
+    inpCard.value = "";
+    inpExpMonth.value = '';
+    inpExpYear.value = '';
+    inpCVC.value = '';
+
+    //Hide completedField and Display entryField
+    entryField.classList.remove('hidden');
+    completedField.classList.add('hidden');
+  });
+</script>
 
 </html>

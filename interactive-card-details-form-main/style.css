@@ -17,7 +17,7 @@ header {
     position: relative;
 }
 
-img.background {
+.background {
     width: 375px;
     height: 240px;
     margin: 0;
@@ -109,7 +109,7 @@ footer {
 
 .name__container,
 .cardNumber__container,
-.misc__container{
+.misc__container {
     width: 327px;
     height: 89px;
 }
@@ -127,6 +127,7 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 0;
+    margin-top: 10px;
 }
 
 .small__container {
@@ -144,7 +145,8 @@ footer {
     height: 69px;
 }
 
-input, input:focus {
+input,
+input:focus {
     font-family: 'Space Grotesk', sans-serif;
     outline: none;
     border: 1px solid hsl(270, 3%, 87%);
@@ -172,12 +174,19 @@ input, input:focus {
     margin-right: 8px;
 }
 
-.number__errorMsg {
+.errorMsg {
+    display: absolute;
     display: block;
-    margin: 3px;
     color: #ff5252;
-    font-size: 10px;
-    /* display: none; */
+    font-size: 9px;
+    font-weight: 700;
+    margin: 6px auto 0 auto;
+}
+
+
+
+.borderRed {
+    border: 2px solid hsl(0, 100%, 66%);
 }
 
 
@@ -186,7 +195,6 @@ input, input:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
-    display: none;
 }
 
 .icon__complete {
@@ -210,7 +218,7 @@ input, input:focus {
 }
 
 button {
-    margin-top: 28px;
+    margin-top: 41px;
     width: 327px;
     height: 53px;
     color: white;
@@ -219,3 +227,99 @@ button {
     border-radius: 10px;
 }
 
+.hidden {
+    display: none;
+}
+
+@media screen and (min-width: 1400px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    main {
+        margin: 0;
+        width: 1440px;
+        height: 900px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    header {
+        width: 483px;
+        height: 900px;
+    }
+
+    img.background {
+        width: 483px;
+        height: 900px;
+    }
+
+    footer {
+        margin: 0;
+        width: 800px;
+        height: 900px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card__front {
+        position: absolute;
+        top: 166px;
+        left: 93px;
+        width: 447px;
+        height: 245px;
+        background-image: url("./images/bg-card-front.png");
+        border-radius: 10px;
+        font-size: 18px;
+    }
+
+    .card__back {
+        position: absolute;
+        top: 459px;
+        left: 173px;
+        width: 447px;
+        height: 245px;
+        background-image: url("./images/bg-card-back.png");
+        background-size: contain;
+        border-radius: 10px;
+    }
+
+    .card__cvc {
+        /* on card back */
+        position: absolute;
+        top: 95px;
+        left: 353px;
+        font-size: 18px;
+    }
+
+    .card__number {
+        top: 148px;
+        left: 38px;
+        z-index: 10;
+    }
+    
+    .card__name {
+        position: absolute;
+        top: 194px;
+        left: 38px;
+        z-index: 11;
+    }
+    
+    .card__date {
+        top: 194px;
+        left: 368px;
+        z-index: 12;
+    }
+    
+    .card__logo {
+        position: absolute;
+        top: 36px;
+        left: 38px;
+        width: 84px;
+        height: 47px;
+    }
+
+
+}
