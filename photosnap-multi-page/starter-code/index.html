@@ -6,101 +6,184 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <title>Frontend Mentor | Photosnap Website Challenge</title>
-  <style>
-    @import url("mobile.css") screen and (max-wdith: 600px);
-  </style>
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/mobile.css">
 </head>
 
 <body>
   <div class="topContainer">
 
-
-
     <header>
       <nav>
         <img src="" alt="">
-        <ul>
+        <menu>
           <li>Stories</li>
           <li>Features</li>
           <li>Pricing</li>
-        </ul>
+        </menu>
 
-        <a href="">Get an invite</a>
+        <a href="#">Get an invite</a>
       </nav>
     </header>
 
     <main>
 
-      <article class="create__stories">
-        <h1>Create and share your photo Stories</h1>
+      <section class="twoSquare ">
+        <img src="./assets/home/mobile/create-and-share.jpg" alt="Man looking at lake">
 
-        <p>Photosnap is a platform for photographers and visual storytellers. We make it
-          easy to share photos, tell stories and connect with others.</p>
-        <a href="">Get an invite</a>
-      </article>
+        <article class="article--black">
+          <h1 class="article__header">Create and share your photo Stories.</h1>
+          <p class="article__para">Photosnap is a platform for photographers and visual storytellers. We make it
+            easy to share photos, tell stories and connect with others.</p>
 
-      <article>
+          <div class="link__box">
+            <a class="article__link" href="#">Get an invite</a>
 
-      </article>
+            <svg class="svg__arrow" width="42" height="12" xmlns="http://www.w3.org/2000/svg" version="1.1">
+              <line x1="0" y1="50%" x2="100%" y2="50%" stroke="white" stroke-width="1" stroke-linejoin="miter" />
+              <line x1="80%" y1="0" x2="99%" y2="50%" stroke="white" stroke-width="1" stroke-linejoin="miter" />
+              <line x1="80%" y1="100%" x2="99%" y2="50%" stroke="white" stroke-width="1" stroke-linejoin="miter" />
+            </svg>
+          </div>
+
+        </article>
+      </section>
+
+
+      <section class="twoSquare ">
+        <img src="./assets/home/mobile/beautiful-stories.jpg" alt="Laptop on desk">
+
+        <article class="article--black">
+          <h1 class="article__header">Beautiful stories every time</h1>
+          <p class="article__para">We provide design templates to ensure your stories look terrific. Easily add
+            photos, text, embed maps and media from other networks. Then share your story
+            with everyone.</p>
+
+          <div class="link__box">
+            <a class="article__link" href="#">View the stories</a>
+
+            <svg class="svg__arrow" width="42" height="12" xmlns="http://www.w3.org/2000/svg" version="1.1">
+              <line x1="0" y1="50%" x2="100%" y2="50%" stroke="white" stroke-width="1" stroke-linejoin="miter" />
+              <line x1="80%" y1="0" x2="99%" y2="50%" stroke="white" stroke-width="1" stroke-linejoin="miter" />
+              <line x1="80%" y1="100%" x2="99%" y2="50%" stroke="white" stroke-width="1" stroke-linejoin="miter" />
+            </svg>
+          </div>
+
+        </article>
+      </section>
+
+
+      <section class="twoSquare ">
+        <img src="./assets/home/mobile/beautiful-stories.jpg" alt="Laptop on desk">
+
+        <article class="article--black">
+          <h1 class="article__header">Designed for everyone</h1>
+          <p class="article__para">Photosnap can help you create stories that resonate with your audience. Our
+            tool is designed for photographers of all levels, brands, businesses you name it.</p>
+
+          <div class="link__box">
+            <a class="article__link" href="#">View the stories</a>
+
+            <svg class="svg__arrow" width="42" height="12" xmlns="http://www.w3.org/2000/svg" version="1.1">
+              <line x1="0" y1="50%" x2="100%" y2="50%" stroke="white" stroke-width="1" stroke-linejoin="miter" />
+              <line x1="80%" y1="0" x2="99%" y2="50%" stroke="white" stroke-width="1" stroke-linejoin="miter" />
+              <line x1="80%" y1="100%" x2="99%" y2="50%" stroke="white" stroke-width="1" stroke-linejoin="miter" />
+            </svg>
+          </div>
+
+        </article>
+      </section>
+
+      <section class="stories">
+        <article class="story">
+          <img src="./assets/stories/mobile/mountains.jpg" alt="A soaring mountain in the clouds.">
+        </article>
+        <h2>The Mountains</h2>
+        <h3>by John Appleseed</h3>
+        <div class="link__box">
+          <a class="article__link" href="#">Read Story</a>
+
+          <svg class="svg__arrow" width="42" height="12" xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <line x1="0" y1="50%" x2="100%" y2="50%" stroke="white" stroke-width="1" stroke-linejoin="miter" />
+            <line x1="80%" y1="0" x2="99%" y2="50%" stroke="white" stroke-width="1" stroke-linejoin="miter" />
+            <line x1="80%" y1="100%" x2="99%" y2="50%" stroke="white" stroke-width="1" stroke-linejoin="miter" />
+          </svg>
+        </div>
+      </section>
+
+      <section class="stories">
+        <article class="story">
+          <img src="./assets/stories/mobile/cityscapes.jpg" alt="Skysrapers in a city at sunset.">
+        </article>
+        <h2>Sunset Cityscapes</h2>
+        <h3>by Benjamin Cruz</h3>
+        <div class="link__box">
+          <a class="article__link" href="#">Read Story</a>
+
+          <svg class="svg__arrow" width="42" height="12" xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <line x1="0" y1="50%" x2="100%" y2="50%" stroke="white" stroke-width="1" stroke-linejoin="miter" />
+            <line x1="80%" y1="0" x2="99%" y2="50%" stroke="white" stroke-width="1" stroke-linejoin="miter" />
+            <line x1="80%" y1="100%" x2="99%" y2="50%" stroke="white" stroke-width="1" stroke-linejoin="miter" />
+          </svg>
+        </div>
+      </section>
+
+
+      <section class="stories">
+        <article class="story">
+          <img src="./assets/stories/mobile/18-days-voyage.jpg" alt="Walking man silhouetted at sunset.">
+        </article>
+        <h2>18 Days Voyage</h2>
+        <h3>by Alexei Borodin</h3>
+        <div class="link__box">
+          <a class="article__link" href="#">Read Story</a>
+
+          <svg class="svg__arrow" width="42" height="12" xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <line x1="0" y1="50%" x2="100%" y2="50%" stroke="white" stroke-width="1" stroke-linejoin="miter" />
+            <line x1="80%" y1="0" x2="99%" y2="50%" stroke="white" stroke-width="1" stroke-linejoin="miter" />
+            <line x1="80%" y1="100%" x2="99%" y2="50%" stroke="white" stroke-width="1" stroke-linejoin="miter" />
+          </svg>
+        </div>
+      </section>
+
+
+      <section class="stories">
+        <article class="story">
+          <img src="./assets/stories/mobile/architecturals.jpg" alt="A geometric building.">
+        </article>
+        <h2>Architecturals</h2>
+        <h3>by Samantha Brooke</h3>
+        
+      </section>
+
+      <section class="technical__details">
+        <article>
+          <img src="./assets/features/desktop/responsive.svg" alt="Mobile devices plugged together">
+          <h2>100% Responsive</h2>
+          <p>No matter which the device you’re on, our site is fully responsive and stories
+            look beautiful on any screen.
+          </p>
+        </article>
+
+        <article>
+          <img src="./assets/features/desktop/no-limit.svg" alt="Infinity Symbol.">
+          <h2>No Photo Upload Limit</h2>
+          <p>Our tool has no limits on uploads or bandwidth. Freely upload in bulk and
+            share all of your stories in one go.</p>
+        </article>
+
+        <article>
+          <img src="./assets/features/desktop/embed.svg" alt="Megaphone broadcasting to social media.">
+          <h2>Available to Embed</h2>
+          <p>Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos,
+            Google Maps, and more.</p>
+        </article>
+
+      </section>
 
     </main>
-
-
-
-
-
-
-
-    Beautiful stories every time
-
-    We provide design templates to ensure your stories look terrific. Easily add
-    photos, text, embed maps and media from other networks. Then share your story
-    with everyone.
-
-    View the stories
-
-    Designed for everyone
-
-    Photosnap can help you create stories that resonate with your audience. Our
-    tool is designed for photographers of all levels, brands, businesses you name it.
-
-    View the stories
-
-    The Mountains
-    by John Appleseed
-    Read Story
-
-    Sunset Cityscapes
-    by Benjamin Cruz
-    Read Story
-
-    18 Days Voyage
-    by Alexei Borodin
-    Read Story
-
-    Architecturals
-    by Samantha Brooke
-    Read Story
-
-    <section>
-      100% Responsive
-
-      No matter which the device you’re on, our site is fully responsive and stories
-      look beautiful on any screen.
-
-      No Photo Upload Limit
-
-      Our tool has no limits on uploads or bandwidth. Freely upload in bulk and
-      share all of your stories in one go.
-
-      Available to Embed
-
-      Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos,
-      Google Maps, and more.
-    </section>
-
-
 
     <footer>
       Home
@@ -108,8 +191,17 @@
       Features
       Pricing
 
-      Get an invite
+      <div class="link__box">
+        <a class="article__link" href="#">Get an invite
+        </a>
 
+        <svg class="svg__arrow" width="42" height="12" xmlns="http://www.w3.org/2000/svg" version="1.1">
+          <line x1="0" y1="50%" x2="100%" y2="50%" stroke="white" stroke-width="1" stroke-linejoin="miter" />
+          <line x1="80%" y1="0" x2="99%" y2="50%" stroke="white" stroke-width="1" stroke-linejoin="miter" />
+          <line x1="80%" y1="100%" x2="99%" y2="50%" stroke="white" stroke-width="1" stroke-linejoin="miter" />
+        </svg>
+      </div>
+      
       Copyright 2019. All Rights Reserved
     </footer>
 
