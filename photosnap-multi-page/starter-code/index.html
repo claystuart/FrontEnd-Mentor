@@ -11,21 +11,27 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/mobile.css">
 </head>
-
 <body>
   <div class="topContainer">
 
     <header>
-      <nav>
-        <img src="" alt="">
-        <menu>
-          <li>Stories</li>
-          <li>Features</li>
-          <li>Pricing</li>
-        </menu>
+      <div class="hamburgerMenu">
+        <img src="./assets/shared/desktop/logo.svg" alt="Photosnap logo">
+        <img id="menuSwitch" src="./assets/shared/mobile/menu.svg" alt="Menu Open" class="closed">
+      </div>
+
+      <nav class="nav--hidden" id="menuContents">
+        <ul>
+          <li><a href="stories.html">Stories</a></li>
+          <li><a href="stories.html">Features</a></li>
+          <li><a href="stories.html">Pricing</a></li>
+        </ul>
+
+        <div class="line"></div>
 
         <a href="#">Get an invite</a>
       </nav>
+
     </header>
 
     <main>
@@ -41,7 +47,8 @@
           <div class="link__box">
             <a class="article__link" href="#">Get an invite</a>
 
-            <svg class="svg__arrow" width="42" height="12" xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <svg class="svg__arrow svg__arrow--white" width="42" height="12" xmlns="http://www.w3.org/2000/svg"
+              version="1.1">
               <line x1="0" y1="50%" x2="100%" y2="50%" stroke="white" stroke-width="1" stroke-linejoin="miter" />
               <line x1="80%" y1="0" x2="99%" y2="50%" stroke="white" stroke-width="1" stroke-linejoin="miter" />
               <line x1="80%" y1="100%" x2="99%" y2="50%" stroke="white" stroke-width="1" stroke-linejoin="miter" />
@@ -55,7 +62,7 @@
       <section class="twoSquare ">
         <img src="./assets/home/mobile/beautiful-stories.jpg" alt="Laptop on desk">
 
-        <article class="article--black">
+        <article class="article--white">
           <h1 class="article__header">Beautiful stories every time</h1>
           <p class="article__para">We provide design templates to ensure your stories look terrific. Easily add
             photos, text, embed maps and media from other networks. Then share your story
@@ -64,10 +71,11 @@
           <div class="link__box">
             <a class="article__link" href="#">View the stories</a>
 
-            <svg class="svg__arrow" width="42" height="12" xmlns="http://www.w3.org/2000/svg" version="1.1">
-              <line x1="0" y1="50%" x2="100%" y2="50%" stroke="white" stroke-width="1" stroke-linejoin="miter" />
-              <line x1="80%" y1="0" x2="99%" y2="50%" stroke="white" stroke-width="1" stroke-linejoin="miter" />
-              <line x1="80%" y1="100%" x2="99%" y2="50%" stroke="white" stroke-width="1" stroke-linejoin="miter" />
+            <svg class="svg__arrow svg__arrow--black" width="42" height="12" xmlns="http://www.w3.org/2000/svg"
+              version="1.1">
+              <line x1="0" y1="50%" x2="100%" y2="50%" stroke-width="1" stroke-linejoin="miter" />
+              <line x1="80%" y1="0" x2="99%" y2="50%" stroke-width="1" stroke-linejoin="miter" />
+              <line x1="80%" y1="100%" x2="99%" y2="50%" stroke-width="1" stroke-linejoin="miter" />
             </svg>
           </div>
 
@@ -76,9 +84,9 @@
 
 
       <section class="twoSquare ">
-        <img src="./assets/home/mobile/beautiful-stories.jpg" alt="Laptop on desk">
+        <img src="./assets/home/mobile/designed-for-everyone.jpg" alt="Laptop on desk">
 
-        <article class="article--black">
+        <article class="article--white">
           <h1 class="article__header">Designed for everyone</h1>
           <p class="article__para">Photosnap can help you create stories that resonate with your audience. Our
             tool is designed for photographers of all levels, brands, businesses you name it.</p>
@@ -86,10 +94,11 @@
           <div class="link__box">
             <a class="article__link" href="#">View the stories</a>
 
-            <svg class="svg__arrow" width="42" height="12" xmlns="http://www.w3.org/2000/svg" version="1.1">
-              <line x1="0" y1="50%" x2="100%" y2="50%" stroke="white" stroke-width="1" stroke-linejoin="miter" />
-              <line x1="80%" y1="0" x2="99%" y2="50%" stroke="white" stroke-width="1" stroke-linejoin="miter" />
-              <line x1="80%" y1="100%" x2="99%" y2="50%" stroke="white" stroke-width="1" stroke-linejoin="miter" />
+            <svg class="svg__arrow svg__arrow--black" width="42" height="12" xmlns="http://www.w3.org/2000/svg"
+              version="1.1">
+              <line x1="0" y1="50%" x2="100%" y2="50%" stroke-width="1" stroke-linejoin="miter" />
+              <line x1="80%" y1="0" x2="99%" y2="50%" stroke-width="1" stroke-linejoin="miter" />
+              <line x1="80%" y1="100%" x2="99%" y2="50%" stroke-width="1" stroke-linejoin="miter" />
             </svg>
           </div>
 
@@ -110,6 +119,7 @@
             <line x1="80%" y1="0" x2="99%" y2="50%" stroke="white" stroke-width="1" stroke-linejoin="miter" />
             <line x1="80%" y1="100%" x2="99%" y2="50%" stroke="white" stroke-width="1" stroke-linejoin="miter" />
           </svg>
+
         </div>
       </section>
 
@@ -155,7 +165,7 @@
         </article>
         <h2>Architecturals</h2>
         <h3>by Samantha Brooke</h3>
-        
+
       </section>
 
       <section class="technical__details">
@@ -201,12 +211,31 @@
           <line x1="80%" y1="100%" x2="99%" y2="50%" stroke="white" stroke-width="1" stroke-linejoin="miter" />
         </svg>
       </div>
-      
+
       Copyright 2019. All Rights Reserved
     </footer>
 
 
   </div>
 </body>
+<script>
+  // CSS Burger Menu animation
+  let menuClosed = true;
+  document.querySelector('#menuSwitch').addEventListener('click', (e) => {
+    if (menuClosed == true) {
+      //Switch to menu open
+      menuClosed = false;
+      e.currentTarget.src = "./assets/shared/mobile/close.svg";
+      document.getElementById('menuContents').classList.toggle('nav--hidden')
+    }
+    else {
+      //Switch to menu closed
+      menuClosed = true;
+      e.currentTarget.src = "./assets/shared/mobile/menu.svg";
+      document.getElementById('menuContents').classList.toggle('nav--hidden')
+    }
+  });
+
+</script>
 
 </html>
