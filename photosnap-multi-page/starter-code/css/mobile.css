@@ -106,6 +106,9 @@ nav>a:visited {
 .twoSquare {
     display: flex;
     flex-direction: column;
+
+    /* removes strange gap */
+    line-height: 0;
 }
 
 article {
@@ -194,15 +197,19 @@ article {
 /* STORIES */
 .stories {
     display: grid;
-    grid-template-rows: repeat(4, 375px);
+    /* grid-template-rows: repeat(4, 375px); */
+    grid-template-rows: repeat(4, 1fr);
+
+    /* removes odd gap between pictures */
+    line-height: 0;
 }
 
 figure {
     position: relative;
 }
 
-figure>img {
-    filter: brightness(65%);
+figure img {
+    filter: brightness(60%);
 }
 
 figcaption {
@@ -330,6 +337,7 @@ footer>nav ul {
 footer>nav ul li {
     margin-bottom: 19px;
 }
+
 footer>nav ul li:last-child {
     margin-bottom: 0px;
 }
@@ -351,4 +359,3 @@ footer a:visited {
     font-weight: normal;
     opacity: .5;
 }
-

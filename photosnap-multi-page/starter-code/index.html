@@ -36,7 +36,11 @@
     <main>
 
       <section class="twoSquare ">
-        <img src="./assets/home/mobile/create-and-share.jpg" alt="Man looking at lake">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./assets/home/desktop/create-and-share.jpg" />
+          <source media="(min-width: 768px)" srcset="./assets/home/tablet/create-and-share.jpg" />
+          <img src="./assets/home/mobile/create-and-share.jpg" alt="Man looking at lake">
+        </picture>
 
         <article class="article--black">
           <h1 class="article__header">Create and share your photo Stories.</h1>
@@ -58,7 +62,11 @@
       </section>
 
       <section class="twoSquare ">
-        <img src="./assets/home/mobile/beautiful-stories.jpg" alt="Laptop on desk">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./assets/home/desktop/beautiful-stories.jpg" />
+          <source media="(min-width: 768px)" srcset="./assets/home/tablet/beautiful-stories.jpg" />
+          <img src="./assets/home/mobile/beautiful-stories.jpg" alt="Laptop on desk">
+        </picture>
 
         <article class="article--white">
           <h1 class="article__header">Beautiful stories every time</h1>
@@ -81,7 +89,12 @@
       </section>
 
       <section class="twoSquare ">
-        <img src="./assets/home/mobile/designed-for-everyone.jpg" alt="Laptop on desk">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./assets/home/desktop/designed-for-everyone.jpg" />
+          <source media="(min-width: 768px)" srcset="./assets/home/tablet/designed-for-everyone.jpg" />
+          <img src="./assets/home/mobile/designed-for-everyone.jpg" alt="Laptop on desk">
+        </picture>
+
 
         <article class="article--white">
           <h1 class="article__header">Designed for everyone</h1>
@@ -106,7 +119,10 @@
       <div class="stories">
         <figure>
           <figcaption class="caption--date"></figcaption>
-          <img src="./assets/stories/mobile/mountains.jpg" alt="A soaring mountain in the clouds.">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/stories/desktop/mountains.jpg" />
+            <img src="./assets/stories/mobile/mountains.jpg" alt="A soaring mountain in the clouds.">
+          </picture>
           <figcaption class="caption--title">The Mountains</figcaption>
           <figcaption class="caption--subtitle">by John Appleseed</figcaption>
           <figcaption class="caption__dividingLine"></figcaption>
@@ -120,7 +136,10 @@
 
         <figure>
           <figcaption class="caption--date"></figcaption>
-          <img src="./assets/stories/mobile/cityscapes.jpg" alt="Skysrapers in a city at sunset.">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/stories/desktop/cityscapes.jpg" />
+            <img src="./assets/stories/mobile/cityscapes.jpg" alt="Skysrapers in a city at sunset.">
+          </picture>
           <figcaption class="caption--title">Sunset Cityscapes</figcaption>
           <figcaption class="caption--subtitle">by Benjamin Cruz</figcaption>
           <figcaption class="caption__dividingLine"></figcaption>
@@ -134,8 +153,10 @@
 
         <figure>
           <figcaption class="caption--date"></figcaption>
-          <img src="./assets/stories/mobile/18-days-voyage.jpg" alt="Walking man silhouetted at sunset."
-            class="walkingMan">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/stories/desktop/18-days-voyage.jpg" />
+            <img src="./assets/stories/mobile/18-days-voyage.jpg" alt="Walking man silhouetted at sunset.">
+          </picture>
           <figcaption class="caption--title">18 Days Voyage</figcaption>
           <figcaption class="caption--subtitle">by Alexei Borodin</figcaption>
           <figcaption class="caption__dividingLine"></figcaption>
@@ -149,7 +170,10 @@
 
         <figure>
           <figcaption class="caption--date"></figcaption>
-          <img src="./assets/stories/mobile/architecturals.jpg" alt="A geometric building.">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/stories/desktop/architecturals.jpg" />
+            <img src="./assets/stories/mobile/architecturals.jpg" alt="A geometric building.">
+          </picture>
           <figcaption class="caption--title">Architecturals</figcaption>
           <figcaption class="caption--subtitle">by Samantha Brooke</figcaption>
           <figcaption class="caption__dividingLine"></figcaption>
@@ -217,7 +241,7 @@
       <div class="footer__invite">
         <a class="article__link" href="#">Get an invite</a>
 
-        <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14" >
+        <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14">
           <g fill="none" fill-rule="evenodd" stroke="white">
             <path d="M0 7h41.864M35.428 1l6 6-6 6" />
           </g>
