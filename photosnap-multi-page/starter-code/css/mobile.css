@@ -255,8 +255,9 @@ figcaption {
 
 /* TECHNICAL DETAILS SECTION */
 .technical__section {
-    margin-top: 50px;
-    height: 802px;
+    background-color: white;
+    outline: 1px solid red;
+    padding: 80px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -289,3 +290,8 @@ figcaption {
 }
 
 /* FOOTER */
+footer {
+    height: 539px;
+    background-color: black;
+    color: white;
+}
