@@ -1,14 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
   <title>Frontend Mentor | Photosnap Website Challenge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/mobile.css">
 </head>
+
 <body>
+  <div class="topContainer">
+
+    <header>
+      <div class="hamburgerMenu">
+        <a href="index.html"><img src="./assets/shared/desktop/logo.svg" alt="Photosnap logo"></a>
+        <img id="menuSwitch" src="./assets/shared/mobile/menu.svg" alt="Menu Open" class="closed">
+      </div>
+
+      <nav class="nav--hidden" id="menuContents">
+        <ul>
+          <li><a href="stories.html">Stories</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+        </ul>
+
+        <div class="line"></div>
+        <a href="#">Get an invite</a>
+      </nav>
+    </header>
+
+    <main>
 
   Stories
   Features
@@ -72,5 +97,49 @@
 
   Copyright 2019. All Rights Reserved
 
+  <footer>
+    <div class="visuals">
+      <a href="index.html"><img src="./assets/shared/desktop/logo_White.svg" alt="Photosnap logo"></a>
+
+      <ul>
+        <li><a href="#"><img src="./assets/shared/desktop/facebook.svg" alt="facebook"></a></li>
+        <li><a href="#"><img src="./assets/shared/desktop/youtube.svg" alt="youtube"></a></li>
+        <li><a href="#"><img src="./assets/shared/desktop/twitter.svg" alt="twitter"></a></li>
+        <li><a href="#"><img src="./assets/shared/desktop/pinterest.svg" alt="pinterest"></a></li>
+        <li><a href="#"><img src="./assets/shared/desktop/instagram.svg" alt="instagram"></a></li>
+      </ul>
+
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="stories.html">Stories</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+      </ul>
+
+    </nav>
+
+
+    <div class="footer__invite">
+      <a class="article__link" href="#">Get an invite</a>
+
+      <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14" >
+        <g fill="none" fill-rule="evenodd" stroke="white">
+          <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+        </g>
+      </svg>
+
+    </div>
+
+
+    <h2 class="footer__copyright">Copyright 2019. All Rights Reserved</h2>
+  </footer>
+
+
+</div>
 </body>
+<script type="text/javascript" src="script.js"></script>
+
 </html>
