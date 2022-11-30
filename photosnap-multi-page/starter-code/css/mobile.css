@@ -38,7 +38,7 @@ header {
 }
 
 
-nav {
+header > nav {
     width: 375px;
     height: 253px;
     background-color: white;
@@ -293,5 +293,9 @@ figcaption {
 footer {
     height: 539px;
     background-color: black;
+    color: white;
+}
+
+footer > nav {
     color: white;
 }
