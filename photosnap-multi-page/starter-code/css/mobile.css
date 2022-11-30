@@ -32,6 +32,12 @@ header {
     justify-content: space-between;
 }
 
+#menuSwitch {
+    cursor: pointer;
+    padding: 7px 15px;
+}
+
+
 nav {
     width: 375px;
     height: 253px;
@@ -58,8 +64,7 @@ nav>ul>li {
     margin-bottom: 15px;
 }
 
-nav>ul>li>a:link
- {
+nav>ul>li>a:link {
     color: black;
     font-weight: 700;
     font-size: 15px;
