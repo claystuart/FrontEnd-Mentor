@@ -38,7 +38,7 @@ header {
 }
 
 
-header > nav {
+header>nav {
     width: 375px;
     height: 253px;
     background-color: white;
@@ -54,17 +54,17 @@ header > nav {
     display: block;
 }
 
-nav>ul {
+header nav>ul {
     margin-top: 32px;
     list-style-type: none;
     text-align: center;
 }
 
-nav>ul>li {
+header nav>ul>li {
     margin-bottom: 15px;
 }
 
-nav>ul>li>a:link {
+header nav>ul>li>a:link {
     color: black;
     font-weight: 700;
     font-size: 15px;
@@ -73,7 +73,7 @@ nav>ul>li>a:link {
     text-decoration: none;
 }
 
-nav>ul>li>a:visited {
+header nav>ul>li>a:visited {
     color: black;
 }
 
@@ -256,7 +256,6 @@ figcaption {
 /* TECHNICAL DETAILS SECTION */
 .technical__section {
     background-color: white;
-    outline: 1px solid red;
     padding: 80px 0;
     display: flex;
     flex-direction: column;
@@ -291,11 +290,65 @@ figcaption {
 
 /* FOOTER */
 footer {
-    height: 539px;
     background-color: black;
     color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
-footer > nav {
-    color: white;
+footer .visuals {
+    margin-top: 56px;
 }
+
+footer .visuals ul {
+    list-style-type: none;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 13px;
+}
+
+footer .visuals li img {
+    filter: invert(100%) grayscale(100%) brightness(500%);
+}
+
+footer .visuals li img:hover {
+    filter: none;
+}
+
+footer>nav {
+    margin-top: 49px;
+    display: block;
+}
+
+footer>nav ul {
+    list-style-type: none;
+}
+
+footer>nav ul li {
+    margin-bottom: 19px;
+}
+footer>nav ul li:last-child {
+    margin-bottom: 0px;
+}
+
+footer a:link,
+footer a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.footer__invite {
+    margin-top: 119px;
+    font-size: 12px;
+}
+
+.footer__copyright {
+    margin: 34px auto 56px auto;
+    font-size: 15px;
+    font-weight: normal;
+    opacity: .5;
+}
+
