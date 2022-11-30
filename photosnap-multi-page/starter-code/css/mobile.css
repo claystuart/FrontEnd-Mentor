@@ -60,6 +60,7 @@ nav>ul>li {
 
 nav>ul>li>a:link
  {
+    color: black;
     font-weight: 700;
     font-size: 15px;
     text-transform: uppercase;
