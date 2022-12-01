@@ -319,9 +319,17 @@ figcaption {
     opacity: .6;
 }
 
-/* FEATURES BETA */
+/* BETA */
 .beta {
+    width: 375px;
+    height: 288px;
     line-height: 0;
+    position: relative;
+}
+
+.beta h1 {
+    position: absolute;
+    color: white;
 }
 
 .beta figure {
@@ -333,22 +341,28 @@ figcaption {
 }
 
 .beta__title {
-    display: block;
-    position: absolute;
-    width: 310px;
+    line-height: 40px;
+    letter-spacing: 3.33px;
+    width: 316px;
     height: 120px;
     font-size: 32px;
     letter-spacing: 3.33px;
     text-transform: uppercase;
     font-weight: bold;
-    top: 87px;
-    color: white;
+    top: 60px;
     left: 33px;
-    overflow: visible;
-    
 }
 
+.beta .caption__link {
+    position: absolute;
+    left: 33px;
+    top: 70%;
+}
 
+.beta .caption__arrow {
+    top: 70%;
+    left: 42%;
+}
 
 /* FOOTER */
 footer {
@@ -380,22 +394,27 @@ footer .visuals li img:hover {
     filter: none;
 }
 
-footer>nav {
+footer nav {
     margin-top: 49px;
     display: block;
 }
 
-footer>nav ul {
+footer nav ul {
     list-style-type: none;
 }
 
-footer>nav ul li {
+footer nav li {
     margin-bottom: 19px;
 }
 
-footer>nav ul li:last-child {
+footer nav li:last-child {
     margin-bottom: 0px;
 }
+
+footer nav a:hover {
+    opacity: .4;
+}
+
 
 footer a:link,
 footer a:visited {
@@ -407,19 +426,13 @@ footer a:visited {
     letter-spacing: 2px;
 }
 
+footer .footer__invite a:hover {
+    text-decoration: underline;
+}
+
 .footer__invite {
     margin-top: 119px;
     font-size: 12px;
-}
-
-.footer__link {
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    margin-right: 15px;
 }
 
 .footer__copyright {
@@ -428,3 +441,4 @@ footer a:visited {
     font-weight: normal;
     opacity: .5;
 }
+
