@@ -364,6 +364,49 @@ figcaption {
     left: 42%;
 }
 
+/* FEATURES LAYOUTS */
+.desktop__features__container {
+    display: none;
+}
+
+.mobile__features__container {
+    width: 318px;
+    margin: 64px auto;
+    --offset: 16px;
+}
+
+.mobile__features__container .feature hr {
+    margin-top: var(--offset);
+    opacity: .3;
+}
+
+.mobile__features__container .features__heading {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: var(--offset) auto;
+}
+
+.mobile__features__container table {
+    table-layout: fixed;
+}
+
+.mobile__features__container table tr:first-child {
+font-size: 10px;
+opacity: .5;
+font-weight: bold;
+letter-spacing: 1.67px;
+text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
 /* FOOTER */
 footer {
     background-color: black;
@@ -441,4 +484,3 @@ footer .footer__invite a:hover {
     font-weight: normal;
     opacity: .5;
 }
-
