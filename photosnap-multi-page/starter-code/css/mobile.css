@@ -113,8 +113,8 @@ nav>a:visited {
 
 article {
     width: 375px;
-    height: 419px;
     display: inline-block;
+    padding-bottom: 48px;
 }
 
 .article--black {
@@ -127,6 +127,14 @@ article {
     color: black;
 }
 
+.article__preHeader {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 48px 28.5px 0 28.5px;
+}
+
 .article__header {
     text-transform: uppercase;
     letter-spacing: 3.33px;
@@ -134,6 +142,22 @@ article {
     font-size: 32px;
     font-weight: 700;
     margin: 72px 28.5px 0 28.5px;
+}
+
+.article__subtitle {
+    font-size: 13px;
+    font-weight: normal;
+    margin: 16px 28.5px 8px 28.5px;
+}
+
+.article__date {
+    opacity: .75;
+    margin-right: 4px;
+}
+
+.article--subtitleOffset {
+    margin-top: 16px;
+    margin-bottom: 0;
 }
 
 .article__para {
