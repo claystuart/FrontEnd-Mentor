@@ -378,11 +378,29 @@ figcaption {
 
 
 /* FEATURES TABLE */
-.desktop__features__container {
+.features__table--desktop {
     display: none;
 }
 
-tbody td[colspan] {
+.features__table--mobile {
+    table-layout: fixed; 
+    width: 318px;
+    margin: 64px auto;
+}
+
+/* table caption: "The Features" */
+thead td {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 1;
+    border-bottom: 1px solid black;
+    padding-bottom: 23px;
+}
+
+/* heading for each feature */
+tbody tr:nth-child(3n+1) td {
     font-size: 12px;
     font-weight: bold;
     letter-spacing: 2px;
@@ -390,32 +408,8 @@ tbody td[colspan] {
     padding: 23px 0 16px 0;
 }
 
-.mobile__features__container {
-    width: 318px;
-    margin: 64px auto;
-    --offset: 16px;
-}
-
-.mobile__features__container table {
-    width: 100%;
-    table-layout: fixed;
-
-    /* enables borders on tr - among other things */
-    border-collapse: collapse;
-}
-
-thead td {
-    font-size: 12px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin: var(--offset) auto;
-    opacity: 1;
-    border-bottom: 1px solid black;
-    padding-bottom: 23px;
-}
-
-.table__tiers {
+/* style tiers: Basic. Pro, Business  */
+tbody tr:nth-child(3n+2) td {
     font-size: 10px;
     opacity: .5;
     font-weight: bold;
@@ -424,21 +418,11 @@ thead td {
     padding-bottom: 8px;
 }
 
-.table__tiers td {
-    padding-bottom: 8px;
-}
-
-tbody tr:nth-child(3n) td{
+/* underline checkmark row */
+tbody tr:nth-child(3n) td {
     padding-bottom: 16px;
     border-bottom: 1px solid rgb(223, 223, 223);
 }
-
-
-
-
-
-
-
 
 
 
