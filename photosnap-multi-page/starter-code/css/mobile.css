@@ -24,6 +24,7 @@ Table of Contents
  * STORIES
  * TECHNICAL DETAILS SECTION
  * BETA
+ * TOGGLE SWITCH
  * PRICING PLANS
 /* FEATURES TABLE
  * FOOTER 
@@ -378,18 +379,87 @@ figcaption {
     left: 42%;
 }
 
-/* PRICING PLANS */
-.toggle__switch {
-    margin-top: 64px;
-    outline: 1px solid blue;
+/* TOGGLE SLIDER SWITCH */
+.toggle__switch__container {
+    margin: 64px 60px 0 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.toggle {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 25px;
+    opacity: .5;
+    cursor: pointer;
+}
+
+.toggle--selected {
+    opacity: 1;
+}
+
+/* Hide control */
+.toggle__switch__container input {
+    display: none;
+}
+
+.switch {
+    margin: 0 32px;
+    width: 64px;
+    height: 32px;
+    position: relative;
+}
+
+/* Initialize track - default grey*/
+.track {
+    position: absolute;
+    cursor: pointer;
+    inset: 0;
+    background-color: #DFDFDF;
+    transition: background-color .5s ease-in;
+    border-radius: 34px;
+}
+
+/* track turns black when checked*/
+input:checked+.track {
+    background-color: black;
+}
+
+/* Initialize ball - default black*/
+.track:before {
+    content: "";
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    left: 8px;
+    bottom: 4px;
+    background-color: black;
+    transition: all .4s ease-in;
+    border-radius: 50%;
+}
+
+/* ball turns white when checked */
+input:checked+.track:before {
+    background-color: white;
+}
+
+input:focus+.track {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.track:before {
+    transform: translateX(24px);
+}
+
+
+
+/* PRICING PLANS */
 .price__plans {
     margin-top: 40px;
     display: grid;
     gap: 24px;
     justify-content: center;
-
 }
 
 .price__card {

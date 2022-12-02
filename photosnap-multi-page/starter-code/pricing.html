@@ -51,16 +51,24 @@
         </article>
       </section>
 
-      <div class="toggle__switch">
-        <!-- toggle switch -->
-        <label for="term__toggleSwitch">Monthly</label>
+      <!-- TOGGLE SLIDER SWITCH -->
+      <div class="toggle__switch__container">
+        <label id="month__Toggle" class="toggle toggle--selected" for="term__toggleSwitch">Monthly</label>
         <label class="switch">
-          <input type="checkbox" id="term__toggleSwitch">
-          <span class="slider round"></span>
+          <input type="checkbox" id="term__toggleSwitch" onchange="( ()=> {
+              month__Toggle.classList.toggle('toggle--selected');
+              year__Toggle.classList.toggle('toggle--selected');
+            for(let i of document.querySelectorAll('.price__section'))
+              i.classList.toggle('price__section--hidden');
+            
+
+          } )()">
+          <span class="track"></span>
         </label>
-        <label for="term__toggleSwitch">Yearly</label>
+        <label id="year__Toggle" class="toggle" for="term__toggleSwitch">Yearly</label>
       </div>
 
+      <!-- PRICE PLANS -->
       <div class="price__plans">
 
         <div class="price__card">
@@ -97,19 +105,17 @@
           <h1>Business</h1>
           <p>Additional features available such as more detailed metrics. Recommended for business owners.</p>
 
-            <div class="price__section">
-              <h2>$99.00</h2>
-              <h3>per month</h3>
-            </div>
-            <div class="price__section price__section--hidden">
-              <h2>$990.00</h2>
-              <h3>per year</h3>
-            </div>
-            <button>Pick Plan</button>
+          <div class="price__section">
+            <h2>$99.00</h2>
+            <h3>per month</h3>
+          </div>
+          <div class="price__section price__section--hidden">
+            <h2>$990.00</h2>
+            <h3>per year</h3>
+          </div>
+          <button>Pick Plan</button>
         </div>
       </div>
-
-
 
       <!-- FEATURES TABLE - two separate layouts (mobile & tablet/desktop) -->
 
