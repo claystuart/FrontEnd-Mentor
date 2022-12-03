@@ -198,6 +198,7 @@ article {
     align-items: center;
     width: 60%;
     flex: 0 0 auto;
+    position: relative;
 }
 
 .article--black :is(a:link, a:visited) {
@@ -650,6 +651,12 @@ footer .footer__invite a:hover {
 .footer__invite {
     margin-top: 92px;
     font-size: 12px;
+    position: relative;
+}
+
+footer .footer__invite svg {
+    position: absolute;
+    top: 2px;
 }
 
 .footer__copyright {
