@@ -52,14 +52,7 @@
       <div class="toggle__switch__container">
         <label id="month__Toggle" class="toggle toggle--selected" for="term__toggleSwitch">Monthly</label>
         <label class="switch">
-          <input type="checkbox" id="term__toggleSwitch" onchange="( ()=> {
-              month__Toggle.classList.toggle('toggle--selected');
-              year__Toggle.classList.toggle('toggle--selected');
-            for(let i of document.querySelectorAll('.price__section'))
-              i.classList.toggle('price__section--hidden');
-            
-
-          } )()">
+          <input type="checkbox" id="term__toggleSwitch">
           <span class="track"></span>
         </label>
         <label id="year__Toggle" class="toggle" for="term__toggleSwitch">Yearly</label>
