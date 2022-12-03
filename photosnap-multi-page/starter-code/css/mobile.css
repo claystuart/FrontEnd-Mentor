@@ -47,16 +47,16 @@ header .menu__row {
     justify-content: space-between;
 }
 
+.large__menu {
+    display: none;
+}
+
 header #hamburgerIcon {
     cursor: pointer;
     padding: 7px 15px;
 }
 
-header .menu--closed {
-    display: none;
-}
-
-header nav {
+header .mobile__menu {
     width: 375px;
     height: 253px;
     background-color: white;
@@ -68,7 +68,11 @@ header nav {
     padding-top: 32px;
 }
 
-nav a:link {
+header .menu--closed {
+    display: none;
+}
+
+nav a.link {
     color: black;
     font-weight: 700;
     font-size: 15px;
@@ -92,7 +96,8 @@ nav hr {
     border-top: 0;
 }
 
-nav a.invite:link
+/* nav a.invite:link, */
+header .header__invite
  {
     width: 310px;
     height: 48px;
@@ -107,7 +112,7 @@ nav a.invite:link
     margin: 20px auto;
 }
 
-nav a.invite:visited {
+nav .header__invite:visited {
     color: white;
 }
 

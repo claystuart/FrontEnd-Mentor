@@ -1,0 +1,46 @@
+.topContainer {
+    width: 768px;
+}
+
+/* HEADER */
+
+
+header :is(#hamburgerIcon, #menuContents, hr) {
+    display: none;
+}
+
+.menu__row {
+    display: flex;
+    align-items: center;
+}
+
+.large__menu {
+    width: 269px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.large__menu a {
+    color: black;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    text-decoration: none;
+}
+
+.large__invite {
+    width: 158px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2.5px;
+    display: grid;
+    place-content: center;
+}
+
