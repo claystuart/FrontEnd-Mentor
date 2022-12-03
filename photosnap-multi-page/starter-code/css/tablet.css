@@ -46,8 +46,12 @@ header :is(#hamburgerIcon, #menuContents, hr) {
 
 .twoSquare {
     width: 768px;
-    height: 650px;
     flex-direction: row;
+}
+
+.twoSquare picture {
+    width: 273px;
+    height: 600px;
 }
 
 .item1 {
@@ -60,7 +64,7 @@ header :is(#hamburgerIcon, #menuContents, hr) {
 
 article {
     width: 495px;
-    height: 650px;
+    height: 600px;
     padding: 0;
 }
 
@@ -79,9 +83,17 @@ article {
     margin: 48px auto 0 54px;
 }
 
+/* STORIES */
 
+.stories {
+    grid-auto-rows: 500px;
+    grid-template-columns: 389px 379px;  
+}
 
-
+.stories img {
+    width: 100%;
+    height: 100%;
+}
 
 
 
