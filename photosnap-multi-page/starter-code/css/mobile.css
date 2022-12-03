@@ -40,66 +40,60 @@ header {
     position: relative;
 }
 
-.hamburgerMenu {
+header .menu__row {
     margin: 28px 24px 0 24px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-#menuSwitch {
+header #hamburgerIcon {
     cursor: pointer;
     padding: 7px 15px;
 }
 
+header .menu--closed {
+    display: none;
+}
 
-header>nav {
+header nav {
     width: 375px;
     height: 253px;
     background-color: white;
     position: absolute;
     top: 72px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 32px;
 }
 
-.nav--hidden {
-    display: none;
-}
-
-.open {
-    display: block;
-}
-
-header nav>ul {
-    margin-top: 32px;
-    list-style-type: none;
-    text-align: center;
-}
-
-header nav>ul>li {
-    margin-bottom: 15px;
-}
-
-header nav>ul>li>a:link {
+nav a:link {
     color: black;
     font-weight: 700;
     font-size: 15px;
     text-transform: uppercase;
     letter-spacing: 2.5px;
     text-decoration: none;
+    margin-bottom: 20px;
 }
 
-header nav>ul>li>a:visited {
+nav a:visited {
     color: black;
 }
 
-.line {
-    width: 310px;
-    border-top: 1px solid rgba(97 97 97 / .25);
-    margin: 20px auto;
+nav .link--margin--bottom {
+    margin-bottom: 20px;
 }
 
-nav>a:link,
-nav>a:visited {
+nav hr {
+    width: 310px;
+    color: rgba(97 97 97 / .25);
+    border-top: 0;
+}
+
+nav a.invite:link
+ {
     width: 310px;
     height: 48px;
     background-color: black;
@@ -108,11 +102,13 @@ nav>a:visited {
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 2.5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin: 25px auto;
+    display: grid;
+    place-content: center;
+    margin: 20px auto;
+}
+
+nav a.invite:visited {
+    color: white;
 }
 
 
