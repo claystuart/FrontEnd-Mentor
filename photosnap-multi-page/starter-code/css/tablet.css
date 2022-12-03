@@ -3,8 +3,6 @@
 }
 
 /* HEADER */
-
-
 header :is(#hamburgerIcon, #menuContents, hr) {
     display: none;
 }
@@ -43,4 +41,49 @@ header :is(#hamburgerIcon, #menuContents, hr) {
     display: grid;
     place-content: center;
 }
+
+/* MAIN */
+
+.twoSquare {
+    width: 768px;
+    height: 650px;
+    flex-direction: row;
+}
+
+.item1 {
+    order: 1;
+}
+
+.item2 {
+    order: 2;
+}
+
+article {
+    width: 495px;
+    height: 650px;
+    padding: 0;
+}
+
+.article__header {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 4.17px;
+    margin: 173px 54px 0 54px;
+}
+
+.article__para {
+    margin: 21px 54px 0 54px;
+}
+
+.link__box {
+    margin: 48px auto 0 54px;
+}
+
+
+
+
+
+
+
+
 
