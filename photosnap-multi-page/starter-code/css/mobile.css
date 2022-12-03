@@ -613,7 +613,7 @@ footer .visuals li img:hover {
 }
 
 footer nav {
-    margin-top: 49px;
+    margin-top: 40px;
     display: block;
 }
 
@@ -633,7 +633,6 @@ footer nav a:hover {
     opacity: .4;
 }
 
-
 footer a:link,
 footer a:visited {
     color: white;
@@ -649,7 +648,7 @@ footer .footer__invite a:hover {
 }
 
 .footer__invite {
-    margin-top: 119px;
+    margin-top: 92px;
     font-size: 12px;
 }
 
@@ -658,4 +657,5 @@ footer .footer__invite a:hover {
     font-size: 15px;
     font-weight: normal;
     opacity: .5;
+    margin-bottom: 56px;
 }
