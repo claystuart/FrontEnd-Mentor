@@ -315,4 +315,21 @@
   </div>
 </body>
 <script type="text/javascript" src="./javascript/script.js"></script>
+<script>
+  /**
+* Location: pricing.html > div.toggle__switch__container
+* 
+* Description: Changes the highlighting for the 
+* monthly and yearly label and toggles the pricing visibility 
+* between monthly and yearly prices.
+*/
+  term__toggleSwitch.addEventListener('change', () => {
+    month__Toggle.classList.toggle('toggle--selected');
+    year__Toggle.classList.toggle('toggle--selected');
+
+    for (let i of document.querySelectorAll('.price__section'))
+      i.classList.toggle('price__section--hidden');
+  });
+</script>
+
 </html>
