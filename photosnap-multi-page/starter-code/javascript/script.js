@@ -5,6 +5,7 @@
  * 
  * Description: Toggles the hamburger menu open and shut
  */
+// hamburgerIcon.addEventListener('click', (e) => {
 hamburgerIcon.addEventListener('click', (e) => {
     if (menuContents.classList.contains('menu--closed')) {
         //Switch to menu open
