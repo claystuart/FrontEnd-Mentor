@@ -32,7 +32,7 @@ Table of Contents
 
 
 /* HEADER */
-header {
+.header {
     height: 72px;
     width: 100%;
     background-color: white;
@@ -40,8 +40,9 @@ header {
     position: relative;
 }
 
-header .menu__row {
-    margin: 28px 24px 0 24px;
+.header .menu__row {
+    margin: 18px 24px 4px 24px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -51,24 +52,25 @@ header .menu__row {
     display: none;
 }
 
-header #hamburgerIcon {
+.header #hamburgerIcon {
     cursor: pointer;
-    padding: 7px 15px;
+    padding: 10px 10px 10px 25px;
 }
 
-header .mobile__menu {
+.header .mobile__menu {
     width: 375px;
     height: 253px;
     background-color: white;
     position: absolute;
     top: 72px;
+    left: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 32px;
 }
 
-header .menu--closed {
+.header .menu--closed {
     display: none;
 }
 
@@ -97,7 +99,7 @@ nav hr {
 }
 
 /* nav a.invite:link, */
-header .header__invite
+.header .header__invite
  {
     width: 310px;
     height: 48px;

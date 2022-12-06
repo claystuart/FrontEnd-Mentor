@@ -18,14 +18,15 @@ header :is(#hamburgerIcon, #menuContents, hr) {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 37px;
 }
 
 .large__menu a {
     color: black;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 12px;
     text-transform: uppercase;
-    letter-spacing: 2.5px;
+    letter-spacing: 2px;
     text-decoration: none;
 }
 
@@ -34,10 +35,10 @@ header :is(#hamburgerIcon, #menuContents, hr) {
     height: 40px;
     background-color: black;
     color: white;
-    font-size: 15px;
+    font-size: 12px;
     text-transform: uppercase;
     text-decoration: none;
-    letter-spacing: 2.5px;
+    letter-spacing: 2px;
     display: grid;
     place-content: center;
 }
