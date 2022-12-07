@@ -7,9 +7,11 @@ header :is(#hamburgerIcon, #menuContents, hr) {
     display: none;
 }
 
-.menu__row {
+.header .menu__row {
     display: flex;
     align-items: center;
+    margin-left: 39px;
+    margin-right: 40px;
 }
 
 .large__menu {
@@ -110,7 +112,7 @@ article {
 /* FOOTER */
 
 footer {
-    width: 768px;
+    width: 100%;
     height: 284px;
     flex-direction: row;
 }
@@ -121,7 +123,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 64px 0 auto 32px;
+    margin: 64px 0 auto 39px;
 }
 
 .navigation__links {

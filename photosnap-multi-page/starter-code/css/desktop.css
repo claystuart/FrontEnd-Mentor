@@ -2,3 +2,37 @@
     width: 1440px;
 }
 
+/* HEADER */
+
+.header .menu__row {
+    margin-left: 165px;
+    margin-right: 165px;
+}
+
+/* FOOTER */
+footer {
+    height: 250px;
+}
+
+footer nav {
+    margin: 0;
+    order: 3;
+    grid-row: 1 / span 2;
+}
+
+.footer__left {
+    margin-left: 171px;
+    height: 122px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+footer .social__media {
+    margin-top: 0;
+    order: 2;
+}
+
+footer .navigation__links {
+    flex-direction: column;
+    gap: 0;
+}
