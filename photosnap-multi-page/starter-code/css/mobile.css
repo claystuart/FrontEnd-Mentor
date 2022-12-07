@@ -157,7 +157,7 @@ article {
     letter-spacing: 3.33px;
     line-height: 40px;
     font-size: 32px;
-    font-weight: 700;
+    font-weight: bold;
     margin: 72px 28.5px 0 28.5px;
 }
 
@@ -181,7 +181,7 @@ article {
     margin: 16px 28.5px 23px 28.5px;
     display: inline-block;
     font-size: 15px;
-    font-weight: 400;
+    font-weight: normal;
     letter-spacing: 0;
     line-height: 25px;
     opacity: .6;
@@ -191,6 +191,7 @@ article {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
+    font-weight: bold;
     font-size: 12px;
     letter-spacing: 2px;
     margin-right: 15px;
