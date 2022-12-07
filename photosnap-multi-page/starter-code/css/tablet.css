@@ -16,7 +16,7 @@
     background-color: transparent;
     position: absolute;
     left: 39px;
-    top: 122px;
+    top: -30px;
 }
 
 .stories__article__preHeader {
@@ -59,6 +59,47 @@
     position: relative;
 }
 
+/* TWO SQUARE FOR EVERY OTHER PAGE */
+.twoSquare {
+    width: 768px;
+    height: 600px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.twoSquare--height650 {
+    height: 650px;
+}
+
+article {
+    width: 387px;
+    height: 304px;
+    padding-bottom: 0;
+    margin: 173px 54px;
+}
+
+.item2 {
+    order: 1;
+}
+
+.article__header {
+    margin: 0;
+    width: 387px;
+    height: 144px;
+    font-size: 40px;
+    letter-spacing: 4.17px;
+    line-height: 48px;
+}
+
+.article__para {
+    margin: 21px 0 0 0;
+    width: 387px;
+    height: 75px;
+}
+
+.link__box {
+    margin: 48px 0 0 0;
+}
 
 /* STORIES */
 
@@ -72,14 +113,33 @@
     height: 100%;
 }
 
+.caption--date {
+    top: 68%;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.caption--title {
+    top: 72%;
+    line-height: 25px;
+}
+
+.caption--subtitle {
+    top: 78%;
+}
+
+.caption__dividingLine {
+    top: 84%;
+}
+
 /* TECHNICAL SECTION */
 .technical__section {
-    padding: 120px 0;
+    padding-top: 120px;
     gap: 80px;
 }
 
 .technical__article {
+    margin: 0;
     width: 457px;
     height: auto;
 }
-
