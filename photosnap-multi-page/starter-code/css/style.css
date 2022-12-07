@@ -1,0 +1,369 @@
+/* MOBILE */
+/*
+Table of Contents
+ * RESETS
+ * HEADER
+ * FOOTER 
+ */
+
+/* CSS RESETS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #F2F2F2;
+}
+
+.topContainer {
+    width: 375px;
+    background-color: white;
+}
+
+/* HEADER */
+.header {
+    height: 72px;
+    width: 100%;
+    background-color: white;
+    display: inline-block;
+    position: relative;
+}
+
+.header .menu__row {
+    margin: 18px 24px 4px 24px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.large__menu {
+    display: none;
+}
+
+.header #hamburgerIcon {
+    cursor: pointer;
+    padding: 10px 10px 10px 25px;
+}
+
+.header .mobile__menu {
+    width: 375px;
+    height: 253px;
+    background-color: white;
+    position: absolute;
+    top: 72px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 32px;
+}
+
+.header .menu--closed {
+    display: none;
+}
+
+nav a.link {
+    color: black;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+nav a:visited {
+    color: black;
+}
+
+nav .link--margin--bottom {
+    margin-bottom: 20px;
+}
+
+nav hr {
+    width: 310px;
+    color: rgba(97 97 97 / .25);
+    border-top: 0;
+}
+
+/* nav a.invite:link, */
+.header .header__invite {
+    width: 310px;
+    height: 48px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2.5px;
+    display: grid;
+    place-content: center;
+    margin: 20px auto;
+}
+
+nav .header__invite:visited {
+    color: white;
+}
+
+/* FOOTER */
+footer {
+    width: 375px;
+    height: 539px;
+    background-color: black;
+    color: white;
+    display: grid;
+    place-items: center;
+}
+
+.footer__container {
+    width: 310px;
+    height: 427px;
+    position: relative;
+}
+
+.footer__logo {
+    position: absolute;
+    width: 170px;
+    height: 16px;
+    top: 0;
+    left: 70px;
+}
+
+.footer__social__media {
+    position: absolute;
+    top: 48px;
+    left: 78px;
+    width: 154px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__social__media a:link {
+    filter: grayscale(100%) brightness(500%);
+}
+
+.footer__social__media a:hover {
+    filter: none;
+}
+
+.footer__navigation__container {
+    width: 310px;
+    height: 121px;
+    position: absolute;
+    top: 117px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__navigation__container a:link {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.footer__navigation__container a:visited {
+    color: white;
+}
+
+.footer__navigation__container a:hover {
+    opacity: .3;
+}
+
+.footer__invite__container {
+    position: absolute;
+    width: 172px;
+    height: 16px;
+    top: 357px;
+    left: 69px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__invite__container a:link {
+    color: white;
+    opacity: .5;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.footer__invite__container a:visited {
+    color: white;
+}
+
+.footer__invite__container a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.footer__copyright {
+    width: 255px;
+    height: 20px;
+    position: absolute;
+    top: 407px;
+    left: 27px;
+}
+
+.footer__copyright__text {
+    font-size: 15px;
+    font-weight: normal;
+    opacity: .5;
+}
+
+/* TABLET */
+@media only screen and (min-width: 768px) {
+    .topContainer {
+        width: 768px;
+    }
+
+    /* HEADER */
+    header :is(#hamburgerIcon, #menuContents, hr) {
+        display: none;
+    }
+
+    .header .menu__row {
+        display: flex;
+        align-items: center;
+        margin-left: 39px;
+        margin-right: 40px;
+    }
+
+    .large__menu {
+        width: 269px;
+        height: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 37px;
+    }
+
+    .large__menu a {
+        color: black;
+        font-weight: 700;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-decoration: none;
+    }
+
+    .large__invite {
+        width: 158px;
+        height: 40px;
+        background-color: black;
+        color: white;
+        font-size: 12px;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 2px;
+        display: grid;
+        place-content: center;
+    }
+
+    /* FOOTER */
+
+    footer {
+        width: 768px;
+        height: 284px;
+    }
+
+    .footer__container {
+        width: 689px;
+        height: 156px;
+    }
+
+    .footer__logo {
+        left: 0;
+    }
+
+    .footer__social__media {
+        top: 136px;
+        left: 0;
+    }
+
+    .footer__navigation__container {
+        width: 315px;
+        height: 16px;
+        flex-direction: row;
+        top: 48px;
+        left: 0;
+    }
+
+    .footer__invite__container {
+        width: 168px;
+        top: 0;
+        left: 521px;
+    }
+
+    .footer__copyright {
+        top: 136px;
+        left: 448px;
+    }
+
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 1440px) {
+    .topContainer {
+        width: 1440px;
+    }
+
+    /* HEADER */
+
+    .header .menu__row {
+        margin-left: 165px;
+        margin-right: 165px;
+    }
+
+    /* FOOTER */
+    footer {
+        width: 1440px;
+        height: 250px;
+    }
+
+    .footer__container {
+        width: 1104px;
+        height: 122px;
+    }
+
+    .footer__social__media {
+        top: 101px;
+        left: 0;
+    }
+
+    .footer__navigation__container {
+        width: 255px;
+        height: 122px;
+        flex-direction: column;
+        top: 0;
+        left: 279px;
+    }
+
+    .footer__invite__container {
+        width: 168px;
+        top: 0;
+        left: 936px;
+    }
+
+    .footer__copyright {
+        top: 102px;
+        left: 862px;
+    }
+
+}
