@@ -214,7 +214,7 @@ article.technical__article--features {
     margin-top: 86px;
 }
 
-.technical__article--features p{
+.technical__article--features p {
     width: 339px;
     margin: 16px auto 0 auto;
     text-align: center;
@@ -247,4 +247,51 @@ article.technical__article--features {
     position: absolute;
     top: 44%;
     left: 183%;
+}
+
+.toggle__switch__container {
+    margin-top: 112px;
+}
+
+/*  PRICING PLANS */
+.price__card {
+    width: 689px;
+    height: 270px;
+    display: grid;
+    grid-template-columns: 40px 270px 1fr 48px;
+    grid-template-rows: 40px 118px 1fr 40px;
+    grid-template-areas:
+        ". . . ."
+        ". level price ."
+        ". button . ."
+        ". . . .";
+    align-items: flex-start
+}
+
+.pricing__level,
+.pricing__description {
+    grid-area: level;
+}
+
+.price__card > h1 {
+    margin: 0;
+    height: 25px;
+}
+
+.price__card > p {
+    text-align: left;
+    padding-top: 18px;
+}
+
+.price__section {
+    grid-area: price;
+    align-items: flex-end;
+}
+
+.price__section h2 {
+    margin-top: 0;
+}
+
+.price__card button {
+    grid-area: button;
 }
