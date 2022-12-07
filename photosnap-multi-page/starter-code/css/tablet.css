@@ -178,7 +178,6 @@ article.technical__article--features {
     width: 340px;
     margin: 0;
     height: auto;
-    outline: 1px solid red;
     display: flex;
     flex-direction: column;
 }
@@ -202,3 +201,31 @@ article.technical__article--features {
     text-align: center;
 }
 
+/* BETA */
+.beta {
+    height: 280px;
+    position: relative;
+}
+
+.beta__title {
+    line-height: 48px;
+    letter-spacing: 4.17px;
+    width: 400px;
+    height: 144px;
+    font-size: 40px;
+    top: 53px;
+    left: 33px;
+}
+
+.beta .caption__link {
+    position: absolute;
+    width: 120px;
+    left: 528px;
+    top: 45%;
+}
+
+.beta .caption__arrow {
+    position: absolute;
+    top: 44%;
+    left: 183%;
+}
