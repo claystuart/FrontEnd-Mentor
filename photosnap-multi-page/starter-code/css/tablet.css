@@ -112,50 +112,39 @@ article {
 /* FOOTER */
 
 footer {
-    width: 100%;
+    width: 768px;
     height: 284px;
-    flex-direction: row;
 }
 
-.footer__left {
-    width: 384px;
+.footer__container {
+    width: 689px;
     height: 156px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 64px 0 auto 39px;
 }
 
-.navigation__links {
+.footer__logo {
+    left: 0;
+}
+
+.footer__social__media {
+    top: 136px;
+    left: 0;
+}
+
+.footer__navigation__container {
+    width: 315px;
+    height: 16px;
     flex-direction: row;
-    gap: 26px;
+    top: 48px;
+    left: 0;
 }
 
-.social__media {
-    order: 3;
-}
-
-.footer__right {
-    margin: 64px 40px 64px 100px;
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
-.footer__invite {
-    margin: 0;
+.footer__invite__container {
     width: 168px;
-    display: flex;   
-}
-
-footer .footer__invite svg {
-    position: static;
-    display: inline;
+    top: 0;
+    left: 521px;
 }
 
 .footer__copyright {
-    margin: 0;
-    width: 255px;
+    top: 136px;
+    left: 434px;
 }
