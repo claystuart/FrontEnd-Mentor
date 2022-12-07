@@ -59,7 +59,25 @@
     position: relative;
 }
 
-/* TWO SQUARE FOR EVERY OTHER PAGE */
+/* TWO SQUARE FOR FEATURES PAGE */
+.features__twoSquare {
+    width: 768px;
+    height: 490px;
+    display: flex;
+}
+
+.features__article--black {
+    width: 495px;
+    height: 490px;
+    margin: 0;
+}
+
+.features__pictures {
+    width: 273px;
+    height: 490px;
+}
+
+/* TWO SQUARE FOR INDEX PAGE */
 .twoSquare {
     width: 768px;
     height: 600px;
@@ -132,7 +150,7 @@ article {
     top: 84%;
 }
 
-/* TECHNICAL SECTION */
+/* TECHNICAL SECTION INDEX*/
 .technical__section {
     padding-top: 120px;
     gap: 80px;
@@ -143,3 +161,44 @@ article {
     width: 457px;
     height: auto;
 }
+
+/* TECHNICAL SECTION FEATURES*/
+.technical__section--features {
+    padding: 112px 0;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 345px 345px;
+    grid-auto-rows: 236px;
+    row-gap: 72px;
+    column-gap: 11px;
+    justify-items: center;
+}
+
+article.technical__article--features {
+    width: 340px;
+    margin: 0;
+    height: auto;
+    outline: 1px solid red;
+    display: flex;
+    flex-direction: column;
+}
+
+.technical__article--features img {
+    /* prevent svg stretching */
+    align-self: center;
+}
+
+.technical__article--features h2 {
+    margin: 48px auto 0 auto;
+}
+
+.technical__article--features h2.infinity--offset {
+    margin-top: 86px;
+}
+
+.technical__article--features p{
+    width: 339px;
+    margin: 16px auto 0 auto;
+    text-align: center;
+}
+
