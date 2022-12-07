@@ -602,7 +602,6 @@ footer {
 .footer__container {
     width: 310px;
     height: 427px;
-    outline: 1px solid blue;
     position: relative;
 }
 
@@ -643,7 +642,6 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    outline: 1px solid red;
 }
 
 .footer__navigation__container a:link {
