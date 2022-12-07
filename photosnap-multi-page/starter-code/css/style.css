@@ -82,6 +82,9 @@ nav a.link {
 nav a:visited {
     color: black;
 }
+nav a:hover {
+    opacity: .3;
+}
 
 nav .link--margin--bottom {
     margin-bottom: 20px;
@@ -274,6 +277,10 @@ footer {
         letter-spacing: 2px;
         display: grid;
         place-content: center;
+    }
+
+    .large__invite:hover {
+        background-color: #979797;
     }
 
     /* FOOTER */

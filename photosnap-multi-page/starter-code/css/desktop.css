@@ -1,0 +1,47 @@
+.twoSquare--height650 {
+   width: 1440px;
+   height: 650px;
+}
+
+.twoSquare {
+    width: 1440px;
+    height: 600px;
+}
+
+.twoSquare img {
+    width: 830px;
+    height: 600px;
+}
+
+article {
+    width: 610px;
+    height: 600px;
+}
+
+.article--black a:hover{
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+.article--white a:hover{
+    text-decoration-color: black;
+    text-decoration: underline;
+}
+
+/* STORIES */
+.stories {
+    width: 1440px;
+    grid-template-columns: repeat(4, 360px);
+}
+
+figure:hover {
+    margin-bottom: 30px;
+    margin-top: -30px;
+}
+
+/* TECHNICAL SECTION */
+.technical__section {
+    flex-direction: row;
+    margin: 120px 165px;
+    width: 1110px;
+    height: 238px;
+}
