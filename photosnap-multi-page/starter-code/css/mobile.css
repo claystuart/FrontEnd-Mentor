@@ -674,6 +674,7 @@ footer {
 }
 
 .footer__invite__container a:link {
+    color: white;
     opacity: .5;
     text-decoration: none;
     text-transform: uppercase;
