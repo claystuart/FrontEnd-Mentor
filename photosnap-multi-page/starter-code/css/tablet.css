@@ -210,8 +210,11 @@ article.technical__article--features {
     margin: 48px auto 0 auto;
 }
 
+.technical__article--features .infinity__symbol {
+    margin-top: 15px;
+}
 .technical__article--features h2.infinity--offset {
-    margin-top: 86px;
+    margin-top: 71px;
 }
 
 .technical__article--features p {

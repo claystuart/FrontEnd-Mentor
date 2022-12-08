@@ -45,3 +45,32 @@ figure:hover {
     width: 1110px;
     height: 238px;
 }
+
+/* TECHNICAL SECTION FEATURES*/
+.technical__section--features {
+    padding: 0;
+    margin: 160px 165px;
+    width: 1110px;
+    height: 576px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 236px;
+    row-gap: 104px;
+    column-gap: 30px;
+    justify-items: center;
+}
+
+/* BETA */
+.beta .caption__link {
+    left: 1103px;
+    top: 43%;
+}
+
+.beta .caption__arrow {
+    top: 43%;
+    left: 326%
+}
+
+.features__article--black {
+    width: 610px;
+    flex-shrink: 0;
+}
