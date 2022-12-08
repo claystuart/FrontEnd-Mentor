@@ -35,7 +35,7 @@ main {
 
 h1 {
     color: var(--green);
-    font-size: 11px;
+    font-size: 15px;
     font-weight: 800;
     letter-spacing: 3.46px;
     text-transform: uppercase;
@@ -45,7 +45,7 @@ h1 {
 h2 {
     color: var(--cyan);
     margin-top: 24px;
-    font-size: 24px;
+    font-size: 28px;
     letter-spacing: -.26px;
     font-weight: 800;
     width: 295px;
@@ -53,10 +53,12 @@ h2 {
     text-align: center;
 }
 
-picture {
+.dividingLine {
+    width: 295px;
+    height: 16px;
+    background-image: url(./images/pattern-divider-mobile.svg);
     position: absolute;
-    top: 235px;
-    left: 24px;
+    top: 244px;
 }
 
 .dice__circle {
@@ -72,12 +74,23 @@ picture {
     transform: translateX(-50%);
 }
 
-@media (min-width: 1440px ) {
-    body {
-        /* USE COLOR TO INDICATE MEDIA SWITCH */
-        background-color: var(--green);
+@media (min-width: 1440px) {
+    main {
+        width: 540px;
+        height: 364px;
     }
-    
+
+    h1 {
+        margin-top: 48px;
+    }
+
+    h2 {
+        width: 444px;
+    }
+
+    .dividingLine {
+        width: 444px;
+        background-image: url(./images/pattern-divider-desktop.svg);
+        top: 282px;
+    }
 }
-
-
