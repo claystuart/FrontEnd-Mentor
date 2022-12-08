@@ -22,6 +22,12 @@ Table of Contents
     line-height: 0;
 }
 
+.features__twoSquare img {
+    display: block;
+    width: 375px;
+    height: 294px;
+}
+
 article {
     width: 375px;
     display: inline-block;
@@ -31,6 +37,30 @@ article {
 .article--black {
     background-color: black;
     color: white;
+}
+
+.features__article--black {
+    width: 375px;
+    height: 300px;
+    display: inline-block;
+    padding-bottom: 48px;
+}
+
+.features__article__header {
+    margin: 72px 28px 0px 28px;
+    font-size: 32px;
+    letter-spacing: 3.33px;
+    line-height: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.features__article__para {
+    margin: 16px 28px 0 28px;
+    font-size: 15px;
+    font-weight: normal;
+    opacity: .6;
+    line-height: 25px;
 }
 
 .article--white {
@@ -131,6 +161,81 @@ article {
     stroke: black;
 }
 
+/* STORIES ARTICLE*/
+.stories__twoSquare {
+    width: 375px;
+    color: white;
+    background-color: black;
+    display: inline-block;
+}
+
+.stories__twoSquare picture {
+    display: block;
+    width: 375px;
+    height: 317px;
+}
+
+.stories__article {
+    width: 375px;
+    /* height: 495px; */
+    margin: 48px 28px 0 28px;
+}
+
+.stories__article__preHeader {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.stories__article__header {
+    text-transform: uppercase;
+    width: 318px;
+    letter-spacing: 3.33px;
+    line-height: 40px;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 24px 0 0 0;
+}
+
+.stories__article__subtitle {
+    font-size: 13px;
+    font-weight: normal;
+    margin: 16px 0 0 0;
+}
+
+.stories__article__subtitle span {
+    opacity: .75;
+}
+
+.stories__article__date {
+    margin-right: 9px;
+}
+
+.stories__article__para {
+    width: 318px;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: normal;
+    opacity: .6;
+    margin: 24px 0 0 0;
+}
+
+.stories__link__box {
+    width: 184px;
+    height: 16px;
+    margin: 24px 0 0 0;
+    display: flex;
+    align-items: center;
+    width: 60%;
+    flex: 0 0 auto;
+    position: relative;
+}
+
+
+
+
 /* STORIES */
 .stories {
     display: grid;
@@ -198,7 +303,8 @@ figcaption {
 }
 
 /* TECHNICAL DETAILS SECTION */
-.technical__section {
+.technical__section,
+.technical__section--features {
     background-color: white;
     padding: 80px 0;
     display: flex;
@@ -208,7 +314,8 @@ figcaption {
     gap: 56px;
 }
 
-.technical__article {
+.technical__article,
+.technical__article--features {
     width: 310px;
     height: 236px;
     display: flex;
@@ -217,16 +324,19 @@ figcaption {
     line-height: 25px;
 }
 
-.technical__article>img {
+.technical__article>img,
+.technical__article--features>img {
     margin: 0 auto 48px auto;
 }
 
-.technical__article>h2 {
+.technical__article>h2,
+.technical__article--features>h2 {
     font-size: 18px;
     font-weight: bold;
 }
 
-.technical__article>p {
+.technical__article>p,
+.technical__article--features>p {
     margin-top: 16px;
     font-size: 15px;
     opacity: .6;
@@ -361,7 +471,6 @@ input:checked+.track:before {
 }
 
 .price__card {
-    display: inline-block;
     width: 318px;
     height: 407px;
     background-color: #F5F5F5;
@@ -374,6 +483,7 @@ input:checked+.track:before {
     margin-top: 56px;
     font-size: 24px;
     font-weight: bold;
+    line-height: 25px;
 }
 
 .price__card p {
@@ -390,6 +500,10 @@ input:checked+.track:before {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.price__section--hidden {
+    display: none;
 }
 
 .price__card h2 {
@@ -430,9 +544,7 @@ input:checked+.track:before {
     color: black;
 }
 
-.price__section--hidden {
-    display: none;
-}
+
 
 
 /* FEATURES TABLE */

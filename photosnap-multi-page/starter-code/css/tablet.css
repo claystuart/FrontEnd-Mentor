@@ -7,6 +7,7 @@
     flex-direction: row;
     position: relative;
     line-height: normal;
+    display: block;
 }
 
 .stories__article {
@@ -15,8 +16,8 @@
     color: white;
     background-color: transparent;
     position: absolute;
-    left: 39px;
-    top: -30px;
+    left: 9px;
+    top: 70px;
 }
 
 .stories__article__preHeader {
@@ -89,6 +90,12 @@
     width: 495px;
     height: 490px;
     margin: 0;
+    padding: 0;
+}
+
+.features__twoSquare img {
+    width: 273px;
+    height: 490px;
 }
 
 .features__pictures {
@@ -207,14 +214,15 @@ article.technical__article--features {
 }
 
 .technical__article--features h2 {
-    margin: 48px auto 0 auto;
+    margin: 0px auto 0 auto;
 }
 
 .technical__article--features .infinity__symbol {
     margin-top: 15px;
 }
+
 .technical__article--features h2.infinity--offset {
-    margin-top: 71px;
+    margin-top: 15px;
 }
 
 .technical__article--features p {
@@ -316,6 +324,7 @@ article.technical__article--features {
     letter-spacing: 4.17px;
     line-height: 48px;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .features__table--desktop table {
@@ -331,11 +340,13 @@ article.technical__article--features {
 }
 
 /* style tiers: Basic. Pro, Business  */
-tbody tr:nth-child(3n+1) td,
-tbody tr:nth-child(3n+2) td,
-tbody tr:nth-child(3n) td {
+/* tbody tr:nth-child(3n+1) td,
+tbody tr:nth-child(3n+2) td, */
+/* tbody tr:nth-child(n) td { */
+.features__table--desktop .mobile__override td {
     font-size: 12px;
-    opacity: 1;
+    font-weight: bold;
+    opacity: 1 ;
     letter-spacing: 2px;
     text-transform: uppercase;
     padding: 24px 0 16px 0;
