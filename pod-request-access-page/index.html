@@ -5,41 +5,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+
+
   <title>Frontend Mentor | Pod request access landing page</title>
 </head>
 
 <body>
   <div class="top__container">
+
     <div class="logo">
       <img src="./starter-code/assets/desktop/logo.svg" alt="pod logo">
     </div>
 
     <main>
       <h1>Publish your podcasts</h1>
-      <h1 class="everywhere" >everywhere.</h1>
+      <h1 class="everywhere">everywhere.</h1>
       <p>Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, Apple Podcasts,
         Google Podcasts, Pocket Casts and more!</p>
     </main>
 
     <footer>
       <!-- social media links -->
+
       <img src="./starter-code/assets/desktop/spotify.svg" alt="spotify" class="social">
       <img src="./starter-code/assets/desktop/apple-podcast.svg" alt="apple podcast" class="social">
       <img src="./starter-code/assets/desktop/google-podcasts.svg" alt="google podcast" class="social">
       <img src="./starter-code/assets/desktop/pocket-casts.svg" alt="pocket casts" class="social">
     </footer>
 
+    <div class="email__container">
+      <input class="email__container__object email__container__object--input" type="text" name="email" id="email" placeholder="Email address">
+      <h2 class="hidden" >Oops! Please check your email</h2>
+      <button class="email__container__object">Request Access</button>
+    </div>
+
   </div>
 
-
-
-
-  Request access
 </body>
 <script>
   document.getElementById('submit').addEventListener('click', emailCheck)

@@ -27,7 +27,8 @@ body {
     background-image: url(./starter-code/assets/mobile/image-host.jpg);
     box-shadow: inset 0 0 0 188px rgba(12, 17, 25, .85);
     position: relative;
-    display: grid;
+    display: flex;
+    flex-direction: column;
 }
 
 .logo {
@@ -38,10 +39,9 @@ body {
 
 main {
     color: white;
-    margin: 175px 24px 0 24px;
+    margin: 175px auto 0;
     width: 327px;
-    height: 398px;
-    outline: 1px solid white;
+    height: 192px;
 }
 
 h1 {
@@ -66,14 +66,17 @@ p {
     font-weight: 300;
     color: var(--lgray);
     text-align: center;
+    opacity: .7;
 }
 
 footer {
+    margin: 33px auto 0;
     width: 315px;
-    display: flex;
     height: 17px;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
-    margin: 0 auto;
+    color: var(--mgray);
 }
 
 img[alt~='spotify'] {
@@ -94,4 +97,60 @@ img[alt~='google'] {
 img[alt~='pocket'] {
     width: 77px;
     height: 15px;
+}
+
+.email__container {
+    width: 375px;
+    margin: 48px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.email__container__object {
+    width: 327px;
+    height: 46px;
+    border-radius: 30px;
+    font-family: 'Chivo', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 28px;
+    color: var(--navy);
+    margin: 0 auto;
+}
+
+.email__container__object--input {
+    background-color: #2C344B;
+    color: white;
+    padding-left: 32px;
+    border: 0;
+}
+input::placeholder {
+    color: white;
+}
+
+button {
+    color: var(--mgray);
+    background-color: var(--green);
+    border: 0;
+}
+
+button:hover {
+    background-color: #B3FFE2;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: #7cd1b0;
+}
+
+h2 {
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--alert);
+    margin: 2px auto 0;
+}
+
+.hidden {
+    display: none;
 }
