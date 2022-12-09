@@ -20,5 +20,31 @@
 
   Request access
 </body>
+<script>
+  document.getElementById('submit').addEventListener('click', emailCheck)
+
+  function emailCheck() {
+    console.log(`Entry: ${document.getElementById('email').value}`);
+    const emailVerifier_RegEx = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/i;
+
+    const email = document.getElementById("email").value;
+
+    if (email.length === 0 || !emailVerifier_RegEx.test(email)) {
+      console.error("Email error");
+      if (!document.getElementById('warning').classList.contains('warning')) {
+        document.getElementById("email").classList.toggle('warning');
+        document.getElementById("warning").classList.toggle('warning');
+        document.getElementById("submit").classList.toggle('warning');
+      }
+    } else if (document.getElementById('warning').classList.contains('warning')) {
+      document.getElementById("email").classList.toggle('warning');
+      document.getElementById("warning").classList.toggle('warning');
+      document.getElementById("submit").classList.toggle('warning');
+    } {
+
+    }
+  }
+
+</script>
 
 </html>
