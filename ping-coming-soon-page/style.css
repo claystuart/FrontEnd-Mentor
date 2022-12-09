@@ -48,6 +48,12 @@ h2 {
     color: #15202A;
 }
 
+.input__warning__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 input {
     width: 281px;
     height: 40px;
@@ -57,6 +63,10 @@ input {
     border-width: 1px;
     outline-color: transparent;
     padding-left: 32px;
+}
+
+input.warning {
+    border-color: hsl(354, 100%, 66%);
 }
 
 ::placeholder {
@@ -140,4 +150,81 @@ h4 {
     font-size: 10px;
     font-weight: 300;
     color: #969696;
+}
+
+@media screen and (min-width: 1440px){
+    .top__container {
+        width: 1440px;
+        height: 1024px;
+    }
+    .logoIMG {
+        width: 90px;
+    }
+
+    h1 {
+        width: 712px;
+        font-size: 48px;
+        line-height: 60px;
+        margin-top: 40px;
+    }
+
+    h2 {
+       font-size: 20px;
+        margin-top: 16px;
+    }
+
+    .dashboardIMG {
+        margin-top: 94px;
+        width: 640px;
+    }
+
+    .social__media__icons {
+        margin-top: 72px;
+    }
+
+    h4 {
+        width: 203px;
+        margin-top: 25px;
+        font-size: 12px;
+    }
+
+    input {
+        width: 421px;
+        height: 56px;
+        border-radius: 30px;
+        margin-top: 0;
+    }
+
+    button {
+        width: 200px;
+        height: 56px;
+        border-radius: 30px;
+        margin: 0;
+    }
+
+    .input__top__container {
+        display: flex;
+        width: 637px;
+        flex-direction: row;
+        margin-top: 40px;
+       justify-content: space-between;
+       position: relative;
+    }
+
+    h3 {
+        position: absolute;
+        font-size: 12px;
+        width: 206px;
+        top: 62px;
+        left: 30px;
+        margin: 0;
+        line-height: 20px;
+        font-weight: normal;
+    }
+
+    button.warning {
+        margin: 0;
+    }
+
+
 }

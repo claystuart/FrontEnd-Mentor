@@ -21,9 +21,15 @@
     <h1>We are launching <span>soon!</span></h1>
     <h2>Subscribe and get notified</h2>
 
-    <input class="" type="text" name="email_input" id="email_input" placeholder="Your email address&hellip;">
-    <h3 class="">Please provide a valid email address</h3>
-    <button class="">Notify Me</button>
+    <div class="input__top__container">
+      <div class="input__warning__container">
+        <input class="" type="text" name="email" id="email" placeholder="Your email address&hellip;">
+        <h3 id="warning" class="">Please provide a valid email address</h3>
+      </div>
+
+      <button id="submit" class="">Notify Me</button>
+    </div>
+
 
     <img class="dashboardIMG" src="./images/illustration-dashboard.png" alt="abstract drawing of business charts">
 
@@ -37,5 +43,39 @@
 
   </div>
 </body>
+<script>
+  document.getElementById('submit').addEventListener('click', emailCheck)
+
+  function emailCheck() {
+    console.log(`Entry: ${document.getElementById('email').value}`);
+    const emailVerifier_RegEx = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/i;
+
+    const email = document.getElementById("email").value;
+
+    if (email.length === 0 || !emailVerifier_RegEx.test(email)) {
+      console.error("Email error");
+      if (!document.getElementById('warning').classList.contains('warning')) {
+        document.getElementById("email").classList.toggle('warning');
+        document.getElementById("warning").classList.toggle('warning');
+        document.getElementById("submit").classList.toggle('warning');
+      }
+    } else if (document.getElementById('warning').classList.contains('warning')) {
+      document.getElementById("email").classList.toggle('warning');
+      document.getElementById("warning").classList.toggle('warning');
+      document.getElementById("submit").classList.toggle('warning');
+    } {
+
+    }
+  }
+
+
+  //   const entry = document.getElementById("email").value;
+  //   document.getElementById("email").className += " error";
+  //   document.getElementById("email_errorMsg").style.display = "block";
+  // } else {
+  //   document.getElementById("email").className = "";
+  //   document.getElementById("email_errorMsg").style.display = "none";
+  // }
+</script>
 
 </html>
