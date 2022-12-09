@@ -24,4 +24,74 @@ body {
     height: 667px;
     background-color: var(--navy);
     margin: 0 auto;
+    background-image: url(./starter-code/assets/mobile/image-host.jpg);
+    box-shadow: inset 0 0 0 188px rgba(12, 17, 25, .85);
+    position: relative;
+    display: grid;
+}
+
+.logo {
+    position: absolute;
+    top: 62px;
+    left: 120px;
+}
+
+main {
+    color: white;
+    margin: 175px 24px 0 24px;
+    width: 327px;
+    height: 398px;
+    outline: 1px solid white;
+}
+
+h1 {
+    width: 327px;
+    font-size: 26px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 38px;
+    color: var(--green);
+}
+
+h1.everywhere {
+    color: white;
+}
+
+p {
+    margin-top: 16px;
+    width: 327px;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 300;
+    color: var(--lgray);
+    text-align: center;
+}
+
+footer {
+    width: 315px;
+    display: flex;
+    height: 17px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+img[alt~='spotify'] {
+    width: 56px;
+    height: 17px;
+}
+
+img[alt~='apple'] {
+    width: 45px;
+    height: 17px;
+}
+
+img[alt~='google'] {
+    width: 73px;
+    height: 11px;
+}
+
+img[alt~='pocket'] {
+    width: 77px;
+    height: 15px;
 }
