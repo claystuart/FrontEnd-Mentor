@@ -16,4 +16,128 @@ body {
     width: 375px;
     height: 812px;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logoIMG {
+    width: 56px;
+    margin-top: 81px;
+}
+
+h1 {
+    width: 302px;
+    font-size: 22px;
+    line-height: 32px;
+    color: #969696;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 32px;
+}
+
+h1 span {
+    color: #15202A;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 12px;
+    font-weight: 300;
+    margin-top: 15px;
+    color: #15202A;
+}
+
+input {
+    width: 281px;
+    height: 40px;
+    margin-top: 32px;
+    border-radius: 20px;
+    border-color: hsla(223, 100%, 88%, 0.507);
+    border-width: 1px;
+    outline-color: transparent;
+    padding-left: 32px;
+}
+
+::placeholder {
+    font-family: 'Libre Franklin', sans-serif;
+    color: hsl(223, 40%, 54%);
+}
+
+h3 {
+    margin-top: 2px;
+    font-size: 10px;
+    width: 172px;
+    font-style: italic;
+    color: hsl(354, 100%, 66%);
+    display: none;
+}
+
+h3.warning {
+    display: block;
+}
+
+button {
+    width: 282px;
+    height: 40px;
+    color: white;
+    background-color: hsl(223, 87%, 63%);
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 72px;
+    border: 0;
+    cursor: pointer;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 600;
+}
+
+button:active {
+    box-shadow: 0 0 8px 3px rgba(79, 125, 243, 0.514);
+}
+
+button.warning {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.dashboardIMG {
+    width: 320px;
+
+}
+
+.social__media__icons {
+    width: 120px;
+    height: 31px;
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+i {
+    color: #4C7BF3;
+    border: 1px solid rgba(194, 211, 255, 0.582);
+    padding: 7px;
+    border-radius: 50%;
+}
+
+.fa-facebook-f:hover,
+.fa-twitter:hover,
+.fa-instagram:hover{
+    background-color: #4C7BF3;
+    color: white !important;
+}
+
+i[class~="fa-facebook-f"] {
+    padding: 7px 10px;
+}
+
+h4 {
+    margin-top: 27px;
+    width: 169px;
+    font-size: 10px;
+    font-weight: 300;
+    color: #969696;
 }
