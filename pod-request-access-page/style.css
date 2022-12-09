@@ -4,6 +4,24 @@
     box-sizing: border-box;
 }
 
+:root {
+    --hoverColor: #83ffe2;
+    --green: #54e6af;
+    --dgray: #25293A;
+    --mgray: #5a668a;
+    --lgray: #c2cbe5;
+    --navy: #121725;
+    --alert: #FB3E3E;
+}
+
 body {
     font-family: 'Chivo', sans-serif;
+    background-color: #F2F2F2;
+}
+
+.top__container {
+    width: 375px;
+    height: 667px;
+    background-color: var(--navy);
+    margin: 0 auto;
 }
