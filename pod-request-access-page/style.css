@@ -8,7 +8,7 @@
     --hoverColor: #83ffe2;
     --green: #54e6af;
     --dgray: #25293A;
-    --mgray: #5a668a;
+    --mgray: rgb(90, 102, 138);
     --lgray: #c2cbe5;
     --navy: #121725;
     --alert: #FB3E3E;
@@ -77,6 +77,11 @@ footer {
     align-items: center;
     justify-content: space-between;
     color: var(--mgray);
+}
+
+img[src$='png'] {
+    width: 56px;
+    height: 17px;
 }
 
 img[alt~='spotify'] {
@@ -149,8 +154,9 @@ h2 {
     font-weight: bold;
     color: var(--alert);
     margin: 2px auto 0;
+    display: none;
 }
 
-.hidden {
-    display: none;
+.error {
+    display: block;
 }

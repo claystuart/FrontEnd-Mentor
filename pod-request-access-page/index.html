@@ -4,13 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-
+  <link rel="icon" type="image/png" sizes="32x32" href="./starter-code/assets/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300;700&display=swap" rel="stylesheet">
-
 
   <title>Frontend Mentor | Pod request access landing page</title>
 </head>
@@ -39,38 +38,41 @@
     </footer>
 
     <div class="email__container">
-      <input class="email__container__object email__container__object--input" type="text" name="email" id="email" placeholder="Email address">
-      <h2 class="hidden" >Oops! Please check your email</h2>
-      <button class="email__container__object">Request Access</button>
+      <input id="email" class="email__container__object email__container__object--input" type="text"
+        placeholder="Email address">
+      <h2 id="warningHeader" class="">Oops! Please check your email</h2>
+      <button class="email__container__object" id="submitButton">Request Access</button>
     </div>
 
   </div>
 
 </body>
 <script>
-  document.getElementById('submit').addEventListener('click', emailCheck)
 
-  function emailCheck() {
-    console.log(`Entry: ${document.getElementById('email').value}`);
-    const emailVerifier_RegEx = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/i;
+  // Function for the submit button
+  submitButton.addEventListener('click', () => {
 
+    // The value entered into the #email text input
     const email = document.getElementById("email").value;
 
-    if (email.length === 0 || !emailVerifier_RegEx.test(email)) {
-      console.error("Email error");
-      if (!document.getElementById('warning').classList.contains('warning')) {
-        document.getElementById("email").classList.toggle('warning');
-        document.getElementById("warning").classList.toggle('warning');
-        document.getElementById("submit").classList.toggle('warning');
-      }
-    } else if (document.getElementById('warning').classList.contains('warning')) {
-      document.getElementById("email").classList.toggle('warning');
-      document.getElementById("warning").classList.toggle('warning');
-      document.getElementById("submit").classList.toggle('warning');
-    } {
+    // Console output to verify function is working
+    console.log(`Entry: ${email}`);
 
+    // Regular expression to roughly check for valid email
+    const emailVerifier_RegEx = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/i;
+
+    // Check for valid email
+    if (email.length === 0 || emailVerifier_RegEx.test(email) == false) {
+      console.error("Email error");
+
+      // If warningHeader classList doesn't contain 'error', add error to classList
+      if (!warningHeader.classList.contains('error'))
+        warningHeader.classList.add('error');
     }
-  }
+
+    else
+      warningHeader.classList.remove('error');
+  })
 
 </script>
 
