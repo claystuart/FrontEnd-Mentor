@@ -1,0 +1,44 @@
+.top__container {
+    width: 1440px;
+    height: 900px;
+    background-image: url(./starter-code/assets/desktop/image-host.jpg);
+    background-size: 61% auto;
+    background-position: center right;
+}
+
+.logo {
+   top: 102px;
+   left: 165px; 
+}
+
+main {
+    width: 723px;
+    height: 509px;
+    margin-top: 261px;
+    margin-left: 165px;
+}
+
+h1.publish {
+    margin-top: 88px;
+    font-size: 52px;
+    line-height: 62px;
+}
+
+p {
+    margin-top: 24px;
+}
+
+.email__container {
+    width: 427px;
+    top: 621px;
+    left: 165px;
+}
+
+footer {
+    margin-left: 165px;
+}
+
+.dot__grid {
+    top: 707px;
+    left: 1206px;
+}
