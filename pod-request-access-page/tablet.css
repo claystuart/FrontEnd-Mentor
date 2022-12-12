@@ -6,3 +6,91 @@
     background-position: top right;
     box-shadow: none;
 }
+
+.logo {
+    top: 50px;
+    left: 39px;
+}
+
+main {
+    width: 635px;
+    height: 509px;
+    margin: 258px 94px 0 39px;
+    background-color: var(--navy);
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 56px;
+    width: 100%;
+    text-align: left;
+}
+
+h1.publish {
+    margin-top: 93px;
+}
+
+p {
+    width: 445px;
+    height: 84px;
+    text-align: left;
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 31px;
+}
+
+.email__container {
+    position: absolute;
+    top: 618px;
+    left: 39px;
+    margin: 0;
+}
+
+.email__container__input{
+    width: 427px;
+    height: 56px;
+}
+
+.email__container__button {
+    width: 162px;
+    height: 46px;
+    position: absolute;
+    top: 5px;
+    left: 260px;
+}
+
+footer {
+    width: 536px;
+    margin-left: 39px;
+    margin-top: -25px;
+}
+
+img[alt~='spotify'] {
+    width: 96px;
+    height: 29px;
+}
+
+img[alt~='apple'] {
+    width: 78px;
+    height: 29px;
+}
+
+img[alt~='google'] {
+    width: 125px;
+    height: 19=8px;
+}
+
+img[alt~='pocket'] {
+    width: 129px;
+    height: 26px;
+}
+
+.dot__grid {
+    width: 232px;
+    height: 104px;
+    display: block;
+    position: absolute;
+    top: 920px;
+    left: 30px;
+}
+

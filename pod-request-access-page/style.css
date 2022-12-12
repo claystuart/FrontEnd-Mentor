@@ -112,7 +112,8 @@ img[alt~='pocket'] {
     gap: 16px;
 }
 
-.email__container__object {
+.email__container__input,
+.email__container__button {
     width: 327px;
     height: 46px;
     border-radius: 30px;
@@ -124,28 +125,29 @@ img[alt~='pocket'] {
     margin: 0 auto;
 }
 
-.email__container__object--input {
+.email__container__input {
     background-color: #2C344B;
     color: white;
     padding-left: 32px;
     border: 0;
 }
+
 input::placeholder {
     color: white;
 }
 
-button {
+.email__container__button {
     color: var(--mgray);
     background-color: var(--green);
     border: 0;
 }
 
-button:hover {
+.email__container__button:hover {
     background-color: #B3FFE2;
     cursor: pointer;
 }
 
-button:active {
+.email__container__button:active {
     background-color: #7cd1b0;
 }
 
@@ -159,4 +161,8 @@ h2 {
 
 .error {
     display: block;
+}
+
+.dot__grid {
+    display: none;
 }
