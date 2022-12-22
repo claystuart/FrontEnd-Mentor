@@ -1,0 +1,54 @@
+body {
+    /* temporarily make background red to indicate transition */
+    background-color: red;
+}
+
+.container {
+    width: 940px;
+    display: flex;
+}
+
+header {
+    width: 274px;
+    height: 568px;
+    background-image: url('./assets/images/bg-sidebar-desktop.svg');
+}
+
+.header__container {
+    width: 153px;
+    height: 228px;
+    flex-direction: column;
+    margin: 40px 89px 300px 32px;
+}
+
+.option {
+    display: flex;
+    height: 33px;
+}
+
+.option__explanation {
+    margin-left: 16px;
+    display: block;
+    text-transform: uppercase;
+}
+
+.step {
+    font-size: 12px;
+    font-weight: normal;
+    color: var(--light-blue);
+
+}
+
+.info {
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+}
+
+section {
+    width: 343px;
+}
+
+.personal__info {
+    height: 376px;
+}
