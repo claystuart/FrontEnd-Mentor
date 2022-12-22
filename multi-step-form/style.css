@@ -122,14 +122,14 @@ footer {
     margin-bottom: 120px;
 }
 
-h1 {
+.article__header {
     font-size: 24px;
     font-weight: bold;
     color: var(--denim);
     margin: 32px 24px 0;
 }
 
-p {
+.article__subheader {
     font-size: 16px;
     font-weight: normal;
     line-height: 25px;
