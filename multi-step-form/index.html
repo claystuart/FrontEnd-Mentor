@@ -21,7 +21,7 @@
       <div class="header__container">
 
         <div class="option">
-          <button id="btn_page1" class="currentPage">1</button>
+          <button id="btn_page1" class="header__currentPage">1</button>
           <div class="option__explanation">
             <p class="step">Step 1</p>
             <p class="info">Your info</p>
@@ -58,25 +58,26 @@
       </div>
     </header>
 
-
     <main>
       <section class="">
         <!-- Step 1 start -->
         <article class="personal__info">
-          Personal info
-          Please provide your name, email address, and phone number.
+          <h1>Personal info</h1>
+          <p>Please provide your name, email address, and phone number.</p>
 
-          Name
-          e.g. Stephen King
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="e.g. Stephen King">
 
-          Email Address
-          e.g. stephenking@lorem.com
+          <label for="email">Email Address</label>
+          <input type="email" name="email" id="email" placeholder="e.g. stephenking@lorem.com">
 
-          Phone Number
-          e.g. +1 234 567 890
+          <label for="phone">Phone Number</label>
+          <input type="tel" name="phone" id="phone" placeholder="e.g. +1 234 567 890">
         </article>
 
-        <footer>Next Step</footer>
+        <footer>
+          <button class="footer__next">Next Step</button>
+        </footer>
         <!-- Step 1 end -->
       </section>
 
@@ -108,7 +109,7 @@
 
       <section class="hidden">
         <!-- Step 3 start -->
-        <article class="add_ons">
+        <article class="add__ons">
           Pick add-ons
           Add-ons help enhance your gaming experience.
 
@@ -160,7 +161,7 @@
           using our platform. If you ever need support, please feel free
           to email us at support@loremgaming.com.
         </article>
-        
+
         <!-- Step 5 end -->
       </section>
     </main>

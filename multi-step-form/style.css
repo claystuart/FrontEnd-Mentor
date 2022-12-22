@@ -6,17 +6,19 @@
 
 :root {
     /* Primary Colors */
-    --marine-blue: hsl(213, 96%, 18%);
-    --purple-blue: hsl(243, 100%, 62%);
-    --pastel-blue: hsl(228, 100%, 84%);
-    --light-blue: hsl(206, 94%, 87%);
-    --strawberry-red: hsl(354, 84%, 57%);
+    --marine-blue: #02295a;
+    --denim: #02295a;
+    --purple-blue: #473dff;
+    --pastel-blue: #adbeff;
+    --light-blue: #bfe2fd;
+    --strawberry-red: #ed3548;
 
     /* Neutral Colors */
-    --cool-gray: hsl(231, 11%, 63%);
-    --light-gray: hsl(229, 24%, 87%);
-    --magnolia: hsl(217, 100%, 97%);
-    --alabaster: hsl(231, 100%, 99%);
+    --cool-gray: #9699ab;
+    --light-gray: #d6d9e6;
+    --magnolia: #f0f6ff;
+    --alabaster: #fafbff;
+    --background: #eff5ff;
 
     /* Font: 400, 500, 700 */
     font-family: 'Ubuntu', sans-serif;
@@ -32,8 +34,8 @@ body {
 
 .container {
     width: 375px;
-    height: min-content;
-    background-color: white;
+    background-color: var(--background);
+    position: relative;
 }
 
 header {
@@ -61,7 +63,6 @@ header button {
     border-radius: 50%;
     outline: none;
     border: 0;
-
     font-family: 'Ubuntu', sans-serif;
     font-size: 14px;
     font-weight: bold;
@@ -70,7 +71,7 @@ header button {
     border: 1px solid white;
 }
 
-.currentPage {
+.header__currentPage {
     color: var(--marine-blue);
     background-color: var(--light-blue);
     border: 0;
@@ -78,4 +79,77 @@ header button {
 
 .hidden {
     display: none;
+}
+
+/* MAIN */
+
+section {
+    width: 343px;
+    position: absolute;
+    top: 99px;
+}
+
+article {
+    background-color: white;
+    margin: 0 16px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    width: 375px;
+    height: 72px;
+    background-color: white;
+}
+
+.footer__next {
+    width: 97px;
+    height: 40px;
+    color: white;
+    background-color: var(--denim);
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    margin: 16px 16px 16px 262px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.personal__info {
+    width: 343px;
+    height: 376px;
+    margin-bottom: 120px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--denim);
+    margin: 32px 24px 0;
+}
+
+p {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 25px;
+    color: var(--cool-gray);
+    margin: 9px 24px 22px;
+}
+
+label {
+    font-size: 12px;
+    color: var(--denim);
+    margin: 0 0 0 24px;
+}
+
+input {
+    width: 295px;
+    height: 40px;
+    margin: 3px 24px 16px;
+    padding-left: 16px;
+    font-size: 15px;
+    font-weight: normal;
+    color: #3d3f46;
+    border: 1px solid rgba(128, 128, 128, 0.282);
 }
