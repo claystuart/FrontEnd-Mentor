@@ -3,6 +3,7 @@ let currentButton = 'btn_page1';
 
 /**
  * @param {string} newPage Name of page id to swap displays on
+ * @param {string} newButton Name of button id to swap highlight
  */
 function displayPage(newPage, newButton) {
     document.getElementById(currentPage).classList.toggle('hidden');
