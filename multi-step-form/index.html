@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <title>Frontend Mentor | Multi-step form</title>
+
+  <script src="https://unpkg.com/react@16.7.0/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@16.7.0/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 940px)">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -59,7 +64,7 @@
     </header>
 
     <main>
-      <section class="">
+      <section class="" id="page__info">
         <!-- Step 1 start -->
         <article class="personal__info">
           <h1 class="article__header">Personal info</h1>
@@ -81,7 +86,7 @@
         <!-- Step 1 end -->
       </section>
 
-      <section class="hidden">
+      <section class="hidden" id="page__plan">
         <!-- Step 2 start -->
         <article class="select__plan">
           Select your plan
@@ -107,7 +112,7 @@
         <!-- Step 2 end -->
       </section>
 
-      <section class="hidden">
+      <section class="hidden" id="page__addOns">
         <!-- Step 3 start -->
         <article class="add__ons">
           Pick add-ons
@@ -134,7 +139,7 @@
       </section>
 
 
-      <section class="hidden">
+      <section class="hidden" id="page__finishUp">
         <!-- Step 4 start -->
         <article class="finishing__up">
           Finishing up
@@ -152,7 +157,7 @@
         <!-- Step 4 end -->
       </section>
 
-      <section class="hidden">
+      <section class="hidden" id="page__thankYou">
         <!-- Step 5 start -->
         <article class="thank__you">
           Thank you!
