@@ -2,6 +2,12 @@
 test.html
 experiments.html
 
+# basic logistics
+gitignore
+
 # Screencaptures for editing
 FrontEnd.xcf
 Capture.PNG
+
+# Folders to ignore
+/workit-landing-page
