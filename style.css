@@ -1,65 +1,65 @@
 body {
-    background-color: white;
-    background-repeat: no-repeat;
-    background-color: #7298ad;
-    background-attachment: fixed;
-    font-family: 'Cormorant Garamond', serif;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-color: #7298ad;
+  background-attachment: fixed;
+  font-family: "Cormorant Garamond", serif;
 }
 
 header {
-    text-align: center;
-    background-color: #121817;
-    color: white;
-    font-size: 24px;
-    margin: 20px;
-    border-radius: 1em;
-    word-spacing: 110%;
+  text-align: center;
+  background-color: #121817;
+  color: white;
+  font-size: 24px;
+  margin: 20px;
+  border-radius: 1em;
+  word-spacing: 110%;
 }
 
 h1 {
-    padding: 10px;
-    letter-spacing: 1px;
+  padding: 10px;
+  letter-spacing: 1px;
 }
 
 main {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 article {
-    width: 275px;
-    height: 375px;
-    cursor: pointer;
-    background-color: #121817;
-    letter-spacing: 110%;
-    word-spacing: 110%;
-    color: white;
-    text-align: center;
-    border-radius: 1em;
+  width: 275px;
+  height: 375px;
+  cursor: pointer;
+  background-color: #121817;
+  letter-spacing: 110%;
+  word-spacing: 110%;
+  color: white;
+  text-align: center;
+  border-radius: 1em;
 }
 
 section {
-    width: 80%;
-    margin: 0 auto;
+  width: 80%;
+  margin: 0 auto;
 }
 
 img {
-    width: 100%;
-    /* object-fit:scale-down; */
+  width: 230px;
+  height: 248px;
 }
 
 h2 {
-    font-size: 25px;
+  font-size: 25px;
 }
 
-article>h2 {
-    margin-top: 10px;
+article > h2 {
+  margin-top: 10px;
 }
 
 span {
-    color: #6ec05f;
-    font-size: 25px;
-    font-weight: bold;
+  color: #6ec05f;
+  font-size: 25px;
+  font-weight: bold;
 }

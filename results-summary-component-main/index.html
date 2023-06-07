@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Results summary component</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+  </style>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
+</head>
+
+<!-- onresize reloads for responsive React -->
+
+<body onresize="window.location.reload()">
+
+  <div id="container" class="container">
+
+    <script type="text/babel">
+      // BEGIN PURPLE BACKGROUND ('YOUR RESULT') SECTION WITH BIG NUMBER IN CIRCLE
+      class GraphicPage extends React.Component {
+        render() {
+          let GraphicSummaryStyle = {};
+
+          let ResultStyle = {};
+
+          let GreatStyle = {};
+
+          let ExplanationStyle = {};
+
+          // Responsive Code
+          if (window.matchMedia("(max-width: 768px)").matches) {
+
+            GraphicSummaryStyle = {
+              width: "375px",
+              height: "356px",
+              background: "linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%))",
+              borderBottomRightRadius: 32,
+              borderBottomLeftRadius: 32,
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            };
+
+            ResultStyle = {
+              margin: 24,
+              fontSize: 18,
+              color: "#CAC9FF",
+            }
+
+            GreatStyle = {
+              marginTop: 24,
+              fontSize: 24,
+              fontWeight: 700,
+              lineHeight: "31px",
+              color: "white",
+            }
+
+            ExplanationStyle = {
+              marginTop: 8,
+              fontSize: 16,
+              width: 260,
+              height: 42,
+              color: "#CAC9FF",
+            }
+          } else {
+
+            GraphicSummaryStyle = {
+              width: "368px",
+              height: "512px",
+              background: "linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%))",
+              borderTopLeftRadius: 32,
+              borderBottomLeftRadius: 32,
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            };
+
+            ResultStyle = {
+              margin: 38,
+              fontSize: 24,
+              fontWeight: 700,
+              color: "#CAC9FF",
+            }
+
+            GreatStyle = {
+              marginTop: 28,
+              fontSize: 32,
+              fontWeight: 700,
+              lineHeight: "41px",
+              color: "white",
+            }
+
+            ExplanationStyle = {
+              textAlign: "center",
+              marginTop: 14,
+              fontSize: 18,
+              width: 260,
+              height: 42,
+              color: "#CAC9FF",
+            }
+          }
+
+          return (
+            <div style={GraphicSummaryStyle}>
+              <h1 style={ResultStyle}>Your Result</h1>
+              <DataCircle />
+              <h2 style={GreatStyle}>Great</h2>
+              <p style={ExplanationStyle}>Your performance exceeds 65% of the people conducting the test here!</p>
+            </div>
+          );
+        }
+      }
+
+      class DataCircle extends React.Component {
+        render() {
+
+          let DataCircleStyle = {};
+
+          let BigNumStyle = {};
+
+          let SmallNumStyle = {};
+
+          if (window.matchMedia("(max-width: 768px)").matches) {
+            DataCircleStyle = {
+              width: 140,
+              height: 140,
+              borderRadius: "50%",
+              background: "linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0))",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+              margin: 0,
+            }
+
+            DataCircleStyle = {
+              width: 140,
+              height: 140,
+              borderRadius: "50%",
+              background: "linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0))",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+              margin: 0,
+            }
+
+            BigNumStyle = {
+              height: 72,
+              width: 63,
+              fontSize: 56,
+              fontWeight: 800,
+              color: "white",
+            }
+
+            SmallNumStyle = {
+              width: 46,
+              height: 21,
+              color: "#CAC9FF",
+              fontSize: "16px",
+              opacity: "51%"
+            }
+          } else {
+
+            DataCircleStyle = {
+              width: 200,
+              height: 200,
+              borderRadius: "50%",
+              background: "linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0))",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+              margin: 0,
+            }
+
+            BigNumStyle = {
+              fontSize: 56,
+              fontWeight: 800,
+              color: "white",
+            }
+
+            SmallNumStyle = {
+              width: 52,
+              height: 23,
+              color: "#CAC9FF",
+              fontSize: 18,
+              opacity: "51%"
+            }
+          }
+
+          return (
+            <div style={DataCircleStyle}>
+              <h1 style={BigNumStyle}>76</h1>
+              <h2 style={SmallNumStyle}>of 100</h2>
+            </div>
+          )
+        }
+      }
+
+      // Label part for DataPanel
+      class Label extends React.Component {
+        render() {
+          let LabelStyle = {
+            width: 95,
+            height: 21,
+            color: this.props.color,
+            marginLeft: 16,
+            fontSize: "16px",
+            fontWeight: "bold",
+            display: "flex",
+            alignItems: "center",
+          }
+
+          return (
+            <div style={LabelStyle} >
+              {this.props.children}
+            </div>
+          );
+        }
+      }
+
+      // Fraction part of DataPanel
+      class Fraction extends React.Component {
+        render() {
+          let FractionStyle = {
+            width: 64,
+            height: 21,
+            marginRight: 16,
+            fontWeight: "bold",
+            color: "hsl(224, 30%, 27%)",
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: 'space-between',
+          }
+
+          let Opacity = {
+            opacity: "50%",
+          }
+
+          return (
+            <div style={FractionStyle} >
+              <span>
+                {this.props.children.split(' ')[0]}
+              </span>
+              <span style={Opacity}>
+                {this.props.children.split(' ')[1]}
+              </span>
+              <span style={Opacity}>
+                {this.props.children.split(' ')[2]}
+              </span>
+
+            </div>
+          );
+        }
+      }
+
+      // Colored sections: Reaction, Memory, Verbal, and Visual
+      class DataPanel extends React.Component {
+        render() {
+          let DataPanelStyle = {};
+
+          if (window.matchMedia("(max-width: 700px)").matches) {
+            DataPanelStyle = {
+              width: "315px",
+              height: "56px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+              backgroundColor: 'hsla(0, 100%, 67%, .05)',
+              backgroundColor: this.props.bgColor,
+              marginLeft: 30,
+              marginTop: 16,
+              marginBottom: 16,
+            }
+          } else {
+            DataPanelStyle = {
+              width: 288,
+              height: 56,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+              backgroundColor: 'hsla(0, 100%, 67%, .05)',
+              backgroundColor: this.props.bgColor,
+              marginLeft: 40,
+              marginTop: 16,
+              marginBottom: 16,
+              borderRadius: 12,
+            }
+          }
+          return (
+            <div style={DataPanelStyle} >
+              {this.props.children}
+            </div>
+          );
+        };
+      }
+
+      // BEGIN WHITE BACKGROUND ('SUMMARY') SECTION WITH DATA
+      class DataPage extends React.Component {
+        constructor() {
+          super();
+          this.state = {
+            info: '',
+          };
+
+          // Function for Continue Button
+          this.sayHello = () => console.log(this.state.info[0].category);
+
+          this.Name = "Reaction";
+        }
+
+        componentDidMount() {
+          //  JSON experiment
+          fetch('data.json')
+            .then(response => response.json())
+            .then(resp => this.setState({ info: resp }))
+          // .then(jsonResponse => console.log(jsonResponse))
+          //  consoles out object from the parsed json
+        }
+
+        render() {
+          let DataPageStyle = {};
+
+          let ImgStyle = {};
+
+          let ButtonStyle = {};
+
+          let SummaryStyle = {
+          };
+
+          // Responsive Code
+          if (window.matchMedia("(max-width: 700px)").matches) {
+            DataPageStyle = {
+              width: "375px",
+              background: "white",
+              borderBottomRightRadius: 20,
+              borderBottomLeftRadius: 20,
+            };
+
+            ImgStyle = {
+              marginRight: 12
+            }
+
+            ButtonStyle = {
+              width: 315,
+              height: 56,
+              backgroundColor: "#303B59",
+              color: "white",
+              fontSize: 18,
+              lineHeight: "23px",
+              borderRadius: "25px",
+              marginLeft: "30px",
+              border: "none",
+              marginTop: 8,
+              marginBottom: 30,
+            }
+
+            SummaryStyle = {
+              width: "78px",
+              height: "28px",
+              fontWeight: "bold",
+              fontSize: 18,
+              marginTop: 24,
+              marginBottom: 24,
+              marginLeft: 32,
+              color: "hsl(224, 30%, 27%)",
+            };
+
+          } else {
+
+            DataPageStyle = {
+              width: 368,
+              height: 512,
+              background: "white",
+              borderTopRightRadius: 32,
+              borderBottomRightRadius: 32,
+            };
+
+            ImgStyle = {
+              marginRight: 12
+            }
+
+            ButtonStyle = {
+              width: 288,
+              height: 56,
+              backgroundColor: "#303B59",
+              color: "white",
+              fontSize: 18,
+              lineHeight: "23px",
+              borderRadius: "25px",
+              marginLeft: "40px",
+              border: "none",
+              marginTop: 30,
+            }
+
+            SummaryStyle = {
+              width: "78px",
+              height: "28px",
+              fontWeight: "bold",
+              fontSize: 24,
+              marginTop: 38,
+              marginBottom: 28,
+              marginLeft: 40,
+              color: "hsl(224, 30%, 27%)",
+            };
+          }
+
+          return (
+            <div style={DataPageStyle}>
+
+              <p style={SummaryStyle}>Summary</p>
+
+              <DataPanel bgColor='hsla(0, 100%, 67%, .08)'>
+                <Label color="#FF5555"><img style={ImgStyle} src="./assets/images/icon-reaction.svg" alt="Lightning Icon" />{this.Name}</Label>
+                <Fraction>80 / 100</Fraction>
+              </DataPanel>
+
+              <DataPanel bgColor='hsla(39, 100%, 56%, .08)'>
+                <Label color="#FFB21E"><img style={ImgStyle} src="./assets/images/icon-memory.svg" alt="Clock Icon" />Memory</Label>
+                <Fraction>92 / 100</Fraction>
+              </DataPanel>
+
+              <DataPanel bgColor='hsla(166, 100%, 37%, .08)'>
+                <Label color="#00BB8F"> <img style={ImgStyle} src="./assets/images/icon-verbal.svg" alt="Dialog Icon" />Verbal</Label>
+                <Fraction>61 / 100</Fraction>
+              </DataPanel>
+
+              <DataPanel bgColor='hsla(234, 85%, 45%, .05)'>
+                <Label color="#1125D6"><img style={ImgStyle} src="./assets/images/icon-visual.svg" alt="Eye Icon" />Visual</Label>
+                <Fraction>72 / 100</Fraction>
+              </DataPanel>
+
+              <button style={ButtonStyle} onClick={this.sayHello}>Continue</button>
+            </div >
+          );
+        }
+      }
+
+      class Display extends React.Component {
+        render() {
+          let DisplayStyle = {
+
+          };
+
+          // Responsive Code
+          if (window.matchMedia("(max-width: 768px)").matches) {
+
+            DisplayStyle = {
+              width: 375,
+              height: 809,
+              display: "flex",
+              flexDirection: "column",
+              boxShadow: "0px 0px 5px #665",
+            };
+          } else {
+
+            DisplayStyle = {
+              width: 736,
+              height: 512,
+              display: "flex",
+              flexDirection: "row",
+              boxShadow: "0px 0px 5px rgba(61, 108, 236, 0.15)",
+              borderRadius: 32,
+              border: "none",
+            };
+          }
+          return (
+            <div style={DisplayStyle}>
+              <GraphicPage />
+              <DataPage />
+            </div>
+          );
+        }
+      }
+
+      ReactDOM.render(
+        <div>
+          <Display></Display>
+        </div>, document.getElementById("container")
+      );
+    </script>
+  </div>
+
+  <div class="attribution" hidden>
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="http://www.claystuart.com">Clay Stuart</a>.
+  </div>
+
+</body>
+
+</html>
