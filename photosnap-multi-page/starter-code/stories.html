@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <title>Frontend Mentor | Photosnap Website Challenge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/mobile.css">
+  <link rel="stylesheet" href="./css/tablet.css" media="screen and (min-width: 768px)">
+  <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width: 1440px)">
+</head>
+
+<body>
+  <div class="topContainer">
+
+    <header class="header">
+      <div class="menu__row">
+        <a href="index.html"><img src="./assets/shared/desktop/logo.svg" alt="Photosnap logo"></a>
+        <img id="hamburgerIcon" src="./assets/shared/mobile/menu.svg" alt="Menu Open">
+        <nav class="large__menu">
+          <a href="stories.html">Stories</a>
+          <a href="features.html">Features</a>
+          <a href="pricing.html">Pricing</a>
+        </nav>
+        <a class="large__menu large__invite" href="#">Get an invite</a>
+       
+      </div> 
+
+      <nav class="mobile__menu menu--closed" id="menuContents">
+        <a class="link" href="stories.html">Stories</a>
+        <a class="link" href="features.html">Features</a>
+        <a class="link" href="pricing.html">Pricing</a>
+        <hr>
+        <a class="header__invite" href="#">Get an invite</a>
+      </nav>
+    </header>
+
+    <main>
+
+      <section class="stories__twoSquare">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./assets/stories/desktop/moon-of-appalacia.jpg" />
+          <source media="(min-width: 768px)" srcset="./assets/stories/tablet/moon-of-appalacia.jpg" />
+          <img src="./assets/stories/mobile/moon-of-appalacia.jpg" alt="A hazy mountain in the moonlight.">
+        </picture>
+
+        <article class="stories__article">
+          <h3 class="stories__article__preHeader">Last month's featured story</h3>
+          <h1 class="stories__article__header">Hazy full moon of Appalachia</h1>
+          <h4 class="stories__article__subtitle"><span class="stories__article__date">March 2nd 2020</span> by John Appleseed</h4>
+          <p class="stories__article__para">The dissected plateau area, while not actually made up of geological mountains,
+            is popularly called "mountains," especially in eastern Kentucky and West Virginia,
+            and while the ridges are not high, the terrain is extremely rugged.</p>
+
+          <div class="stories__link__box">
+            <a class="article__link" href="#">READ THE STORY</a>
+
+            <svg class="svg__arrow svg__arrow--white" width="42" height="12" xmlns="http://www.w3.org/2000/svg"
+              version="1.1">
+              <line x1="0" y1="50%" x2="100%" y2="50%" stroke="white" stroke-width="1" stroke-linejoin="miter" />
+              <line x1="80%" y1="0" x2="99%" y2="50%" stroke="white" stroke-width="1" stroke-linejoin="miter" />
+              <line x1="80%" y1="100%" x2="99%" y2="50%" stroke="white" stroke-width="1" stroke-linejoin="miter" />
+            </svg>
+          </div>
+
+        </article>
+      </section>
+
+
+      <!-- STORIES -->
+      <div class="stories">
+
+        <figure>
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/stories/desktop/mountains.jpg" />
+            <img src="./assets/stories/mobile/mountains.jpg" alt="A soaring mountain in the clouds.">
+          </picture>
+          <figcaption class="caption--date">April 16th 2020</figcaption>
+          <figcaption class="caption--title">The Mountains</figcaption>
+          <figcaption class="caption--subtitle">by John Appleseed</figcaption>
+          <figcaption class="caption__dividingLine"></figcaption>
+          <figcaption class="caption__link"><a href="#">Read Story</a></figcaption>
+          <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14" class="caption__arrow">
+            <g fill="none" fill-rule="evenodd" stroke="white">
+              <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+            </g>
+          </svg>
+
+        </figure>
+
+        <figure>
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/stories/desktop/cityscapes.jpg" />
+            <img src="./assets/stories/mobile/cityscapes.jpg" alt="A city full of Skysrapers.">
+          </picture>
+          <figcaption class="caption--date">April 14th 2020</figcaption>
+          <figcaption class="caption--title">Sunset Cityscapes</figcaption>
+          <figcaption class="caption--subtitle">by Benjamin Cruz</figcaption>
+          <figcaption class="caption__dividingLine"></figcaption>
+          <figcaption class="caption__link"><a href="#">Read Story</a></figcaption>
+          <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14" class="caption__arrow">
+            <g fill="none" fill-rule="evenodd" stroke="white">
+              <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+            </g>
+          </svg>
+        </figure>
+
+        <figure>
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/stories/desktop/18-days-voyage.jpg" />
+            <img src="./assets/stories/mobile/18-days-voyage.jpg" alt="A silhouetted man walking.">
+          </picture>
+          <figcaption class="caption--date">April 11th 2020</figcaption>
+          <figcaption class="caption--title">18 Days Voyage</figcaption>
+          <figcaption class="caption--subtitle">by Alexei Borodin</figcaption>
+          <figcaption class="caption__dividingLine"></figcaption>
+          <figcaption class="caption__link"><a href="#">Read Story</a></figcaption>
+          <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14" class="caption__arrow">
+            <g fill="none" fill-rule="evenodd" stroke="white">
+              <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+            </g>
+          </svg>
+        </figure>
+
+        <figure>
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/stories/desktop/architecturals.jpg" />
+            <img src="./assets/stories/mobile/architecturals.jpg" alt="Looking up at a winding skyscraper">
+          </picture>
+          <figcaption class="caption--date">April 9th 2020</figcaption>
+          <figcaption class="caption--title">Architecturals</figcaption>
+          <figcaption class="caption--subtitle">by Samantha Brooke</figcaption>
+          <figcaption class="caption__dividingLine"></figcaption>
+          <figcaption class="caption__link"><a href="#">Read Story</a></figcaption>
+          <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14" class="caption__arrow">
+            <g fill="none" fill-rule="evenodd" stroke="white">
+              <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+            </g>
+          </svg>
+        </figure>
+
+        <figure>
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/stories/desktop/world-tour.jpg" />
+            <img src="./assets/stories/mobile/world-tour.jpg" alt="A mountain valley lake">
+          </picture>
+          <figcaption class="caption--date">April 7th 2020</figcaption>
+          <figcaption class="caption--title">World Tour 2019</figcaption>
+          <figcaption class="caption--subtitle">by Timothy Wagner</figcaption>
+          <figcaption class="caption__dividingLine"></figcaption>
+          <figcaption class="caption__link"><a href="#">Read Story</a></figcaption>
+          <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14" class="caption__arrow">
+            <g fill="none" fill-rule="evenodd" stroke="white">
+              <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+            </g>
+          </svg>
+        </figure>
+
+        <figure>
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/stories/desktop/unforeseen-corners.jpg" />
+            <img src="./assets/stories/mobile/unforeseen-corners.jpg" alt="A silhouetted tree in the sunrise">
+          </picture>
+          <figcaption class="caption--date"> April 3rd 2020</figcaption>
+          <figcaption class="caption--title">Unforeseen Corners</figcaption>
+          <figcaption class="caption--subtitle">by William Malcolm</figcaption>
+          <figcaption class="caption__dividingLine"></figcaption>
+          <figcaption class="caption__link"><a href="#">Read Story</a></figcaption>
+          <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14" class="caption__arrow">
+            <g fill="none" fill-rule="evenodd" stroke="white">
+              <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+            </g>
+          </svg>
+        </figure>
+
+        <figure>
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/stories/desktop/king-on-africa.jpg" />
+            <img src="./assets/stories/mobile/king-on-africa.jpg" alt="A male lion">
+          </picture>
+          <figcaption class="caption--date"> March 29th 2020</figcaption>
+          <figcaption class="caption--title">King on Africa: Part II</figcaption>
+          <figcaption class="caption--subtitle">by Tim Hillenburg</figcaption>
+          <figcaption class="caption__dividingLine"></figcaption>
+          <figcaption class="caption__link"><a href="#">Read Story</a></figcaption>
+          <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14" class="caption__arrow">
+            <g fill="none" fill-rule="evenodd" stroke="white">
+              <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+            </g>
+          </svg>
+        </figure>
+
+        <figure>
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/stories/desktop/trip-to-nowhere.jpg" />
+            <img src="./assets/stories/mobile/trip-to-nowhere.jpg" alt="A tree reflecting in a pond">
+          </picture>
+          <figcaption class="caption--date"> March 21st 2020</figcaption>
+          <figcaption class="caption--title">The Trip to Nowhere</figcaption>
+          <figcaption class="caption--subtitle">by Felicia Rourke</figcaption>
+          <figcaption class="caption__dividingLine"></figcaption>
+          <figcaption class="caption__link"><a href="#">Read Story</a></figcaption>
+          <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14" class="caption__arrow">
+            <g fill="none" fill-rule="evenodd" stroke="white">
+              <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+            </g>
+          </svg>
+        </figure>
+
+        <figure>
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/stories/desktop/rage-of-the-sea.jpg" />
+            <img src="./assets/stories/mobile/rage-of-the-sea.jpg" alt="Rolling waves">
+          </picture>
+          <figcaption class="caption--date">March 19th 2020</figcaption>
+          <figcaption class="caption--title">Rage of The Sea</figcaption>
+          <figcaption class="caption--subtitle">by Mohammed Abdul</figcaption>
+          <figcaption class="caption__dividingLine"></figcaption>
+          <figcaption class="caption__link"><a href="#">Read Story</a></figcaption>
+          <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14" class="caption__arrow">
+            <g fill="none" fill-rule="evenodd" stroke="white">
+              <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+            </g>
+          </svg>
+        </figure>
+
+        <figure>
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/stories/desktop/running-free.jpg" />
+            <img src="./assets/stories/mobile/running-free.jpg" alt="A galloping horse">
+          </picture>
+          <figcaption class="caption--date">March 16th 2020</figcaption>
+          <figcaption class="caption--title">Running Free</figcaption>
+          <figcaption class="caption--subtitle">by Michelle</figcaption>
+          <figcaption class="caption__dividingLine"></figcaption>
+          <figcaption class="caption__link"><a href="#">Read Story</a></figcaption>
+          <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14" class="caption__arrow">
+            <g fill="none" fill-rule="evenodd" stroke="white">
+              <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+            </g>
+          </svg>
+        </figure>
+
+        <figure>
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/stories/desktop/behind-the-waves.jpg" />
+            <img src="./assets/stories/mobile/behind-the-waves.jpg" alt="A crashing wave">
+          </picture>
+          <figcaption class="caption--date">March 11th 2020</figcaption>
+          <figcaption class="caption--title">Behind the Waves</figcaption>
+          <figcaption class="caption--subtitle">by Lamarr Wilson</figcaption>
+          <figcaption class="caption__dividingLine"></figcaption>
+          <figcaption class="caption__link"><a href="#">Read Story</a></figcaption>
+          <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14" class="caption__arrow">
+            <g fill="none" fill-rule="evenodd" stroke="white">
+              <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+            </g>
+          </svg>
+        </figure>
+
+        <figure>
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/stories/desktop/calm-waters.jpg" />
+            <img src="./assets/stories/mobile/calm-waters.jpg" alt="A mountain side - no water is visible.">
+          </picture>
+          <figcaption class="caption--date"> March 9th 2020</figcaption>
+          <figcaption class="caption--title">Calm Waters</figcaption>
+          <figcaption class="caption--subtitle">by Samantha Brooke</figcaption>
+          <figcaption class="caption__dividingLine"></figcaption>
+          <figcaption class="caption__link"><a href="#">Read Story</a></figcaption>
+          <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14" class="caption__arrow">
+            <g fill="none" fill-rule="evenodd" stroke="white">
+              <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+            </g>
+          </svg>
+        </figure>
+
+        <figure>
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/stories/desktop/milky-way.jpg" />
+            <img src="./assets/stories/mobile/milky-way.jpg" alt="A picture of deep space -- the milky way">
+          </picture>
+          <figcaption class="caption--date">March 5th 2020</figcaption>
+          <figcaption class="caption--title">The Milky Way</figcaption>
+          <figcaption class="caption--subtitle">by Benjamin Cruz</figcaption>
+          <figcaption class="caption__dividingLine"></figcaption>
+          <figcaption class="caption__link"><a href="#">Read Story</a></figcaption>
+          <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14" class="caption__arrow">
+            <g fill="none" fill-rule="evenodd" stroke="white">
+              <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+            </g>
+          </svg>
+        </figure>
+
+        <figure>
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/stories/desktop/dark-forest.jpg" />
+            <img src="./assets/stories/mobile/dark-forest.jpg" alt="A snow-covered mountain side.">
+          </picture>
+          <figcaption class="caption--date">March 4th 2020</figcaption>
+          <figcaption class="caption--title">Night at The Dark Forest</figcaption>
+          <figcaption class="caption--subtitle">by Mohammed Abdul </figcaption>
+          <figcaption class="caption__dividingLine"></figcaption>
+          <figcaption class="caption__link"><a href="#">Read Story</a></figcaption>
+          <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14" class="caption__arrow">
+            <g fill="none" fill-rule="evenodd" stroke="white">
+              <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+            </g>
+          </svg>
+        </figure>
+
+        <figure>
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/stories/desktop/somwarpet.jpg" />
+            <img src="./assets/stories/mobile/somwarpet.jpg" alt="A closeup of flowers blooming.">
+          </picture>
+          <figcaption class="caption--date"> March 1st 2020</figcaption>
+          <figcaption class="caption--title">Somwarpet&apos;s Beauty</figcaption>
+          <figcaption class="caption--subtitle">by Michelle</figcaption>
+          <figcaption class="caption__dividingLine"></figcaption>
+          <figcaption class="caption__link"><a href="#">Read Story</a></figcaption>
+          <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14" class="caption__arrow">
+            <g fill="none" fill-rule="evenodd" stroke="white">
+              <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+            </g>
+          </svg>
+        </figure>
+
+        <figure>
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/stories/desktop/land-of-dreams.jpg" />
+            <img src="./assets/stories/mobile/land-of-dreams.jpg" alt="A tiny church in a huge, snow-covered valley">
+          </picture>
+          <figcaption class="caption--date"> February 25th 2020</figcaption>
+          <figcaption class="caption--title">Land of Dreams</figcaption>
+          <figcaption class="caption--subtitle"> by William Malcolm</figcaption>
+          <figcaption class="caption__dividingLine"></figcaption>
+          <figcaption class="caption__link"><a href="#">Read Story</a></figcaption>
+          <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14" class="caption__arrow">
+            <g fill="none" fill-rule="evenodd" stroke="white">
+              <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+            </g>
+          </svg>
+        </figure>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer__container">
+
+        <div class="footer__logo">
+          <a href="index.html"><img src="./assets/shared/desktop/logo_White.svg" alt="Photosnap logo"></a>
+        </div>
+
+        <div class="footer__social__media">
+          <a href="#"><img src="./assets/shared/desktop/facebook.svg" alt="facebook"></a>
+          <a href="#"><img src="./assets/shared/desktop/youtube.svg" alt="youtube"></a>
+          <a href="#"><img src="./assets/shared/desktop/twitter.svg" alt="twitter"></a>
+          <a href="#"><img src="./assets/shared/desktop/pinterest.svg" alt="pinterest"></a>
+          <a href="#"><img src="./assets/shared/desktop/instagram.svg" alt="instagram"></a>
+        </div>
+
+        <div class="footer__navigation__container">
+          <a href="index.html">Home</a>
+          <a href="stories.html">Stories</a>
+          <a href="features.html">Features</a>
+          <a href="pricing.html">Pricing</a>
+        </div>
+
+        <div class="footer__invite__container">
+          <a href="#">Get an invite</a>
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+            <g fill="none" fill-rule="evenodd" stroke="white">
+              <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+            </g>
+          </svg>
+        </div>
+
+        <div class="footer__copyright">
+          <h2 class="footer__copyright__text">Copyright 2019. All Rights Reserved</h2>
+        </div>
+
+      </div>
+    </footer>
+
+
+  </div>
+</body>
+<script type="text/javascript" src="./javascript/script.js"></script>
+
+</html>

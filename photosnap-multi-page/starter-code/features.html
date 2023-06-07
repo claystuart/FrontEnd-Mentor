@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <title>Frontend Mentor | Photosnap Website Challenge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/mobile.css">
+  <link rel="stylesheet" href="./css/tablet.css" media="screen and (min-width: 768px)">
+  <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width: 1440px)">
+</head>
+
+<body>
+  <div class="topContainer">
+
+    <header class="header">
+      <div class="menu__row">
+        <a href="index.html"><img src="./assets/shared/desktop/logo.svg" alt="Photosnap logo"></a>
+        <img id="hamburgerIcon" src="./assets/shared/mobile/menu.svg" alt="Menu Open">
+        <nav class="large__menu">
+          <a href="stories.html">Stories</a>
+          <a href="features.html">Features</a>
+          <a href="pricing.html">Pricing</a>
+        </nav>
+        <a class="large__menu large__invite" href="#">Get an invite</a>
+       
+      </div> 
+
+      <nav class="mobile__menu menu--closed" id="menuContents">
+        <a class="link" href="stories.html">Stories</a>
+        <a class="link" href="features.html">Features</a>
+        <a class="link" href="pricing.html">Pricing</a>
+        <hr>
+        <a class="header__invite" href="#">Get an invite</a>
+      </nav>
+    </header>
+
+    <main>
+
+      <section class="features__twoSquare ">
+        <picture class="item2">
+          <source media="(min-width: 1440px)" srcset="./assets/features/desktop/hero.jpg" />
+          <source media="(min-width: 768px)" srcset="./assets/features/tablet/hero.jpg" />
+          <img src="./assets/features/mobile/hero.jpg" alt="Man holding camera">
+        </picture>
+
+        <article class="article--black features__article--black">
+          <h1 class="features__article__header">Features</h1>
+          <p class="features__article__para">We make sure all of our features are designed to be loved by every aspiring and even
+            professional photograpers who wanted to share their stories.</p>
+
+        </article>
+      </section>
+
+
+      <!-- TECHNICALS -->
+      <div class="technical__section--features">
+
+        <article class="technical__article--features ">
+          <img src="./assets/features/desktop/responsive.svg" alt="Mobile devices plugged together">
+          <h2>100% Responsive</h2>
+          <p>No matter which the device you’re on, our site is fully responsive and stories
+            look beautiful on any screen.
+          </p>
+        </article>
+
+        <article class="technical__article--features">
+          <img class="infinity__symbol" src="./assets/features/desktop/no-limit.svg" alt="Infinity Symbol.">
+          <h2 class="infinity--offset">No Photo Upload Limit</h2>
+          <p>Our tool has no limits on uploads or bandwidth. Freely upload in bulk and
+            share all of your stories in one go.</p>
+        </article>
+
+        <article class="technical__article--features">
+          <img src="./assets/features/desktop/embed.svg" alt="Megaphone broadcasting to social media.">
+          <h2>Available to Embed</h2>
+          <p>Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos,
+            Google Maps, and more.</p>
+        </article>
+
+        <article class="technical__article--features">
+          <img src="./assets/features/desktop/custom-domain.svg" alt="Web browser search graphic">
+          <h2>Custom Domain</h2>
+          <p>With Photosnap subscriptions you can host your stories on your own domain. You can
+            also remove our branding!</p>
+        </article>
+
+        <article class="technical__article--features">
+          <img src="./assets/features/desktop/boost-exposure.svg" alt="Hand pressing notification button">
+          <h2>Boost Your Exposure</h2>
+          <p>Users that viewed your story or gallery can easily get notifed of new and featured
+            stories with our built in mailing list.</p>
+        </article>
+
+        <article class="technical__article--features">
+          <img src="./assets/features/desktop/drag-drop.svg" alt="Landscape picture being dragged over items">
+          <h2>Drag & Drop Image</h2>
+          <p>Easily drag and drop your image and get beautiful shots everytime. No over the top
+            tooling to add friction to creating stories.</p>
+        </article>
+      </div>
+
+      <div class="beta">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./assets/pricing/desktop/bg-beta.jpg" />
+          <source media="(min-width: 768px)" srcset="./assets/pricing/tablet/bg-beta.jpg" />
+          <img src="./assets/pricing/mobile/bg-beta.jpg" alt="Sand dunes at dusk">
+        </picture>
+        <h1 class="beta__title">We're in Beta. Get your invite today!</h1>
+
+        <h1 class="caption__link"><a href="#">Get an invite</a></h1>
+        <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14" class="caption__arrow">
+          <g fill="none" fill-rule="evenodd" stroke="white">
+            <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+          </g>
+        </svg>
+
+      </div>
+
+    </main>
+
+    <footer>
+      <div class="footer__container">
+
+        <div class="footer__logo">
+          <a href="index.html"><img src="./assets/shared/desktop/logo_White.svg" alt="Photosnap logo"></a>
+        </div>
+
+        <div class="footer__social__media">
+          <a href="#"><img src="./assets/shared/desktop/facebook.svg" alt="facebook"></a>
+          <a href="#"><img src="./assets/shared/desktop/youtube.svg" alt="youtube"></a>
+          <a href="#"><img src="./assets/shared/desktop/twitter.svg" alt="twitter"></a>
+          <a href="#"><img src="./assets/shared/desktop/pinterest.svg" alt="pinterest"></a>
+          <a href="#"><img src="./assets/shared/desktop/instagram.svg" alt="instagram"></a>
+        </div>
+
+        <div class="footer__navigation__container">
+          <a href="index.html">Home</a>
+          <a href="stories.html">Stories</a>
+          <a href="features.html">Features</a>
+          <a href="pricing.html">Pricing</a>
+        </div>
+
+        <div class="footer__invite__container">
+          <a href="#">Get an invite</a>
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+            <g fill="none" fill-rule="evenodd" stroke="white">
+              <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+            </g>
+          </svg>
+        </div>
+
+        <div class="footer__copyright">
+          <h2 class="footer__copyright__text">Copyright 2019. All Rights Reserved</h2>
+        </div>
+
+      </div>
+    </footer>
+
+
+  </div>
+</body>
+<script type="text/javascript" src="./javascript/script.js"></script>
+
+</html>

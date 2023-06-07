@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <title>Frontend Mentor | Photosnap Website Challenge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/mobile.css">
+  <link rel="stylesheet" href="./css/tablet.css" media="screen and (min-width: 768px)">
+  <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width: 1440px)">
+</head>
+
+<body>
+  <div class="topContainer">
+
+    <header class="header">
+      <div class="menu__row">
+        <a href="index.html"><img src="./assets/shared/desktop/logo.svg" alt="Photosnap logo"></a>
+        <img id="hamburgerIcon" src="./assets/shared/mobile/menu.svg" alt="Menu Open">
+        <nav class="large__menu">
+          <a href="stories.html">Stories</a>
+          <a href="features.html">Features</a>
+          <a href="pricing.html">Pricing</a>
+        </nav>
+        <a class="large__menu large__invite" href="#">Get an invite</a>
+
+      </div>
+
+      <nav class="mobile__menu menu--closed" id="menuContents">
+        <a class="link" href="stories.html">Stories</a>
+        <a class="link" href="features.html">Features</a>
+        <a class="link" href="pricing.html">Pricing</a>
+        <hr>
+        <a class="header__invite" href="#">Get an invite</a>
+      </nav>
+    </header>
+
+    <main>
+
+      <section class="features__twoSquare ">
+        <picture class="item2">
+          <source media="(min-width: 1440px)" srcset="./assets/pricing/desktop/hero.jpg" />
+          <source media="(min-width: 768px)" srcset="./assets/pricing/tablet/hero.jpg" />
+          <img src="./assets/pricing/mobile/hero.jpg" alt="Man holding camera">
+        </picture>
+
+        <article class="article--black features__article--black">
+          <h1 class="features__article__header">Pricing</h1>
+          <p class="features__article__para">Create a your stories, Photosnap is a platform for photographers and visual
+            storytellers.
+            It&apos;s the simple way to create and share your photos.</p>
+
+        </article>
+      </section>
+
+      <!-- TOGGLE SLIDER SWITCH -->
+      <div class="toggle__switch__container">
+        <label id="month__Toggle" class="toggle toggle--selected" for="term__toggleSwitch">Monthly</label>
+        <label class="switch">
+          <input type="checkbox" id="term__toggleSwitch">
+          <span class="track"></span>
+        </label>
+        <label id="year__Toggle" class="toggle" for="term__toggleSwitch">Yearly</label>
+      </div>
+
+      <!-- PRICE PLANS -->
+      <div class="price__plans">
+
+        <div class="price__card">
+          <h1 class="pricing__level">Basic</h1>
+          <p class="pricing__description">Includes basic usage of our platform. Recommended for new and aspiring
+            photographers.</p>
+
+          <div class="price__section">
+            <h2>$19.00</h2>
+            <h3>per month</h3>
+          </div>
+          <div class="price__section price__section--hidden">
+            <h2>$190.00</h2>
+            <h3>per year</h3>
+          </div>
+          <button>Pick Plan</button>
+        </div>
+
+        <div class="price__card price__card--black">
+          <h1 class="pricing__level">Pro</h1>
+          <p class="pricing__description">More advanced features available. Recommended for photography veterans and
+            professionals.</p>
+
+          <div class="price__section">
+            <h2>$39.00</h2>
+            <h3>per month</h3>
+          </div>
+          <div class="price__section price__section--hidden">
+            <h2>$390.00</h2>
+            <h3>per year</h3>
+          </div>
+          <button>Pick Plan</button>
+        </div>
+
+        <div class="price__card">
+          <h1 class="pricing__level">Business</h1>
+          <p class="pricing__description">Additional features available such as more detailed metrics. Recommended for
+            business owners.</p>
+
+          <div class="price__section">
+            <h2>$99.00</h2>
+            <h3>per month</h3>
+          </div>
+          <div class="price__section price__section--hidden">
+            <h2>$990.00</h2>
+            <h3>per year</h3>
+          </div>
+          <button>Pick Plan</button>
+        </div>
+      </div>
+
+      <!-- FEATURES TABLE - two separate layouts (mobile & tablet/desktop) -->
+
+      <table class="features__table--mobile">
+        <thead>
+          <tr>
+            <td colspan="3">The Features</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="3">Unlimited Story Posting</td>
+          </tr>
+          <tr class="table__tiers">
+            <td>Basic</td>
+            <td>Pro</td>
+            <td>Business</td>
+          </tr>
+          <tr>
+            <td><img src="./assets/pricing/desktop/check.svg" alt="check mark"></td>
+            <td><img src="./assets/pricing/desktop/check.svg" alt="check mark"></td>
+            <td><img src="./assets/pricing/desktop/check.svg" alt="check mark"></td>
+          </tr>
+          <tr>
+            <td colspan="3">Unlimited Photo Upload</td>
+          </tr>
+          <tr class="table__tiers">
+            <td>Basic</td>
+            <td>Pro</td>
+            <td>Business</td>
+          </tr>
+          <tr>
+            <td><img src="./assets/pricing/desktop/check.svg" alt="check mark"></td>
+            <td><img src="./assets/pricing/desktop/check.svg" alt="check mark"></td>
+            <td><img src="./assets/pricing/desktop/check.svg" alt="check mark"></td>
+          </tr>
+          <tr>
+            <td colspan="3">Embedding Custom Content</td>
+          </tr>
+          <tr class="table__tiers">
+            <td>Basic</td>
+            <td>Pro</td>
+            <td>Business</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><img src="./assets/pricing/desktop/check.svg" alt="check mark"></td>
+            <td><img src="./assets/pricing/desktop/check.svg" alt="check mark"></td>
+          </tr>
+
+          <tr>
+            <td colspan="3">Customize Metadata</td>
+          </tr>
+          <tr class="table__tiers">
+            <td>Basic</td>
+            <td>Pro</td>
+            <td>Business</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><img src="./assets/pricing/desktop/check.svg" alt="check mark"></td>
+            <td><img src="./assets/pricing/desktop/check.svg" alt="check mark"></td>
+          </tr>
+          <tr>
+            <td colspan="3">Advanced Metrics</td>
+          </tr>
+          <tr class="table__tiers">
+            <td>Basic</td>
+            <td>Pro</td>
+            <td>Business</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td><img src="./assets/pricing/desktop/check.svg" alt="check mark"></td>
+          </tr>
+          <tr>
+            <td colspan="3">Photo Downloads</td>
+          </tr>
+          <tr class="table__tiers">
+            <td>Basic</td>
+            <td>Pro</td>
+            <td>Business</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td><img src="./assets/pricing/desktop/check.svg" alt="check mark"></td>
+          </tr>
+          <tr>
+            <td colspan="3">Search Engine Indexing</td>
+          </tr>
+          <tr class="table__tiers">
+            <td>Basic</td>
+            <td>Pro</td>
+            <td>Business</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td><img src="./assets/pricing/desktop/check.svg" alt="check mark"></td>
+          </tr>
+          <tr>
+            <td colspan="3">Custom Analytics</td>
+          </tr>
+          <tr class="table__tiers">
+            <td>Basic</td>
+            <td>Pro</td>
+            <td>Business</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td><img src="./assets/pricing/desktop/check.svg" alt="check mark"></td>
+          </tr>
+        </tbody>
+      </table>
+
+
+      <div class="features__table--desktop">
+        <h1>Compare</h1>
+        <table>
+          <thead>
+            <tr>
+              <td>The Features</td>
+              <td>Basic</td>
+              <td>Pro</td>
+              <td>Business</td>
+            </tr>
+          </thead>
+          <tbody class="mobile__override">
+            <tr>
+              <td>Unlimited Story Posting</td>
+              <td><img src="./assets/pricing/desktop/check.svg" alt="check mark"></td>
+              <td><img src="./assets/pricing/desktop/check.svg" alt="check mark"></td>
+              <td><img src="./assets/pricing/desktop/check.svg" alt="check mark"></td>
+            </tr>
+           
+            <tr>
+              <td>Unlimited Photo Upload</td>
+              <td><img src="./assets/pricing/desktop/check.svg" alt="check mark"></td>
+              <td><img src="./assets/pricing/desktop/check.svg" alt="check mark"></td>
+              <td><img src="./assets/pricing/desktop/check.svg" alt="check mark"></td>
+            </tr>
+            <tr>
+              <td>Embedding Custom Content</td>
+              <td></td>
+              <td><img src="./assets/pricing/desktop/check.svg" alt="check mark"></td>
+              <td><img src="./assets/pricing/desktop/check.svg" alt="check mark"></td>
+            </tr>
+              <td>Customize Metadata</td>
+              <td></td>
+              <td><img src="./assets/pricing/desktop/check.svg" alt="check mark"></td>
+              <td><img src="./assets/pricing/desktop/check.svg" alt="check mark"></td>
+            </tr>
+            </tr>
+              <td>Advanced Metrics</td>
+              <td></td>
+              <td></td>
+              <td><img src="./assets/pricing/desktop/check.svg" alt="check mark"></td>
+            </tr>
+            </tr>
+              <td>Photo Downloads</td>
+              <td></td>
+              <td></td>
+              <td><img src="./assets/pricing/desktop/check.svg" alt="check mark"></td>
+            </tr>
+            </tr>
+              <td>Search Engine Indexing</td>
+              <td></td>
+              <td></td>
+              <td><img src="./assets/pricing/desktop/check.svg" alt="check mark"></td>
+            </tr>
+            </tr>
+              <td>Custom Analytics</td>
+              <td></td>
+              <td></td>
+              <td><img src="./assets/pricing/desktop/check.svg" alt="check mark"></td>
+            </tr>
+          </tbody>
+        </table>        
+      </div>
+
+
+      <div class="beta">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./assets/pricing/desktop/bg-beta.jpg" />
+          <source media="(min-width: 768px)" srcset="./assets/pricing/tablet/bg-beta.jpg" />
+          <img src="./assets/pricing/mobile/bg-beta.jpg" alt="Sand dunes at dusk">
+        </picture>
+        <h1 class="beta__title">We're in Beta. Get your invite today!</h1>
+
+        <h1 class="caption__link"><a href="#">Get an invite</a></h1>
+        <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14" class="caption__arrow">
+          <g fill="none" fill-rule="evenodd" stroke="white">
+            <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+          </g>
+        </svg>
+
+      </div>
+
+    </main>
+
+    <footer>
+      <div class="footer__container">
+
+        <div class="footer__logo">
+          <a href="index.html"><img src="./assets/shared/desktop/logo_White.svg" alt="Photosnap logo"></a>
+        </div>
+
+        <div class="footer__social__media">
+          <a href="#"><img src="./assets/shared/desktop/facebook.svg" alt="facebook"></a>
+          <a href="#"><img src="./assets/shared/desktop/youtube.svg" alt="youtube"></a>
+          <a href="#"><img src="./assets/shared/desktop/twitter.svg" alt="twitter"></a>
+          <a href="#"><img src="./assets/shared/desktop/pinterest.svg" alt="pinterest"></a>
+          <a href="#"><img src="./assets/shared/desktop/instagram.svg" alt="instagram"></a>
+        </div>
+
+        <div class="footer__navigation__container">
+          <a href="index.html">Home</a>
+          <a href="stories.html">Stories</a>
+          <a href="features.html">Features</a>
+          <a href="pricing.html">Pricing</a>
+        </div>
+
+        <div class="footer__invite__container">
+          <a href="#">Get an invite</a>
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+            <g fill="none" fill-rule="evenodd" stroke="white">
+              <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+            </g>
+          </svg>
+        </div>
+
+        <div class="footer__copyright">
+          <h2 class="footer__copyright__text">Copyright 2019. All Rights Reserved</h2>
+        </div>
+
+      </div>
+    </footer>
+
+
+  </div>
+</body>
+<script type="text/javascript" src="./javascript/script.js"></script>
+<script>
+  /**
+* Location: pricing.html > div.toggle__switch__container
+* 
+* Description: Changes the highlighting for the 
+* monthly and yearly label and toggles the pricing visibility 
+* between monthly and yearly prices.
+*/
+  term__toggleSwitch.addEventListener('change', () => {
+    month__Toggle.classList.toggle('toggle--selected');
+    year__Toggle.classList.toggle('toggle--selected');
+
+    for (let i of document.querySelectorAll('.price__section'))
+      i.classList.toggle('price__section--hidden');
+  });
+</script>
+
+</html>
