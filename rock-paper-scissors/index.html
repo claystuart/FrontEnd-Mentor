@@ -1,37 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  <link rel="stylesheet" href="style.css">
 
-  Score
-  Rules
+  <title>Rock, Paper, Scissors</title>
 
-  You Picked
-  The House Picked
 
-  You Win
-  You Lose
 
-  Play Again
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
+  <div class="container">
+    <header>
+      <img class="logo" src="images/logo.svg" alt="Rock Paper Scissors">
+      <div class="score-box">
+        <h2 class="score-label">Score</h2>
+        <h1 class="score">12</h1>
+      </div>
+    </header>
+
+    <main>
+      <section class="start-box">
+        <img src="./images/icon-rock.svg" alt="rock" class="rock" id="rock">
+        <img src="./images/icon-paper.svg" alt="paper" class="paper" id="paper">
+        <img src="./images/icon-scissors.svg" alt="scissors" class="scissors" id="scissors">
 
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+      </section>
+
+      <section class="result-box">
+        <div class="your-pick">
+          <img src="" alt="Your Pick">
+          <h1>You Picked</h1>
+        </div>
+
+        <div class="computer-pick">
+          <img src="" alt="Computer Pick">
+          <h1>The House Picked</h1>
+        </div>
+      </section>
+
+    </main>
+
+    <section class="play-again-box">
+      <h1 id="win">You Win</h1>
+      <h1 id="lose">You Lose</h1>
+      <button class="play-again-button">Play Again</button>
+    </section>
+
+
+
+
+
+
+
+
+
+    <button class="rules-button" onclick="console.log('hello')">Rules</button>
   </div>
+
 </body>
+
 </html>
