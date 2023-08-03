@@ -122,6 +122,55 @@ main {
     background-image: radial-gradient(#F3F3F3 50%, #DADADA 30%, #9D1634 60%);
 }
 
+/* RESULTS */
+.results-container {
+    width: 325px;
+    height: 182px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.results-box {
+    width: 130px;
+    height: 182px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.results-player {
+    margin-top: auto;
+    font-size: 13px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.human-result {
+    position: absolute;
+    top: 14px;
+    left: -3px;
+}
+
+.computer-result {
+    position: absolute;
+    top: 14px;
+    left: 0px;
+}
+
+.rock-result {
+    background-image: radial-gradient(#F3F3F3 50%, #DADADA 30%, #DB2E4D 20%);
+}
+
+.paper-result {
+    background-image: radial-gradient(#F3F3F3 50%, #DADADA 30%, #4664F4 20%);
+}
+
+.scissors-result {
+    background-image: radial-gradient(#F3F3F3 50%, #DADADA 30%, #EB9F0E 20%);
+}
+
+
 .result-box {
     display: none;
     width: 325px;
@@ -131,15 +180,16 @@ main {
 /* PLAY AGAIN BOX */
 
 .play-again-box {
-    display: none;
-    margin-top: auto;
+    margin-top: 120px;
+    margin-left: 40px;
     width: 220px;
     height: 131px;
 }
 
 .play-again-box h1 {
-    font-size: 56px;
+    font-size: 40px;
     font-weight: bold;
+    text-align: center;
 }
 
 #lose {

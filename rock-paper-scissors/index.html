@@ -24,10 +24,10 @@
       </div>
     </header>
 
-    <main>
-      <section class="start-box">
+    <main id="main">
+      <section class="start-box" id="start-box">
 
-        <button class="option rock" id="rock">
+        <button class="option rock paper" id="rock">
           <img src="./images/icon-rock.svg" alt="rock" id="rock">
         </button>
 
@@ -40,24 +40,32 @@
         </button>
       </section>
 
-      <section class="result-box">
-        <div class="your-pick">
-          <img src="" alt="Your Pick">
-          <h1>You Picked</h1>
+      <!-- RESULTS BOX -->
+
+      <section class="results-container hide" id="results-container">
+
+        <div class="results-box">
+          <button class="option human-result" id="human-result">
+            <img src="./images/icon-rock.svg" alt="rock" id="human-result-img">
+          </button>
+          <h1 class="results-player">You Picked</h1>
         </div>
 
-        <div class="computer-pick">
-          <img src="" alt="Computer Pick">
-          <h1>The House Picked</h1>
+        <div class="results-box">
+          <button class="option computer-result rock-result" id="computer-result">
+            <img src="./images/icon-rock.svg" alt="rock" id="computer-result-img">
+          </button>
+          <h1 class="results-player">The House Picked</h1>
         </div>
+      </section>
+
+      <section class="play-again-box hide" id="play_again_box">
+        <h1 id="who_won_text">You Win</h1>
+        <button class="play-again-button" id="play_again_button">Play Again</button>
       </section>
     </main>
 
-    <section class="play-again-box">
-      <h1 id="win">You Win</h1>
-      <h1 id="lose">You Lose</h1>
-      <button class="play-again-button">Play Again</button>
-    </section>
+
 
     <button class="rules-button" id="rules_button">Rules</button>
   </div>
