@@ -20,26 +20,24 @@
       <img class="logo" src="images/logo.svg" alt="Rock Paper Scissors">
       <div class="score-box">
         <h2 class="score-label">Score</h2>
-        <h1 class="score">12</h1>
+        <h1 class="score" id="scores">0</h1>
       </div>
     </header>
 
     <main>
       <section class="start-box">
 
-        <button class="option rock">
+        <button class="option rock" id="rock">
           <img src="./images/icon-rock.svg" alt="rock" id="rock">
         </button>
 
-        <button class="option paper">
+        <button class="option paper" id="paper">
           <img src="./images/icon-paper.svg" alt="paper" id="paper">
         </button>
 
-        <button class="option scissors">
+        <button class="option scissors" id="scissors">
           <img src="./images/icon-scissors.svg" alt="scissors" id="scissors">
         </button>
-
-
       </section>
 
       <section class="result-box">
@@ -53,7 +51,6 @@
           <h1>The House Picked</h1>
         </div>
       </section>
-
     </main>
 
     <section class="play-again-box">
@@ -71,8 +68,8 @@
     <h1 class="rules-title">Rules</h1>
     <img class="rules-image" src="./images/image-rules.svg" alt="Rules">
 
-    <button class="rules-exit-button" id="rules_exit_button"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-        height="20">
+    <button class="rules-exit-button" id="rules_exit_button">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
         <path fill="currentcolor" fill-rule="evenodd"
           d="M16.97 0l2.122 2.121-7.425 7.425 7.425 7.425-2.121 2.12-7.425-7.424-7.425 7.425L0 16.97l7.425-7.425L0 2.121 2.121 0l7.425 7.425L16.971 0z" />
       </svg>
