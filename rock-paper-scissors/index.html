@@ -14,8 +14,8 @@
 
 </head>
 
-<body>
-  <div class="container">
+<body id="body">
+  <div class="container" id="container">
     <header>
       <img class="logo" src="images/logo.svg" alt="Rock Paper Scissors">
       <div class="score-box">
@@ -62,17 +62,24 @@
       <button class="play-again-button">Play Again</button>
     </section>
 
-
-
-
-
-
-
-
-
-    <button class="rules-button" onclick="console.log('hello')">Rules</button>
+    <button class="rules-button" id="rules_button">Rules</button>
   </div>
 
+
+  <!-- RULES SECTION -->
+  <div class="rules-container hide" id="rules-container">
+    <h1 class="rules-title">Rules</h1>
+    <img class="rules-image" src="./images/image-rules.svg" alt="Rules">
+
+    <button class="rules-exit-button" id="rules_exit_button"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+        height="20">
+        <path fill="currentcolor" fill-rule="evenodd"
+          d="M16.97 0l2.122 2.121-7.425 7.425 7.425 7.425-2.121 2.12-7.425-7.424-7.425 7.425L0 16.97l7.425-7.425L0 2.121 2.121 0l7.425 7.425L16.971 0z" />
+      </svg>
+    </button>
+  </div>
+
+  <script src="rockPaperScissors.js"></script>
 </body>
 
 </html>

@@ -180,3 +180,41 @@ main {
     color: #3B4262;
     background-color: white;
 }
+
+/* RULES CONTAINER */
+.rules-title {
+    width: 85px;
+    height: 32px;
+    margin-top: 95px;
+    color: #3B4262;
+}
+
+.rules-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    background-color: white;
+}
+
+.rules-image {
+    margin-top: 113px;
+}
+
+.rules-exit-button {
+    margin-top: auto;
+    margin-bottom: 65px;
+    background: none;
+    border: none;
+    color: #979797;
+    cursor: pointer;
+}
+
+.rules-exit-button:hover {
+    opacity: .5;
+}
+
+.hide {
+    display: none;
+}
